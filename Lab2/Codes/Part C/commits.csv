@@ -1,0 +1,680 @@
+Hash,Message,Hashes of parents,Is a merge commit?,List of modified files
+b51eb87b4bce896550a647562a9526b34603eab9,"Added possibility to write MOT compliant results to .txt, small fix",718185a74e27c973833e840b636f628153c73ef7,False,track.py
+21bc8b50d5727207b0fc2ca44f0cb2c98db9c542,Fixed video save bug,c41c85b514aa6487985e4ac50d2ce706fe564a06,False,track.py
+5fe232162fbc7d96b892e594f192c21793183b45,increment ages when no detections fix,ab0be012c7956ef9fbe9d1822463b9cb2cd923bf,False,track.py
+3b100c552af371b273b6679a72c63800f3afbf69,"fixed MOT complian result bug, switched bbox_left & bbox_top",6599919ba5723a2a3e5586952fda8612be483ae6,False,track.py
+276a9d0d6eb8ab0f1efe18f581f20566cfd41d59,"Class and confidence display (#135)
+
+* classes passed to tracker and class_id for each track returned
+
+* class_id stored in track
+
+* tracks initialized with their respective tracks
+
+* class write to txt
+
+* neater track logic
+
+* var name fix
+
+* thinner bboxes
+
+Co-authored-by: mikel-brostrom <yolov5.deep.sort@gmail.com>",03e00a59fbc965d6c6bc6373d94d54c16da8d91f,False,deep_sort_pytorch/deep_sort/deep_sort.py;deep_sort_pytorch/deep_sort/sort/track.py;deep_sort_pytorch/deep_sort/sort/tracker.py;track.py
+9a0851e5acc8ea66896c3175ce042d90028c81de,fix bad initial kf predictions for new objects in the field of view,4af3111ac61f1f8e4698c08b201498060daa48f6,False,deep_sort_pytorch/deep_sort/deep_sort.py;deep_sort_pytorch/deep_sort/sort/kalman_filter.py;track.py
+4d338ae4bdd62e5fec0c3479c765a76e385972d8,Fix frame idx MOT txt export bug,1af80aa9ce74904f3f8be264ab97d857d9cd5739,False,track.py
+2e68fb2dc702d999a9c936d33a40e5e44ef6237f,fix dt bug,90261559fe2ec399bca17d7747d875294c6811f4,False,track.py
+60f856a60097dd65bd50381572077462186800b2,fix https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch/issues/224,ece6ced83e0d3402f73bcb99a90e47f220ff549b,False,track.py
+0ab9f16b19d3fa1a973fa58298b60f276b650afe,fix logging for no detections,ed130e77474852b01fdaec854eb3f52329d6f8df,False,track.py
+d3a3651f7855bb32b4d3520d6bc40b9af03f54aa,fix yolov5 timing,ef4e0ccd0160b337438b51f18b1f6f5a8800e43a,False,track.py
+6789e2d65445b3e8f39df05180f5c29917050a96,fix error when specifying yolo model,4fd9a25713b395aa420b80430640a6d1a90c6ea2,False,track.py
+d2d5c59c1116b31fcbd907229da1c6c3746b51c6,fix feature map visualizations,e41a18c38d36e2daff5720a1e631d3aea55a5f45,False,track.py
+701591a42963f45e42103588a6ecbc17ae684068,fixed multi-video tracking txt saving,c80ffd7db27a38c19cb83eb306cef7cc622c47f6,False,track.py
+c865655cfc8b50d3cc97b7b99c233abd264e333b,saving video and txt for multiple streams fixed,c8c393a5bcd25b5f37e5ebe46e9378183ef871c9,False,track.py
+bf70d2eeacb6e11d260ddce5b02e9b47f25572b2,"Merge pull request #377 from mikel-brostrom/fix_app_cost_no_effect_bug
+
+Fix app cost no effect bug",a837b648b346d52cc061ac2627f3c954b19795ed;8bfff7046831d2da9d261a441a6e3d0f529e8af9,True,deep_sort/deep_sort.py;deep_sort/sort/nn_matching.py;track.py
+8cc9dbda7c1709b5890b6b2f392aeca51f84b8f6,fix exp folder path creation,4aa62c86527d05891dad3c8fc39ade82ac21fdf2,False,track.py
+d6fed1d7c3a907fcb9e0599a15dc5ef0a3d22265,fix multi backend normalization,273257cd78b236c3b3f89d288a49393e4f7b2a03,False,strong_sort/reid_multibackend.py
+fcae8822dc3dc258c6ac3379a9b07b70c591cdd2,fix package imports,e88c8e033c1cc8ae5ca629a5b68893d075c6dd74,False,strong_sort/reid_multibackend.py;strong_sort/strong_sort.py
+8e8cf6673f5b45369f0182ec62b9ba7785779597,reid warmup fix,2d11a13f4c2ce3db9dae268969e29ff47c691bd9,False,strong_sort/reid_multibackend.py
+24d185ab735a9c4f64fd77d88bed5995d5c51a39,fix fp16 for reid models,6d704aa6746a464c958e168251d5997630f2a641,False,strong_sort/reid_multibackend.py
+9dcc39a0cbb8b93ccbfd1f63fd9543df4403ae19,fix in tflite export,4339d6ba9566a88ade22d8885693812d20e59a4f,False,reid_export.py
+d1d1e7daf987f545869fda9b9124b472fbd991b0,fix ci error,83878c50d350726d0953494da46cb906cc7ec1c5,False,reid_export.py
+752c3a5f4072d458f32bb6ab4ebc1dd42c8498cd,fix opt bug,029b2ab7e8d74a9c68a74505b8fd590a8a7d4f46,False,track.py
+39317437bae64848591f978ebab62d483c483451,fix strong-sort weigths bug,f3b27c146d13e729ec14e2b930ca77980ffc0b0d,False,strong_sort/reid_multibackend.py
+ad93a50e4f44a9477d62649235bbc3c04586935e,fix MOT17 bug,8abd6adbab03b13e9de2bb9e1dd60d592271ef79,False,val.py
+5773f2a219eb6bc964b22732e2156f1e25f70252,fix switching classes in ocsort,9fcf11b835945424f1fac96416b64a39458bf470,False,trackers/ocsort/ocsort.py
+b03b25c70a2d12311ca38c7b79ea6f3fd822369f,fix import issues,5773f2a219eb6bc964b22732e2156f1e25f70252,False,track.py;trackers/strong_sort/reid_multibackend.py;trackers/strong_sort/sort/nn_matching.py;trackers/strong_sort/strong_sort.py
+2353349ce0e1eb0359ff010f848b266d0de51a26,fix path mess,3d1c740f3ac5ffe0a200b5c5ad0586c5929696e3,False,trackers/multi_tracker_zoo.py;trackers/strong_sort/deep/models/__init__.py;trackers/strong_sort/deep/models/densenet.py;trackers/strong_sort/deep/models/hacnn.py;trackers/strong_sort/deep/models/inceptionresnetv2.py;trackers/strong_sort/deep/models/inceptionv4.py;trackers/strong_sort/deep/models/mlfn.py;trackers/strong_sort/deep/models/mobilenetv2.py;trackers/strong_sort/deep/models/mudeep.py;trackers/strong_sort/deep/models/nasnet.py;trackers/strong_sort/deep/models/osnet.py;trackers/strong_sort/deep/models/osnet_ain.py;trackers/strong_sort/deep/models/pcb.py;trackers/strong_sort/deep/models/resnet.py;trackers/strong_sort/deep/models/resnet_ibn_a.py;trackers/strong_sort/deep/models/resnet_ibn_b.py;trackers/strong_sort/deep/models/resnetmid.py;trackers/strong_sort/deep/models/senet.py;trackers/strong_sort/deep/models/shufflenet.py;trackers/strong_sort/deep/models/shufflenetv2.py;trackers/strong_sort/deep/models/squeezenet.py;trackers/strong_sort/deep/models/xception.py;trackers/strong_sort/reid_multibackend.py;trackers/strong_sort/sort/nn_matching.py
+dafccdded02314031c9b6dd0423ff9e51a2ad390,detection fix output,30c79a5cb527606a92db07d515de131781aa4d11,False,trackers/bytetrack/byte_tracker.py
+6db29f064ecd83649935aa84f4bba8f46c63f791,solved bytetrack bug,07a87b600c65e4a441460a2698fce03181f68b4d,False,trackers/bytetrack/byte_tracker.py
+4b8e4528794973e24a0eb620bd88847fda16f237,fix bug for trt version 7,9566c399cbcbb608af8a5730620c7a3814bf490d,False,reid_export.py
+ec90d9e3776312ceb345d5054390f4d4be75a6c3,fix dynamic onnx export arguments,4b8e4528794973e24a0eb620bd88847fda16f237,False,reid_export.py
+db790624801ff4879f2948e56b693edaf221fef1,fix caemra update check,c34b0911f47c56a7012bee3baa0d794818504c0a,False,track.py
+c4e27cdc9cab6f3763e4546aa41f1d5df89a015d,fix caemra update check,db790624801ff4879f2948e56b693edaf221fef1,False,track.py
+4ce526504fd4726cf59c19250ca8d017e8c91acc,fix passing of args to tracking subprocess,29e48f22ef899f4548e472562870afbcfc083266,False,val.py
+924f5ecf2878b536752aa2b7ca11039d8738dc73,fixed list bug when passing to subprocess,a1da87b71677e895f69bf629bfc9cf7721facd65,False,val.py
+e3b9a1971bcb7a40ff0eaecd2bcf815cfb003eb5,"Fix wrong index assignment in byte_tracker.py
+
+Just a minor fix, unless there is a specific reason why clss_second = classes[remain_inds] and not clss_second = classes[inds_second]",5e187640683198dc45beb58a3e2d3d09cf9637ce,False,trackers/bytetrack/byte_tracker.py
+92cbfbc9e15c6d1968538e3e32253ef2fd4e6874,Fixed validation script so it can run on Windows. Added some things to gitignore as well.,3618aeffd47b0111a46daba970aeca930bbc1a37,False,val.py
+6b80c5b4738591c859c96defb1bb5d57291c5dec,Merge branch 'feature/fix-validation-script' of https://github.com/henriksod/Yolov5_StrongSORT_OSNet into henriksod-feature/fix-validation-script,ee0e8be261a03f0e2bcc52fdb213d2dfa4e816ff;92cbfbc9e15c6d1968538e3e32253ef2fd4e6874,True,track.py;trackers/multi_tracker_zoo.py;trackers/strong_sort/sort/detection.py;trackers/strong_sort/sort/track.py;trackers/strong_sort/sort/tracker.py;trackers/strong_sort/strong_sort.py;val.py
+879c310c20128c45fd104d381c36592d8a7f12be,"Merge pull request #621 from sph1n3x/patch-1
+
+Fix wrong index assignment in byte_tracker.py",ee0e8be261a03f0e2bcc52fdb213d2dfa4e816ff;e3b9a1971bcb7a40ff0eaecd2bcf815cfb003eb5,True,trackers/bytetrack/byte_tracker.py
+b6de1923eddb8bef8714f17a9e8b07121615ae7a,"Merge pull request #624 from mikel-brostrom/henriksod-feature/fix-validation-script
+
+Henriksod feature/fix validation script",879c310c20128c45fd104d381c36592d8a7f12be;17aeaa73b3b0b9f486e774e61ee612c0befc54bf,True,trackers/bytetrack/byte_tracker.py;val.py
+c00b8c6c0fbe71888b61d2a565eb073506db1eeb,"Fix for windows, also added download flag file so I don't have to have large zip files clogging up my storage space",6e5c0fd93e763c3e264173d46bdfe2c4163ff6c2,False,val.py
+0b680340ebab75b6a804a399c0a8db22bc8a8218,"Merge pull request #629 from mikel-brostrom/henriksod-fix/val-on-windows
+
+Henriksod fix/val on windows",954b52bd30e25e14ea1b97e1bbf9e52534def1cd;c01939c64ac0c909fb4d1868a1b19b9bb0f78082,True,val.py
+bd3c96845fc74c515dd7c074ccace63abcfc4363,fix timer when no detections,4f5b414d4e154ded04008893f0e9548abbcdb2c3,False,track.py
+7d4b4f51793e517fae76319be2afe7a8d13f85c5,"Merge pull request #648 from mikel-brostrom/fix-ci
+
+Fix ci",f3f21eaedae051cc0e2af09782728ca42632f39a;d6544b797672f61031376c5a63e3df588ec49c15,True,track.py;trackers/bytetrack/byte_tracker.py;trackers/bytetrack/matching.py;trackers/strong_sort/sort/detection.py
+b86dc4c4030949d6b8fdc972e404918aabcaec50,fix save crop bug,0d164194b4d5b0f9fe3cf06f01e8e2967b0c38f5,False,track.py
+f667d60013aa844d3b0e5d798039a22ad4776b2e,fix ocsrot search sapce,94afc438a66351d44508acc81cc4b6afca46d471,False,val.py
+aace5e705f32d36878ab3c105545e4085c2117cf,fix trackeval path issues,b63d413bad4b7bb39f2ba75840f6021cf183a761,False,val.py
+647b67c5163a0ab8f7bdb990ed4701da25818c53,fix mc_lambda search space,27e1c1d87cc0c307d9fc8124b9fa7f6ed4c3dd82,False,evolve.py
+5a5f40a19bc6a94452d960701ea6678a68a6821f,fixpath agnostic bug fix,858d5a40df91b413e4759c57bd7718bb0e293d2e,False,evolve.py;track.py;val.py
+e52d0d1015d1ec3f991a681fc1ae5030dd474abe,fix broken import,3495f7ef3400a204f95cda540a3056cdb57316b9,False,track.py
+18c000ffe64ba17c666ccb26943c500934ee1d6a,"Bug Fix to show both masks and boxes at same time
+
+Bug Fix to show both masks and boxes at same time in the result video. It seems like that annotator.masks() will override the whole image, so maybe it should be placed before all of operations to draw boxes. After this change, video can show both masks and boxes at same time",e52d0d1015d1ec3f991a681fc1ae5030dd474abe,False,track.py
+816bd9d4f78eceeb5be600ad4c1c54b6d1f39dc0,"Merge pull request #685 from clarkkent0618/master
+
+Bug Fix to show both masks and boxes at same time",e52d0d1015d1ec3f991a681fc1ae5030dd474abe;18c000ffe64ba17c666ccb26943c500934ee1d6a,True,track.py
+da44cf33780ce0faf7b4bde95d5fe2d30264e25d,fix,4678b0f908bd0688858cf9a9528cf764daadc1d8,False,trackers/botsort/bot_sort.py
+ab728b7de9ad169866b1a5b5a394f7aa8ac101db,fix model type bug,bfdc39685f4575f34a032c705083ae3129cae989,False,trackers/strongsort/reid_multibackend.py
+47476077533152fe334bde9c87c92ff92c759982,"Merge pull request #695 from mikel-brostrom/evolve-bug-fix
+
+added frame_idx var",4378608e27bd76b8611dd5998c5761b6a5822f39;c31daa246b1baab2e99bd964757e5b3e6ed3b4c7,True,track.py
+b1e8a737a04700ab2e83dd233c92b6e171713a3e,fix bug showing bboxes and seg simultaneously,13da9eea8348afb9097fcb7a7e7904fd3600db6a,False,track.py
+8423d5dd18c41e6f98d05ff6d688c4ed33b2bc77,fix engine track bug,b1e8a737a04700ab2e83dd233c92b6e171713a3e,False,track.py
+821872282ca3565bdff92120390d1573fc0f9016,fix engine track bug,8423d5dd18c41e6f98d05ff6d688c4ed33b2bc77,False,track.py
+9922d3532b21d436636d2ea98c7e92e5337bbc56,fix yolov8 compatibility,2aae0cfddae62be94fdf11a8bcd46fdfaddcf529,False,val.py
+32f82eb0e08075fdcc47b9e1a1e6e71e331238c0,"Remove un controlled bounding box printing
+
+removed printing of bboxes in StrongSort. It's extremely annoying when you get unexpected outputs in executing models.
+It's a quick fix, just removed one line of code",51d390e79464b62af10a8f6ee0c8cbdee748c221,False,trackers/strongsort/strong_sort.py
+0536c322f9177d77a0d858689475a31db55e5432,"Fixed the issue with returning ""XXX.zip is corrupted"" even though it downloaded and unzipped successfully",404baea237f3a26a92d6fc22de4d79f4e48db78a,False,val.py
+73b85d53780c6993c3a40c81ad965b36f461cfc6,"Merge pull request #799 from Rm1n90/fix/evolve
+
+Fix for issue #737",404baea237f3a26a92d6fc22de4d79f4e48db78a;0536c322f9177d77a0d858689475a31db55e5432,True,val.py
+0e97907cefdac5c8499f8adb94f6ef94de692d81,fix https://github.com/mikel-brostrom/yolov8_tracking/issues/823,73b85d53780c6993c3a40c81ad965b36f461cfc6,False,trackers/deepocsort/ocsort.py
+e0616bf7689762ee262ac8fa87b67c049dd114c9,fix https://github.com/mikel-brostrom/yolov8_tracking/issues/856,f064ce7821698cd8e061fa0ef66949f9394bc08a,False,trackers/strongsort/deep/reid_model_factory.py
+ae02cb6d267e77eda34dfe0e20eb260a296e38a3,fix import,9ade9d3d1f82601fb04e23b4704d85cde36b89f2,False,trackers/botsort/bot_sort.py
+59ab5f12bf819eef3b764c184a80adcdcf09c7d3,fix import,ae02cb6d267e77eda34dfe0e20eb260a296e38a3,False,trackers/strongsort/reid_multibackend.py;trackers/strongsort/strong_sort.py
+0735c6ff967f8e090d36251ad647fcd465cc5412,fix import,f3bc05e8d11529768a42b30e852cac1f8fab804c,False,trackers/ocsort/ocsort.py
+4d82e71461848e38d23e928a6337ac824b3b5bf1,fix imports,0735c6ff967f8e090d36251ad647fcd465cc5412,False,trackers/bytetrack/byte_tracker.py
+2e5107e0ed35da6a7fd393aef5c919b3e44d045c,fix arg,489e2b335d292f64102a3de1d238690cfb33a221,False,trackers/reid_export.py
+d3c4f7d1159c0addb3bfbcf0120712580507abd1,fix weights path,88add5e20f8e39046fc4a4b357cd76283af88413,False,reid_export.py
+0be87c062563ad6112039dd1589938b00fb16203,fix import,c9857382b4c0c2c01e8aceaf3ff948f0e75b83a1,False,trackers/deep/reid_multibackend.py
+a7ea1d784096d70c645a6b05a1ab07136b0f8514,fix imports,ba9c2cab61bb3a1903e09fea84c2bedb49edbb9c,False,trackers/deep/reid_export.py
+eef669f223ce51e3ba32ba794d840d05c5289529,fix imports,8cb51838c67fade3648e67c92894cfcb5f008eaf,False,trackers/deep/reid_export.py
+6be2a590ef9ba8836cefafaa8c470e1d1880c75f,fix imports,eef669f223ce51e3ba32ba794d840d05c5289529,False,trackers/bytetrack/byte_tracker.py
+22565069ebbf6300ce7f6cb7e524c00577c53ea2,fix imports,e4a446688dd28eb7452aa7569e591c577fb6c491,False,trackers/deep/reid_export.py
+1be46f692d73c15ac54699d1d6365e3e5fb355f6,fix imports,22565069ebbf6300ce7f6cb7e524c00577c53ea2,False,trackers/deep/reid_export.py
+810b78127e830770c05e5a4a6f4db80aced079db,fix imports,1be46f692d73c15ac54699d1d6365e3e5fb355f6,False,trackers/deep/reid_export.py
+a1931497c0984cec72decc396c274b22e506dee6,fix yolo-model argument,1ce5d73f36b4150db98dcd6b1f993e25874ff711,False,track.py
+eb144c43de58edd305068e3893ba99122f99512e,fix subprocess track arguments,a1931497c0984cec72decc396c274b22e506dee6,False,val.py
+ae1811fa7407476a6e5a650830212ae6338d330c,fix arguments,15e64e12d2413ea10be316420c90443e22bd345c,False,val.py
+a99b6259f4271db0b0239e177aac973bac894759,fix args,a2bf81797553d9d3c12b83cffe8aa868a15cc0d6,False,evolve.py
+a2fe49b1b919f925a0d637e6a45fcfd5a81e8484,fix arg names,40a4dbfb7ad3ab14515c30f5411b84f1ee795400,False,evolve.py
+fc67c4ec22b4d532c66fbf0d061bffac29bde987,fix for pose models,b6aa1d33309dbad9db7c0fe03c722c0f3afd762c,False,track.py
+df372b69448d8f8782bba58467c09d03b8c54be1,"Merge pull request #875 from mikel-brostrom/fix-trackers-output
+
+Fix trackers output",c79dba4b90fdf2aeee4ceeda0d12d6c522601cf3;4916222fa80ad4c88466207219e567a1e2218ac0,True,track.py;trackers/botsort/bot_sort.py;trackers/bytetrack/byte_tracker.py;trackers/deepocsort/ocsort.py;trackers/ocsort/ocsort.py;trackers/strongsort/strong_sort.py
+68816861497f8ab9c206c63148ea0bacf82f5cfb,fix custom evaluation,6d3985f8e580b250b524486aca94091628e71649,False,val.py
+0374fbdab2c6d22c0e419564a4c9723c5c6388d8,"Merge pull request #890 from mikel-brostrom/fix-custom-eval
+
+fix custom evaluation",6d3985f8e580b250b524486aca94091628e71649;68816861497f8ab9c206c63148ea0bacf82f5cfb,True,val.py
+a7e774c75557671561d9a2f34fa5a32769d88476,fix missing seq_path https://github.com/mikel-brostrom/yolov8_tracking/issues/883,6d3985f8e580b250b524486aca94091628e71649,False,val.py
+4ed562534ea600b3b7e36719e4890e2276f010e0,fix --show bug,f9a225b4ca4241fd6b5233001c97044f7e2769e6,False,track.py
+bdd819a23ec5ac63aac4c6b916fbe27d3cccc987,fix https://github.com/mikel-brostrom/yolov8_tracking/issues/888,52db53619d658cfa5a3bd6510210a91bc673d57c,False,track.py
+cf2564449a857f8aefcf081cb8326afed8aeeeb8,fix flag name,547dcb70fabee0c1b7cdc59d4150b76f36161269,False,evolve.py
+8ad367abb43bfce4b81a68a3890012653a9fdfcb,Fix np float attribute deprecation in NumPy>=1.20,ef74c3debea905b53aff639b85713f747885c2e2,False,trackers/strongsort/strong_sort.py
+eb4521238294c622fdbf2cc48a7931e93722b471,fix imports,80a1c1e1a420c6d09b4ce1944eb3e1095adb357c,False,tools/__init__.py;tools/export.py;tools/track.py;tools/val.py
+a459db1725b6cefd20f8e8ef78ba1d66b18c606a,fix imports,2f64f454a6dbe2c4d625ecf86adeb23dedcd0dbf,False,boxmot/tracker_zoo.py
+1cab21ad55b5b0e84e37be3ce1bed01b434a1bac,fix paths to resources,3c9380984179607f24c69a0a5a23f6962ee3cbdf,False,examples/val.py
+600047496376fb3245a8f000892033e078e3b3bc,fix tracker config path,b2dcfd0a316f899aae3e90ea341ff9c2edf6686b,False,boxmot/tracker_zoo.py
+009bc595551bc97113a7ee68bd286b953cb546f9,fix imports,3ec777121e7d0cc2d7035228e80d8e4e8d9d5b34,False,boxmot/botsort/bot_sort.py
+30e282e6b3af3592dc29c135bf8bc2e9bf36ef5e,fix imports,009bc595551bc97113a7ee68bd286b953cb546f9,False,boxmot/botsort/bot_sort.py
+2280aa7a5b609e11ff2cd3b9f2c0d0b4ee8d8a1e,fix imports,6e11dc76fd33540fbbf041d35f1e40b7ddb8386d,False,examples/track.py
+4cd1277e39c56035c4c014874f5ff752d906c627,fix paths,94d2a875d4b1c2fbc8a2562effd86205b4239163,False,boxmot/deep/reid_export.py
+1837a3c80e72e5402f207e65119a8842f5f2d7d0,fix non-existent tags,cebafad7a0f7171fc941d9c2f4886f90868b361b,False,setup.py
+35ea70f4545a46bc9b7467b044a8b465f3492bbe,fix weigths path,3080d129df5718f2c6b4e0ba7eadb49f30f29666,False,boxmot/deep/reid_export.py
+7d511d5bda0e19042ef39a97808d9e8adeb83b68,fix weigths path,35ea70f4545a46bc9b7467b044a8b465f3492bbe,False,boxmot/deep/reid_export.py
+7ed4dfad1ee8bfe7209338962cc541d68f3d6540,fix export in ci,02c480fbc3c0b331ad69b58e58b1df1730d56a55,False,boxmot/deep/reid_export.py
+736c95c164b7c56d4416e509a37e84fc918cff83,fix paths,4bc39ab6abc0555152efb6df7958004d5973f0d8,False,examples/evolve.py
+c10476091f58754f7078bd076bcf6aba7f31fe4e,fix paths,55e7d8b778125a2ef00928c6fa6b767df52e3fc6,False,examples/evolve.py
+fd8b839c24e184da048bcaa3d099209400da639d,lap fix,2d6cfdb1459c21351ba79b0588788479195a4547,False,boxmot/bytetrack/matching.py
+585f1e4d9f51092867fd5981cade052ca40fbbff,"Merge pull request #895 from mikel-brostrom/fix-lap-instal
+
+Fix lap install",bda81093e2f05f293f5786c819e01b6978c4c2c9;fd8b839c24e184da048bcaa3d099209400da639d,True,boxmot/bytetrack/matching.py
+4281fa7d1aa343104b438397cbca95365a1f8f0f,fix id visualizations,e9b8aed9481d44806058b99c042f5fc821b2e343,False,examples/yolo_nas_track.py
+9e55180dc6b56bdb6bc176511f7780fff2bee16b,fix ValueError: tile cannot extend outside image,2e6334082a1dfa46d527513c0f434c195f37b721,False,examples/yolo_nas_track.py
+4e3bcea03eec2b30b86336019413e8e3cf8a51a6,fix conf not getting updated bug,b61e4be7a21235333917e6a2860f1554592e7475,False,boxmot/deepocsort/ocsort.py
+45a2e3006c2d3e0655bd6e3f808756731cd2556f,fix https://github.com/mikel-brostrom/yolo_tracking/issues/877,a8531d9df1b1343d3adc64cd54e1e4ecb42dca33,False,examples/track.py
+e4f424d7adcd1ad676fa517d61c4c278708c7983,fix yolo-nas int bug: confs always zero,b0d2074b6dd7f109f6c0b87013b653875eaaf00e,False,examples/yolo_nas_track.py
+af8188c5cd94137cfb51436f4eb169506e6ce569,fix path bug,89bb14b22b3b36e5eb7a4a00fc436f73ec4e1472,False,examples/multi_yolo_backend.py
+0cbbb93cd032e63d28c74acab3408f2a250f6069,fix sg pkg name,c74a4bb04ce7782b935c6432e1a0d8d5ece85392,False,examples/multi_yolo_backend.py
+57e0e67238cc780c94919819044485119e1d69c8,fix sg pkg name,0cbbb93cd032e63d28c74acab3408f2a250f6069,False,examples/multi_yolo_backend.py
+36826aa803d9cd124c77f55a5d0cbebf369b8234,fix sg pkg name,57e0e67238cc780c94919819044485119e1d69c8,False,examples/multi_yolo_backend.py
+5a0614e1add13fadd3a9beafc134b4aab4fe6b12,"Merge pull request #911 from mikel-brostrom/fix-appearance-based-methods-on-cpu
+
+add @torch.no_grad() to all ReID related inference methods",1a288768831bbd24ece772f6dfc38de69b91c4c8;05d6b4a8d61bec14226a40e596e83ace10e64662,True,boxmot/botsort/bot_sort.py;boxmot/deepocsort/ocsort.py;boxmot/strongsort/strong_sort.py
+9666ab587d62d8ceb7fdacfdc094bf4ddc0cdfa9,fix auto SG pip install,b563b633b81b278003291c9c68b0e8e0ace9358a,False,examples/multi_yolo_backend.py
+52f2ee1c87a2e19f64a55ace1c70b0bd42a62b98,fix config writing,ff5d5874eeb7994dbfeda26642c566a4821c5b99,False,examples/evolve.py
+6a2ceb7b554c7f1a083ae0b54353aae034359ec7,fix logging messages,0390c234eccc1e67c861704f8bcd753cc01a1f8e,False,examples/val.py
+3c9ef84dd952869bc2024cc6ffaabab23eefb5ca,fix dtype bug,986c3b0ef85d00e6f8f538ec10f0ad2b84552d35,False,boxmot/strongsort/sort/track.py
+2d8130188226feb9eff78599501af954f044d853,assert input types and det shapes,3c9ef84dd952869bc2024cc6ffaabab23eefb5ca,False,boxmot/deepocsort/ocsort.py
+cb916326e87ffebaad9cacaf71169e243d237d87,assert det shapes,2d8130188226feb9eff78599501af954f044d853,False,boxmot/ocsort/ocsort.py
+895b2bb17e1182aa4fdffe3221e103badf411bda,assert input types and det shapes,cb916326e87ffebaad9cacaf71169e243d237d87,False,boxmot/strongsort/strong_sort.py
+09e3e798b9a99dc8034d6ae8aef6e707b033afcb,assert input types and det shapes,895b2bb17e1182aa4fdffe3221e103badf411bda,False,boxmot/botsort/bot_sort.py;boxmot/bytetrack/byte_tracker.py
+80c89adc9ad4138edcb5b75b4ad083436d718671,assert input types and det shapes,09e3e798b9a99dc8034d6ae8aef6e707b033afcb,False,boxmot/botsort/bot_sort.py
+eb0955792a3a20f15a441ca45cc69f9716a6523b,fix var name,80c89adc9ad4138edcb5b75b4ad083436d718671,False,boxmot/strongsort/strong_sort.py
+7280514b77eb5b175323f0e1a80f6b4e5c950ae7,"Merge pull request #967 from mikel-brostrom/assert-tracker-inputs
+
+Assert trackers inputs",d0203eaac5c5a143a491a7a1d7e61c7cba42ff4e;c67d3c3b45b17af822bba523bb6bd497ae7a6f3c,True,boxmot/botsort/bot_sort.py;boxmot/bytetrack/byte_tracker.py;boxmot/deepocsort/ocsort.py;boxmot/ocsort/ocsort.py;boxmot/strongsort/strong_sort.py;examples/track.py;examples/val.py
+6616e29bcf3435abca9e3c4b6ef5428f55941236,fix saving problem when using track.py,a0edbe3e90217c61eee3defb3ed3d9850ad21b53,False,examples/track.py;examples/utils.py
+954b5644a818becbee9e2fbe50495539b11d9bdd,fix saving problem when using track.py,6616e29bcf3435abca9e3c4b6ef5428f55941236,False,examples/track.py
+4954550fab93457d8249253029e841d7733443f5,"Merge pull request #976 from mikel-brostrom/fix-mot-results-saving-trackpy
+
+Fix mot results saving trackpy",a1f3d6c19daa73841eec326f7cdd7b901f48773f;954b5644a818becbee9e2fbe50495539b11d9bdd,True,boxmot/__init__.py;examples/track.py;examples/utils.py
+8e25085fe486be5dcc63266fac3ea04ade5eea8a,Fixed so osnet weights file is put in the right location when running test,964c4251a9ab991586855b3a464a49d16bbe3052,False,tests/test_python.py
+3f537ece74b43b3b16f23000479ac090b8aa411e,Fixed some mismatch in paths in example scripts,ab7409d0a85020917dd15529c03eabe5e69d1bb9,False,examples/track.py;examples/val.py
+477e2eb87dbd02b79133db06359f2ce7374bd361,Fixed some issues with kalman filter adapters,3f537ece74b43b3b16f23000479ac090b8aa411e,False,boxmot/motion/adapters/botsort_kf_adapter.py;boxmot/motion/adapters/bytetrack_kf_adapter.py;boxmot/motion/adapters/strongsort_kf_adapter.py;boxmot/utils/association.py
+d6195a541c55176d3a45ede80f468d20bfbd6292,Fixed paths in evolve.py,5ab0bb4ccc4d71fe454770ffc953be18884ccd77,False,examples/evolve.py
+431b665e1e647f551deb7425528ca72d56bf0921,fix class filtering for yolox,015d13d86d9963275936a6c74987b6a41838b8ea,False,examples/multi_yolo_backend.py
+9b0409507e5ffb00d1bafc06e9fd9199861250d2,fix no yolox detections,431b665e1e647f551deb7425528ca72d56bf0921,False,examples/multi_yolo_backend.py
+d641404a30543327f5abcf0c16c3f389ed57b978,Ran fix-formatting from Makefile to reformat boxmot code.,8929ab08db7913ba8b0e47a3412146877fa3fa7e,False,boxmot/__init__.py;boxmot/appearance/__init__.py;boxmot/appearance/backbones/__init__.py;boxmot/appearance/backbones/attention.py;boxmot/appearance/backbones/bnneck.py;boxmot/appearance/backbones/densenet.py;boxmot/appearance/backbones/hacnn.py;boxmot/appearance/backbones/inceptionresnetv2.py;boxmot/appearance/backbones/inceptionv4.py;boxmot/appearance/backbones/lmbn_n.py;boxmot/appearance/backbones/mlfn.py;boxmot/appearance/backbones/mobilenetv2.py;boxmot/appearance/backbones/mudeep.py;boxmot/appearance/backbones/nasnet.py;boxmot/appearance/backbones/osnet.py;boxmot/appearance/backbones/osnet_ain.py;boxmot/appearance/backbones/pcb.py;boxmot/appearance/backbones/resnet.py;boxmot/appearance/backbones/resnet_ibn_a.py;boxmot/appearance/backbones/resnet_ibn_b.py;boxmot/appearance/backbones/resnetmid.py;boxmot/appearance/backbones/senet.py;boxmot/appearance/backbones/shufflenet.py;boxmot/appearance/backbones/shufflenetv2.py;boxmot/appearance/backbones/squeezenet.py;boxmot/appearance/backbones/xception.py;boxmot/appearance/reid_export.py;boxmot/appearance/reid_model_factory.py;boxmot/appearance/reid_multibackend.py;boxmot/motion/adapters/__init__.py;boxmot/motion/adapters/botsort_kf_adapter.py;boxmot/motion/adapters/bytetrack_kf_adapter.py;boxmot/motion/adapters/ocsort_kf_adapter.py;boxmot/motion/adapters/strongsort_kf_adapter.py;boxmot/motion/kalman_filter.py;boxmot/tracker_zoo.py;boxmot/trackers/__init__.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/__init__.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/deepocsort/embedding.py;boxmot/trackers/ocsort/ocsort.py;boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/iou_matching.py;boxmot/trackers/strongsort/sort/linear_assignment.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strong_sort.py;boxmot/utils/__init__.py;boxmot/utils/association.py;boxmot/utils/checks.py;boxmot/utils/cmc.py;boxmot/utils/gmc.py;boxmot/utils/matching.py;boxmot/utils/ops.py;boxmot/utils/preprocessing.py;boxmot/utils/torch_utils.py
+acc25b0ad89650e0d8f5da73ef722fddb5ddc8ce,"Reintroduced KF adapters, added Makefile to easier run tests and linting check/fix, added pre-commit hooks.",a24c5284d3ea0bbddd05c006f6f36caea1329816;1e73782bbfaaec972a8eaf47b3358d41c3ed83c3,True,boxmot/__init__.py;boxmot/appearance/__init__.py;boxmot/appearance/backbones/__init__.py;boxmot/appearance/backbones/attention.py;boxmot/appearance/backbones/bnneck.py;boxmot/appearance/backbones/densenet.py;boxmot/appearance/backbones/hacnn.py;boxmot/appearance/backbones/inceptionresnetv2.py;boxmot/appearance/backbones/inceptionv4.py;boxmot/appearance/backbones/lmbn_n.py;boxmot/appearance/backbones/mlfn.py;boxmot/appearance/backbones/mobilenetv2.py;boxmot/appearance/backbones/mudeep.py;boxmot/appearance/backbones/nasnet.py;boxmot/appearance/backbones/osnet.py;boxmot/appearance/backbones/osnet_ain.py;boxmot/appearance/backbones/pcb.py;boxmot/appearance/backbones/resnet.py;boxmot/appearance/backbones/resnet_ibn_a.py;boxmot/appearance/backbones/resnet_ibn_b.py;boxmot/appearance/backbones/resnetmid.py;boxmot/appearance/backbones/senet.py;boxmot/appearance/backbones/shufflenet.py;boxmot/appearance/backbones/shufflenetv2.py;boxmot/appearance/backbones/squeezenet.py;boxmot/appearance/backbones/xception.py;boxmot/appearance/reid_export.py;boxmot/appearance/reid_model_factory.py;boxmot/appearance/reid_multibackend.py;boxmot/motion/adapters/__init__.py;boxmot/motion/adapters/botsort_kf_adapter.py;boxmot/motion/adapters/bytetrack_kf_adapter.py;boxmot/motion/adapters/ocsort_kf_adapter.py;boxmot/motion/adapters/strongsort_kf_adapter.py;boxmot/motion/botsort_kf.py;boxmot/motion/bytetrack_kf.py;boxmot/motion/deepocsort_kf.py;boxmot/motion/kalman_filter.py;boxmot/motion/ocsort_kf.py;boxmot/motion/strongsort_kf.py;boxmot/tracker_zoo.py;boxmot/trackers/__init__.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/__init__.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/deepocsort/embedding.py;boxmot/trackers/ocsort/ocsort.py;boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/iou_matching.py;boxmot/trackers/strongsort/sort/linear_assignment.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strong_sort.py;boxmot/utils/__init__.py;boxmot/utils/association.py;boxmot/utils/checks.py;boxmot/utils/cmc.py;boxmot/utils/gmc.py;boxmot/utils/matching.py;boxmot/utils/ops.py;boxmot/utils/preprocessing.py;boxmot/utils/torch_utils.py
+8f1a080d3d3f6d157f08c409a88be0187867a7cb,Fixed missing import of from PerClassDecorator,6aa1b2f4d9372e2a948883fa7a2a3f2591f892c6,False,boxmot/trackers/deepocsort/deep_ocsort.py
+779ec8476f8aa06581ea25832d30b436522be398,Fixed strongsort test to include gating metric in coverage,96a17ac0d35b92435654e53167d9ac3c1f6edfa7,False,boxmot/motion/adapters/strongsort_kf_adapter.py;boxmot/trackers/strongsort/sort/linear_assignment.py;tests/test_python.py
+579ad98cf7fd0aeeee682cd36cc93f92fe790255,fix imports,a279e3553208de1bdf8b5f53974793aee6f9fe89,False,tests/test_python.py
+a41dbaa753d113cb9fbf6bf95d9e0c04b67d8a81,fix imports,579ad98cf7fd0aeeee682cd36cc93f92fe790255,False,tests/test_python.py
+87bae3b4fcfb9402739ed029637cfc1febbdaa1a,fix pip install bug,cc6fa37354412d7ffa5afb8027613ff4cb20d02a,False,boxmot/utils/checks.py
+8c515f8f4922dfaa26c12e544d9a591989922070,"Merge pull request #1004 from mikel-brostrom/fix-parallel-multi-seq-val
+
+Fix parallel multi seq val",b94c82e84524c51ac714e11b9c88156d19657c7d;7dbd638ea85e299e7b7e9f55123862eb6924fb7a,True,examples/detectors/strategy/yolox.py;examples/evolve.py;examples/track.py;examples/val.py
+e64a8b453412872f4cf1f034e1c23b57e0b80bd5,"Merge pull request #1010 from apperception-db/fix-ecc-redundancy
+
+Fix ECC Redundancy in StrongSORT",b3848b32968b1a07b1c78e29c5de8e601ded3b54;75a3ca3e9f2fa827f3205e0ccf57bc2d7ca79631,True,boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py
+f8ac4bd58d019308785ebc8789cef3fa2a758660,fix orb output,1b5b854c2a45e6b423ef871d5e573823308dd6cc,False,boxmot/motion/cmc/orb.py
+40d3e2a76bde7f3eb2c12f380e11a84d20c2008e,fix orb output,f8ac4bd58d019308785ebc8789cef3fa2a758660,False,boxmot/motion/cmc/orb.py
+9dce7df2e338e33795b0fe3c42180fd1d29c977f,fix orb output,40d3e2a76bde7f3eb2c12f380e11a84d20c2008e,False,boxmot/motion/cmc/orb.py
+f9c63d1be309aeed8259a7c4d068b52bd1a1d507,fix evolve crash,9ade6981c9adbcfab65b3de5dc75c27342c2b682,False,examples/evolve.py;examples/val.py
+ab4c5cfb5947113bf632d848f56c72fd31875b2c,fix save paths,1eddae6ab2e52b97b110216295e333c71510aa59,False,boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/sift.py;boxmot/motion/cmc/sof.py
+fee1be04c149fced4f48e807e12efee554a1cb7f,"Merge pull request #1017 from mikel-brostrom/cmc-cleanup
+
+fix save paths",e5ccb95eec5ad1b9a094ffc6944c1adc3e0ec0c1;ab4c5cfb5947113bf632d848f56c72fd31875b2c,True,boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/sift.py;boxmot/motion/cmc/sof.py
+124402cdde6ac04039b9c41485904d6888ebb5f2,"Merge pull request #1018 from mikel-brostrom/fix-yolox-yolonas-autoinstall
+
+htop now thop",fee1be04c149fced4f48e807e12efee554a1cb7f;13a51e70e4402a575875c91dcd9bdfa6232b5d04,True,examples/detectors/__init__.py
+275e2532fc975841df9625eaa45c21552088d015,fix case when no cmc keypoints are found,a387a2a66d4292da09a0748a7e38140c7da3e116,False,boxmot/motion/cmc/sof.py
+cdc13ca3a2a27366f38400f74d872b403af89a92,fix deepocsort asso bug,93d5f6a8e84091811ccedac6391119a2a3492674,False,boxmot/utils/association.py
+c2502c0c358776adc472c15ddded3623b2f0fa09,fix deepocsort asso bug,cdc13ca3a2a27366f38400f74d872b403af89a92,False,boxmot/utils/association.py
+22d4dd000c8df42477806f548aedc1fb7bb386b3,"Merge pull request #1019 from mikel-brostrom/fix-association-crash
+
+Fix association crash",124402cdde6ac04039b9c41485904d6888ebb5f2;c2502c0c358776adc472c15ddded3623b2f0fa09,True,boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/sof.py;boxmot/utils/association.py
+39a7933bf667ee7e96fc58cac9438ae7ecfad575,move kfs to folder and fix imports,124402cdde6ac04039b9c41485904d6888ebb5f2,False,boxmot/motion/kalman_filters/adapters/__init__.py;boxmot/motion/kalman_filters/adapters/botsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/bytetrack_kf_adapter.py;boxmot/motion/kalman_filters/adapters/ocsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/strongsort_kf_adapter.py;boxmot/motion/kalman_filters/kalman_filter.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py
+ea6b540abd847d6857b0ab5b7ea67bfe04375f07,"Merge pull request #1022 from mikel-brostrom/move-kfs-to-folder
+
+move kfs to folder and fix imports",9039dd89a7f279cfdd7473a6ab4a5e483b2c3d71;39a7933bf667ee7e96fc58cac9438ae7ecfad575,True,boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/sof.py;boxmot/motion/kalman_filters/adapters/__init__.py;boxmot/motion/kalman_filters/adapters/botsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/bytetrack_kf_adapter.py;boxmot/motion/kalman_filters/adapters/ocsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/strongsort_kf_adapter.py;boxmot/motion/kalman_filters/kalman_filter.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py;boxmot/utils/association.py
+0a81844d2fdabe758097ede5fe8497b01a8a017a,fix imports,818150b3c64bec5d0e70309eafd81decc9f288a4,False,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py;boxmot/utils/association.py
+fef905274aa8fa974f37b1820eb8f1e99c029575,fix imports,0a81844d2fdabe758097ede5fe8497b01a8a017a,False,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py
+21f3af4fb47a4ed8987053ed7e71bf17b97b18d2,fix import,612a43605e3429903a1e0575f505854acb6363e3,False,boxmot/trackers/strongsort/sort/track.py
+8fb5b44481119f68921fcc5ab57718488814d50f,fix,a8a73b20de4c491694ba7a5303c045fd4ad12963,False,examples/detectors/yolo_interface.py
+fa8886a5b5b0fd13b77f524e7add7c7722e768f5,"Merge pull request #1035 from mikel-brostrom/scale-n-clip-refactor
+
+fix",13099e7b64886dfd57bb7db64028fabe20212af6;8fb5b44481119f68921fcc5ab57718488814d50f,True,examples/detectors/yolo_interface.py
+b06a5a7e8cab70e72b469e7f420cfc2a010568bd,fix,fa8886a5b5b0fd13b77f524e7add7c7722e768f5,False,boxmot/postprocessing/gsi.py
+fb85029e93c4b706c85c9665285276e87f08de05,"Merge pull request #1037 from mikel-brostrom/add-main-to-gsi
+
+fix",fa8886a5b5b0fd13b77f524e7add7c7722e768f5;b06a5a7e8cab70e72b469e7f420cfc2a010568bd,True,boxmot/postprocessing/gsi.py
+c86da7446b2babc0aa6de42874277c3cabeb3a44,hotfix,261acbca37350f21a876d7495526261ac5863d79,False,boxmot/postprocessing/__init__.py
+3dd4023f9e1d437f246a370960f5691b6c3cd02f,fix,f17a2d70e3858c60fb9e064c57e57520efa55572,False,boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+2d0d13f77e828aa2db633151f3ef605541cd8aeb,"Merge pull request #1039 from mikel-brostrom/clip-reid-fix
+
+Clip reid fix",ad044bd150b5b2ab00a91eb200d1dc0a12f0eed1;c8964d192aa48f40233eb2262beca6f0ee8cdcdf,True,boxmot/__init__.py;boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+686d9b845e020500e4a650d069d5cb6658296b4a,"Revert ""Clip reid fix""",2d0d13f77e828aa2db633151f3ef605541cd8aeb,False,boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+d683767c077b416201ab309e87a0c7374b241ea6,"Merge pull request #1040 from mikel-brostrom/revert-1039-clip-reid-fix
+
+Revert ""Clip reid fix""",2d0d13f77e828aa2db633151f3ef605541cd8aeb;686d9b845e020500e4a650d069d5cb6658296b4a,True,boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+b21f3a42fde5facc098a5586f6c5ae8f740dd710,Merge branch 'master' of https://github.com/mikel-brostrom/yolo_tracking into clip-reid-fix,c9d4a911524d637adb15b1d98398bf5ddff4225d;d683767c077b416201ab309e87a0c7374b241ea6,True,boxmot/__init__.py;boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+18fb731aff927484d47b7c09880147916f9aaf86,fix path,93239e05be54c9d0119f91a5d90b917942f614e8,False,boxmot/appearance/backbones/clip/clip/simple_tokenizer.py
+e3d200c7e8d72f67fafdad8d6ed9380d8aee38d0,fix gsi testä,807aea3a3e29ee694f462697ff6071c1b2a2afac,False,tests/test_python.py
+dddf3df1af2d12c5321f9b3c6de9e91329e042c6,fix model paths,c3ac005c31366c71c7d33329e87e9e215cf9f871,False,boxmot/appearance/backbones/clip/make_model.py
+f6c9ef30c17b8f9d0ba0041631fce86330fee645,fix model paths,dddf3df1af2d12c5321f9b3c6de9e91329e042c6,False,boxmot/appearance/backbones/clip/make_model.py
+1ccbac452a8fb03208ec9424f3c3fc914d6c4a73,"Merge pull request #1041 from mikel-brostrom/clip-reid-fix
+
+fix clip  reid",d683767c077b416201ab309e87a0c7374b241ea6;d8e951d30b14ae4988145095030c5aaf2e2f42e7,True,boxmot/appearance/backbones/clip/clip/simple_tokenizer.py;boxmot/appearance/backbones/clip/make_model.py;boxmot/appearance/backbones/clip/make_model_clipreid.py;tests/test_python.py
+ab9f16a782f12fe1594c6d320ab5c81681064d7e,fix https://github.com/mikel-brostrom/yolo_tracking/issues/1044\#issuecomment-1659640316,90ec6c9e76849b49d51967c748aef8f66e803f31,False,examples/detectors/yolo_interface.py
+39a1481bb654537256bca0bb490e9daab296c35a,add error mesage for when inference mode cannot be infered from yolo model name,2c05ec1a549754db47e4b4ef6df48d9fab635f50,False,examples/detectors/__init__.py
+8661f7bf116deb5c0d4fb28460174383215e8639,fix evaluation,4805486e4cad97ebc12ddb93daf09d025baecd60,False,examples/track.py;examples/val.py
+af327d48aa6bd84f60cf1059f09499014e4e3eff,fix install,8661f7bf116deb5c0d4fb28460174383215e8639,False,examples/track.py
+e7861ffeb39dce6e01c2721fe57ee10b027ea1da,fix import,09abf631c30af268db6768c5a44070fdc1a31e07,False,examples/detectors/yolox.py
+50a925314f570cf1a0ef772e17861708f05a623f,fix install,2ce09cfb4e5095454c8b09667928ea997b39afb1,False,boxmot/appearance/reid_export.py
+c8374172440ac9b4cae88280b6e9676ab78caa5c,fix,68c03b4308edea1c8693b271873d0688028ce012,False,boxmot/appearance/reid_multibackend.py
+27f0d21abcfba4a16a7eb563743ae39453f909a3,fix,c8374172440ac9b4cae88280b6e9676ab78caa5c,False,boxmot/appearance/reid_multibackend.py
+8e6d5acdc237ecd3bf6f112a2502b487df245382,fix,71a61b156d4f85a0672f6c11d6698ad835bd5cbe,False,boxmot/appearance/reid_multibackend.py
+d603678081e58fb2d8fa0767361ee3f92c9ff7bf,fix bugs,a0540c23fcaa44ae3c6943663811592ca6289074,False,boxmot/trackers/bytetrack/byte_tracker.py
+65ee1c0a205b294aabbc6c668636f2c6661f44be,fix,1aa5670028dfb7553d7cc458cc0470aa1cf86e6b,False,boxmot/appearance/reid_multibackend.py
+7b9436ec9f1c7dd8d8edb5941936a310dae7d416,temporary fix,304d21cddd470b56c6355ae0409a00bff6d35e92,False,boxmot/appearance/reid_export.py
+5e2f252bc5fcb98efe6deab84eee55891c6b8f9f,fix,d72a59f97faa3bff0fc2ed5447af62c3482ef05c,False,boxmot/appearance/reid_export.py
+23ec159ad81318779b939af011e3eb979ad16520,fix,5e2f252bc5fcb98efe6deab84eee55891c6b8f9f,False,boxmot/appearance/reid_export.py
+111d7eb3c42e0375b09b1b7fcd0133ef5912e717,fix dynamic model bug,23ec159ad81318779b939af011e3eb979ad16520,False,boxmot/appearance/reid_export.py;boxmot/appearance/reid_multibackend.py;tests/test_exports.py
+96db3f3404266664cd0d7350ef58dd230b87a441,fix tflite cmd,111d7eb3c42e0375b09b1b7fcd0133ef5912e717,False,boxmot/appearance/reid_export.py
+5aff0ee7251a1e40df52198bf0198f2298599c9e,fix tflite dynamic batch inference,fd27950a5c5cb1cb8798dfa3f070b696fd55da12,False,boxmot/appearance/reid_multibackend.py
+332da01bf0f7e45f1608d8504e8c4669fff93577,"Merge pull request #1057 from mikel-brostrom/fix-tflite-batched-inference
+
+fix tflite dynamic batch inference",fd27950a5c5cb1cb8798dfa3f070b696fd55da12;0a212d87130b36c197cc5a10dcdac0e1c33d02ff,True,boxmot/appearance/reid_multibackend.py;setup.py;tests/test_exports.py
+67f1aa762016336b29fc3dc2055e9098527a3e62,Merge branch 'master' of https://github.com/mikel-brostrom/yolo_tracking into fix-strong-sort,a609e194de2fbc9de27bbf7b161042c104515edf;752ab196a3f25c73cfd91c7ac5c5b94275c801d6,True,boxmot/__init__.py;boxmot/appearance/__init__.py;boxmot/appearance/backbones/__init__.py;boxmot/appearance/backbones/clip/__init__.py;boxmot/appearance/backbones/clip/clip/__init__.py;boxmot/appearance/backbones/clip/clip/clip.py;boxmot/appearance/backbones/clip/clip/model.py;boxmot/appearance/backbones/clip/clip/simple_tokenizer.py;boxmot/appearance/backbones/clip/config/__init__.py;boxmot/appearance/backbones/clip/config/defaults.py;boxmot/appearance/backbones/clip/config/defaults_base.py;boxmot/appearance/backbones/clip/make_model.py;boxmot/appearance/backbones/clip/make_model_clipreid.py;boxmot/appearance/backbones/densenet.py;boxmot/appearance/backbones/hacnn.py;boxmot/appearance/backbones/inceptionresnetv2.py;boxmot/appearance/backbones/inceptionv4.py;boxmot/appearance/backbones/lmbn/attention.py;boxmot/appearance/backbones/lmbn/bnneck.py;boxmot/appearance/backbones/lmbn/lmbn_n.py;boxmot/appearance/backbones/mlfn.py;boxmot/appearance/backbones/mobilenetv2.py;boxmot/appearance/backbones/mudeep.py;boxmot/appearance/backbones/nasnet.py;boxmot/appearance/backbones/osnet.py;boxmot/appearance/backbones/osnet_ain.py;boxmot/appearance/backbones/pcb.py;boxmot/appearance/backbones/resnet.py;boxmot/appearance/backbones/resnet_ibn_a.py;boxmot/appearance/backbones/resnet_ibn_b.py;boxmot/appearance/backbones/resnetmid.py;boxmot/appearance/backbones/senet.py;boxmot/appearance/backbones/shufflenet.py;boxmot/appearance/backbones/shufflenetv2.py;boxmot/appearance/backbones/squeezenet.py;boxmot/appearance/backbones/xception.py;boxmot/appearance/reid_export.py;boxmot/appearance/reid_model_factory.py;boxmot/appearance/reid_multibackend.py;boxmot/configs/__init__.py;boxmot/motion/__init__.py;boxmot/motion/cmc/__init__.py;boxmot/motion/cmc/cmc_interface.py;boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/orb.py;boxmot/motion/cmc/sift.py;boxmot/motion/cmc/sof.py;boxmot/motion/kalman_filters/__init__.py;boxmot/motion/kalman_filters/adapters/__init__.py;boxmot/motion/kalman_filters/adapters/botsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/bytetrack_kf_adapter.py;boxmot/motion/kalman_filters/adapters/ocsort_kf_adapter.py;boxmot/motion/kalman_filters/adapters/strongsort_kf_adapter.py;boxmot/motion/kalman_filters/kalman_filter.py;boxmot/postprocessing/__init__.py;boxmot/postprocessing/gsi.py;boxmot/tracker_zoo.py;boxmot/trackers/__init__.py;boxmot/trackers/botsort/__init__.py;boxmot/trackers/botsort/basetrack.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/__init__.py;boxmot/trackers/bytetrack/basetrack.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/__init__.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/deepocsort/embedding.py;boxmot/trackers/ocsort/__init__.py;boxmot/trackers/ocsort/ocsort.py;boxmot/trackers/strongsort/__init__.py;boxmot/trackers/strongsort/sort/__init__.py;boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/iou_matching.py;boxmot/trackers/strongsort/sort/linear_assignment.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strong_sort.py;boxmot/utils/__init__.py;boxmot/utils/association.py;boxmot/utils/checks.py;boxmot/utils/iou.py;boxmot/utils/matching.py;boxmot/utils/ops.py;boxmot/utils/torch_utils.py;examples/detectors/__init__.py;examples/detectors/yolo_interface.py;examples/detectors/yolonas.py;examples/detectors/yolov8.py;examples/detectors/yolox.py;examples/evolve.py;examples/track.py;examples/utils.py;examples/val.py;setup.py;tests/test_exports.py
+621d3620c931ad75ba514ba81b977452e5774c61,fix formating,52dedbe328e79cf5c3152a1a6326598e8b66e1c1,False,boxmot/trackers/strongsort/sort/tracker.py
+547ee6fc0f0bbf1d7aca506ebd5ba746c679f326,"Merge pull request #1054 from mikel-brostrom/fix-strong-sort
+
+Clean up strong sort",15933bd6721585c09196ea649917081cb23a9331;bd2affdfec2f6bbc154d1538430704ccf73119a5,True,boxmot/appearance/reid_multibackend.py;boxmot/tracker_zoo.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/linear_assignment.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strong_sort.py;boxmot/utils/ops.py;examples/track.py;tests/test_python.py
+1ac61a06b4757268fac76641e9b1bfe5466be2e7,fix save passing to subprocess,1534d108a57c1e8c94678064976bb00d569927b5,False,examples/val.py
+f9e25d9143c5ecfd4ad5da2be6646a6c65028425,fix evolve,1ac61a06b4757268fac76641e9b1bfe5466be2e7,False,examples/evolve.py
+4fd378082472aed3c44b76b6cced98079f31b245,"Merge pull request #1061 from mikel-brostrom/fix-save
+
+use args to yolo, delete later internal yolo args modifications",032a16bb427414ce3fa0997e13d004a3cfda0612;f9e25d9143c5ecfd4ad5da2be6646a6c65028425,True,examples/evolve.py;examples/track.py;examples/val.py
+2e5bc899dbae4b18f51d40b0d791f52d8f89af8c,fix botsort with new det feature extraction,89cc9a8278f5c73da7db27554fa052446d62f36e,False,boxmot/trackers/botsort/bot_sort.py
+4c317ca7b3e2910588ef64f2dea82e17676dfc84,"FIX: resize in cv2 is w, h; in torchvision h, w",2b61f62dd1b01324aa3432e3465f64475b25aef3,False,boxmot/appearance/reid_multibackend.py
+baac1387cfc0c72a138768606879360b15398385,fix list out of ranfge,6afb31b73704c56944bd3e713001a3300a35476e,False,boxmot/appearance/backbones/__init__.py
+7537b086369f1bb6aac05f0f56710f404ad29dee,fix loading,afaa5d0da4fbd3c54bc7bcff2fc4a35b81a07e7f,False,examples/detectors/yolox.py;examples/track.py
+bd1c036e5c35349f0129436b8a0f0aa5afa11a71,fix num class setting for yolox crowdhuman models,7537b086369f1bb6aac05f0f56710f404ad29dee,False,examples/detectors/yolox.py
+96c63bfcd71a596a5ed05b2f44e9643b43209edb,fix ci,5374eb7909beb53cb7c107944e375d1bde1b4ee9,False,boxmot/appearance/reid_export.py
+b5a11fe6a7d9a121f8f1139233669f0a342ecee6,"Merge pull request #1067 from mikel-brostrom/fix-yolox-loading
+
+Fix yolox custom model loading",d1761476745628070bdcfc0a79db08aca6aa2b6a;96c63bfcd71a596a5ed05b2f44e9643b43209edb,True,boxmot/__init__.py;boxmot/appearance/backbones/__init__.py;boxmot/appearance/reid_export.py;boxmot/appearance/reid_multibackend.py;examples/detectors/__init__.py;examples/detectors/yolox.py;examples/track.py
+9849eda5aaa15dc9a215d0bb105efb8c2cad8d1b,fix custom yolo_nas model loading,0e93aa0c074171e26c5b412535ead5bcc92d33f4,False,examples/detectors/yolonas.py;examples/detectors/yolox.py
+4e7b655d72d914f33ff3341ef7a9e555f264b160,"Merge pull request #1068 from mikel-brostrom/yolo-nas
+
+fix super-gradients custom model load",b5a11fe6a7d9a121f8f1139233669f0a342ecee6;9849eda5aaa15dc9a215d0bb105efb8c2cad8d1b,True,examples/detectors/yolo_interface.py;examples/detectors/yolonas.py;examples/detectors/yolox.py
+cd92cfc288554a3526c8f7796288ae5bdde826a6,assert output dim[1] 8 instead of 7,5306f83294db2c43d1df6e361e0762e4040247ec,False,tests/test_python.py
+d93b2373820100db23d8ff8a9413532246ac206b,fix det ind,59ceb83beb368ead82d92d1f77710719c6140b5e,False,boxmot/trackers/botsort/bot_sort.py
+34b63a25914f4ecf41a95bcfa5ac7d0e899d9557,fix det_ind output,b2e39ed191dccce381445f9ab21061d9395e6390,False,boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strong_sort.py
+14964807dea585fd841ec05925926f668fa72704,fix det ind passing to tracker,cf0bc42cd7c4922d76a8a0ed4e21a9f78b85bd6c,False,boxmot/trackers/ocsort/ocsort.py
+f29cdf01b4ac43ecabd46337a3ba5af51265d2f3,fix bytetrack,ec55041a8864aa0a26f0c60baf6572c0a052656d,False,boxmot/trackers/bytetrack/byte_tracker.py;boxmot/utils/matching.py;boxmot/utils/ops.py
+7f3eaf7c63b6b5c56126042cff7ddb7c92027d86,fix bytetrack,f29cdf01b4ac43ecabd46337a3ba5af51265d2f3,False,boxmot/trackers/bytetrack/byte_tracker.py
+6329bb88d219aefa194e32764bdac731a1c8e823,fix botsort,9e45c7f0f673d1dbdf63ae92a1e214a7c49b4696,False,boxmot/trackers/botsort/bot_sort.py
+31e0754844a31afd03f736a7a7368592f8277d0f,fix wrong shapes,9e45c7f0f673d1dbdf63ae92a1e214a7c49b4696,False,boxmot/utils/__init__.py
+2502d415632bf462f87b545d42b057e1b9697224,fix wrong shapes,31e0754844a31afd03f736a7a7368592f8277d0f,False,boxmot/utils/__init__.py
+e9f50515bdb534fded939e870efb689818beeba6,"Merge pull request #1084 from mikel-brostrom/fix-per-class-tracking
+
+Fix per class tracking",7153ea3a40adf07e1ca91cd4ec6363e174d4b853;2502d415632bf462f87b545d42b057e1b9697224,True,boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/utils/__init__.py;boxmot/utils/ops.py
+ee2797c119dd275690e10acab0d610a32f7d3015,fix,b4e3ce9bae1532b06ab26a86dceacc73185fd032,False,boxmot/__init__.py;boxmot/motion/kalman_filters/adapters/hybridsort_kf_adapter.py;boxmot/tracker_zoo.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/utils/association.py
+11eb3c7a4fc815a78fafcab3fd238dbac53649e7,fix,ee2797c119dd275690e10acab0d610a32f7d3015,False,boxmot/utils/association.py
+a6ee01baf140de6cd0576d3eb97b3dd6709a1515,fix,376325e752322e85b976a7563a27a8231f99febd,False,boxmot/trackers/hybridsort/hybridsort.py
+41d91ec9153e156f05f58ebe8fcf470db33539df,fix hybridsort,9cfb5080b91c393e729c62882c72eb2d36b93269,False,boxmot/trackers/hybridsort/association.py;boxmot/trackers/hybridsort/hybridsort.py
+196111d72f336c64e48f98ce86bd86e1f29f7d06,fix hybridsort,41d91ec9153e156f05f58ebe8fcf470db33539df,False,boxmot/utils/association.py
+5a1732f6406031a49554ce2f3f740eb4fa5e4990,fix per class decorator,4cd58690091d90b9314088f03c1e9d6334273bbc,False,boxmot/utils/__init__.py
+39c870f8ae44f0af9b718d67ae8c925965ec74ce,fix per class,5a1732f6406031a49554ce2f3f740eb4fa5e4990,False,boxmot/trackers/hybridsort/hybridsort.py;boxmot/utils/__init__.py
+9e5bf5d7bca53a33c4458099f2bbc6fb58602c20,fix https://github.com/mikel-brostrom/yolo_tracking/issues/1083,34a060fa9adf0cfa0a2249d2fd773b90ae9a7b62,False,boxmot/tracker_zoo.py;boxmot/trackers/botsort/bot_sort.py
+16cbfd2fa405742fab2cde0d7fe9b8ad8b9af1a5,"Merge pull request #1090 from mikel-brostrom/botsort-index-bug-fix
+
+fix https://github.com/mikel-brostrom/yolo_tracking/issues/1083",34a060fa9adf0cfa0a2249d2fd773b90ae9a7b62;9e5bf5d7bca53a33c4458099f2bbc6fb58602c20,True,boxmot/tracker_zoo.py;boxmot/trackers/botsort/bot_sort.py
+88de710dc19a5087ed632b2cc748c7476948ec52,bug: fix import hybridsort,815f1e1a6ff22f2e0b61b6e5b085588b008d3e7a,False,boxmot/trackers/hybridsort/__init__.py
+c95a45815846cbab82c25e41cc3acff1dd2f9f9a,"Merge pull request #1091 from Matesanz/master
+
+fix hybridsort import",815f1e1a6ff22f2e0b61b6e5b085588b008d3e7a;88de710dc19a5087ed632b2cc748c7476948ec52,True,boxmot/trackers/hybridsort/__init__.py
+530b1534cb8c903439f297b7cc26c906d44f83e2,"Merge pull request #1095 from mikel-brostrom/fix-deepocsort
+
+Fix deepocsort",b64aefa2b478847a22481934af139e1eee08f00b;3d9dbbd098a3d0e0662f21950aa2635a283b2af8,True,boxmot/appearance/reid_multibackend.py;boxmot/trackers/deepocsort/deep_ocsort.py
+550f753e436258604ca7564bbbd81976c1f959b2,fix indexing bug,6df6a3e429ee067b06945cfbf928720f92c6cd34,False,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py
+03d93c4987294eaa64e98c9f89ee1e3ba9250167,"Merge pull request #1112 from mikel-brostrom/fix-ocsort-association-bug
+
+fix indexing bug",3e89d992aa69bdd8dc40cf6a72eba8cea54a65bf;550f753e436258604ca7564bbbd81976c1f959b2,True,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/ocsort/ocsort.py
+e479a6bde0275a826903e9b1e47a76422b16c8ea,fix clip vehiclereid model link,9331026f31215796ca0cb0116bd1d0c58789e7da,False,boxmot/appearance/reid_model_factory.py
+ee79fe076f1f57d185e1390374bf01b801463ba1,fix second matching index for bot_sort,7e02dec765d9ee14c4446e1285a26cfd617875a3,False,boxmot/trackers/botsort/bot_sort.py
+fc49426253516c0497677a494c8d925e403d90c4,"Merge pull request #1180 from Justin900429/master
+
+Fix finding second matching index in BoT-SORT",7e02dec765d9ee14c4446e1285a26cfd617875a3;ee79fe076f1f57d185e1390374bf01b801463ba1,True,boxmot/trackers/botsort/bot_sort.py
+d378e6e41e01af01a600c2fbe04efe64e7b7df1b,fix overflow during frame cropping,6456dbd1d58ad66c90b180f120a4ad40216cb1be,False,boxmot/appearance/reid_multibackend.py
+5ee526ccd526d81fe4bf9911762d29242783b048,fix crop overflow issue,d378e6e41e01af01a600c2fbe04efe64e7b7df1b,False,boxmot/appearance/reid_multibackend.py
+0fcb10f0e7e9926bca3a12a6784376989189bebd,"Merge pull request #1187 from Justin900429/master
+
+Fix cropping overflow issue",6456dbd1d58ad66c90b180f120a4ad40216cb1be;5ee526ccd526d81fe4bf9911762d29242783b048,True,boxmot/appearance/reid_multibackend.py
+8117fbb5a09ad4e3978eb6c94bf0fc60648cf71f,"HybridSort: Fix assignment to trk in update, so that it alligns with the types returned by predict",c418157f9a9438c2659f659eca70c76290e9d244,False,boxmot/trackers/hybridsort/hybridsort.py
+2ab3d2e0333eb6d9afefb40c8f6862f20b31e80b,"Merge pull request #1229 from florian-fischer-swarm/fix/hybridSortNumpy
+
+Fix HybridSort numpy datatypes.",ea6469ee7abf0f27ecc4a514b8fd2b9dd4db897c;8117fbb5a09ad4e3978eb6c94bf0fc60648cf71f,True,boxmot/trackers/hybridsort/association.py;boxmot/trackers/hybridsort/hybridsort.py
+5e8acfb1a1e193bab47daf0da196b0d79fc5b478,fix asso function identification,70b08528e15a1ffb7853f9ef8967eb05a121b148,False,boxmot/utils/iou.py
+c42f128a37a3fd0230714882ecc0263eb73259f9,fix paths,7396442c54044c64f60977186f15100b4b08d435,False,experimentation/utils.py;experimentation/val_results.py
+f9b7841954a4e5fed0144c781960e2adc0aa0e2c,fix paths,c42f128a37a3fd0230714882ecc0263eb73259f9,False,experimentation/utils.py;experimentation/val_results.py
+183e3522640489b848330bb38338de0b459984d9,fix reid dst,0837e1fdceba26162e0b5166bbafab0708041ee6,False,experimentation/generate_dets_and_embs.py
+00407752c55e40e6c7ba0646ddc2d33edd7a3507,fix paths,4cb1af8bc1bf39a0bac3a5e990ae2c0c9c49ed45,False,tests/test_exports.py
+1fb3b52859dcfc3cfd74c5b5971f3f6240354a4e,fix paths,b2295014a854683f09e543248ee0b77382dca657,False,tests/test_exports.py
+45ace05e79a63ba53bee3177ef79d89768a2fad2,fix imports,5ab33e90bdf3d039cc1c0f76e21357b9287ff468,False,boxmot/utils/__init__.py;experimentation/generate_dets_and_embs.py;experimentation/track_w_dets_n_embs.py
+a9c550f29632c306507d07979af81cd70092d9e2,fix paths,6b87bc39d651e8949f5d911dcf75a7cc661e94c0,False,tracking/generate_mot_results.py
+4a5f0c7408efcaebc05a35008a5670eee947447e,fix paths,a9c550f29632c306507d07979af81cd70092d9e2,False,tracking/evolve.py;tracking/generate_mot_results.py
+ef728bbe034939d038c9ab1fe5cc88d7f771c4bc,"Merge pull request #1324 from mikel-brostrom/change-file-name
+
+fix paths",e8fea499a623ad6717a8c0a9d7f10b1a703224a5;2b51d629e21a4ebe02c60343c7f912bc510bb311,True,tracking/evolve.py;tracking/generate_mot_results.py
+846fa4bedb6ac856014a0b74024013a6330dd05a,fix imports,74f46b1705ddf0ea59bf238ec7da65242a333320,False,tracking/detectors/yolonas.py;tracking/detectors/yolox.py
+347303ab2668d3c324763bc802386ed6cf4757c9,"Merge pull request #1334 from mikel-brostrom/fix-strongsort-output
+
+Fix strongsort output",cc393834a38fa6453dcea060f527cd191628db9c;82467d5540aadfc746c08db19162b89031c2d5b9,True,boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/strong_sort.py;tests/unit/test_trackers.py
+6925d4fdbbf4e9651662c57fa397ed6cc13544ba,fix paths,8ae4292486bd4e4a630b24240cb1009bdafdcd32,False,boxmot/utils/__init__.py;tracking/val.py
+40f75cb2bcffd73f17c1811f365c7c9ec6e213d9,"Merge pull request #1337 from mikel-brostrom/fix-mot-eval
+
+Fix mot eval",71e25b509c5301fe78ecbf6be0cfd440ddd68db9;e042ccd629c6d1c174ed4859a0e1ed2a0e9633cc,True,boxmot/utils/__init__.py;setup.py;tracking/generate_dets_n_embs.py;tracking/generate_mot_results.py;tracking/val.py
+2074a57c8bc48f2f0f96b086785055d8560dc55e,fix imports,c684e827dc16a27155f4a11f160d0262e89e9f27,False,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py
+8e2ecb29ca0d21acbe476a12b9cfb2060c751e62,fix imports,2074a57c8bc48f2f0f96b086785055d8560dc55e,False,boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py
+6b8d2ceed98c59c5549f05ec440bc679079624f6,fix imports,8e2ecb29ca0d21acbe476a12b9cfb2060c751e62,False,boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py
+d94e853f3898bd7c2a96738a5d84eaa95f6902cb,fix tracks list name,5310c39fb3483432d0040311947e212160fd4071,False,boxmot/trackers/deepocsort/deep_ocsort.py
+ebf121127987b7192c2fbefe0c128ea950f1090a,fix update call,c2963c86bd8452e032a67305f98945dd90860286,False,boxmot/utils/__init__.py
+5029d2aa4bdec48d2a761105fe3128202d9007d4,fix update call,ebf121127987b7192c2fbefe0c128ea950f1090a,False,boxmot/utils/__init__.py
+f9ba25f4f8cbb65f977ffe7802b918dd9f294c57,fix duplicated test names,614a09478504d94fc2398f472678c0ee776c3c7f,False,tests/unit/test_trackers.py
+26bdcf8e7476281adc541665cee31ccb49f60df7,fix trajectory plotting for botsort,65741c54fe57cf5ddab44b600e2c114e38fe5e66,False,boxmot/trackers/basetracker.py;boxmot/trackers/botsort/bot_sort.py
+7fcf7fede28ab9c0b57b4613cac0fc805b437af7,fix bytetrack plotting,26bdcf8e7476281adc541665cee31ccb49f60df7,False,boxmot/trackers/basetracker.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/basetrack.py;boxmot/trackers/bytetrack/byte_tracker.py
+25448604ac1c31762f09b877e9e8f17bf7c1401f,fix bytetrack plotting,7fcf7fede28ab9c0b57b4613cac0fc805b437af7,False,boxmot/utils/matching.py
+deb8e163cbc6b70a75f4dc25c998d5717af172b8,fix per class tracking,ca4ef536c12d3d99b0e701d8badcee76d133c406,False,boxmot/utils/__init__.py
+658f0e87e9de42a8d19237aec2fcd944421fd074,"Merge pull request #1350 from mikel-brostrom/fix-per-class
+
+Fix per class",be258868c3d91495c9fd8a91e753c2b00fadd690;5f9cfd07e847a388c6420f2b8bb901a88d671c07,True,boxmot/trackers/basetracker.py;boxmot/utils/__init__.py
+28210f160f4c8c7f46ec322fa96697c1cb0a5ead,unpack fix,82b550f5d447ae12f60b6122e4aef275e905b99d,False,boxmot/utils/__init__.py
+2815caa24974a07a0818c1c9b6a3f6b358abba0c,import fix,d7916cbf3d5aba750b93ad68ed8d3f2eefbb4e19,False,boxmot/appearance/reid_auto_backend.py
+ba1bf450e8289f88e2910a7ac8d13e05d6c90100,fix import,2815caa24974a07a0818c1c9b6a3f6b358abba0c,False,boxmot/appearance/reid_auto_backend.py
+234e811fea57a84718323bac3c5ea13f8c891a66,fix reid autobackend,88a00874a8f23f1ee33ebd9b95cc34ff5f0d1ab7,False,boxmot/appearance/backends/base_backend.py;boxmot/appearance/reid_auto_backend.py;boxmot/appearance/reid_multibackend.py
+95f015e231792d342ff06935e66cbe22acddbbdc,fix reid auto backend imports,e37241b1156da55599f74596ab46fcbcaa5fd9e0,False,boxmot/appearance/reid_export.py;tests/unit/test_cuda.py;tests/unit/test_reidbackend.py;tracking/generate_dets_n_embs.py;tracking/generate_mot_results.py
+9e8999bdc0f1def421696fe891adb4b7088dd8b3,fix auto backend,95f015e231792d342ff06935e66cbe22acddbbdc,False,tracking/generate_dets_n_embs.py
+3b0f44969e6eca655aba01c18cb64313764255ec,fix import,9e8999bdc0f1def421696fe891adb4b7088dd8b3,False,boxmot/appearance/reid_auto_backend.py
+d8f33daac2b4901f5c2091335b77b1fbc31fbbbd,fix reid arguments,42dc10ca360d7a819783f7bf10cf0ead1149f7f9,False,tests/unit/test_reidbackend.py
+ae7478657839a2aa16948c5b8a6516c43f4d549a,fix reid arguments,d8f33daac2b4901f5c2091335b77b1fbc31fbbbd,False,tests/unit/test_cuda.py
+eed87c46a965751098b304875f854e393c7951cf,fix reid arguments,ae7478657839a2aa16948c5b8a6516c43f4d549a,False,tests/unit/test_cuda.py
+7e4547a917e9aa7315adc910bf356bfe09a8e35b,added backend type assert based on model loaded,eed87c46a965751098b304875f854e393c7951cf,False,tests/unit/test_reidbackend.py
+426d68171a35db6a675526ddafc9514cc9f87490,fix warning,7e2df6a349c48225b47a6ce6ff38991a254cb8ec,False,tests/unit/test_cuda.py
+441f0513d2e083ef99ffc2e6f685bc0b2324363d,fix warmup,e0ec936e28445bdedee2177425c1be3ef5e9ea57,False,boxmot/appearance/backends/base_backend.py
+f2cc9a0b4d26426b0ce9898c924c470ddf216391,fix,9f5cbaa57e3a311a86a7d8224b5141e00d6a9aa4,False,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py
+ec5b43a5d0c584ae4e8fbb8f9c5c6520d9ed540f,"Merge pull request #1367 from mikel-brostrom/fix-queue-indexing
+
+fix deque indexing",9f5cbaa57e3a311a86a7d8224b5141e00d6a9aa4;f2cc9a0b4d26426b0ce9898c924c470ddf216391,True,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py
+939dbc651987f85679b527c7cb432f1f3d1db4e1,fix,f2cc9a0b4d26426b0ce9898c924c470ddf216391,False,boxmot/motion/kalman_filters/deepocsort_kf.py
+1714a5f335e7f3c1b1a0417d3c3dcca1641bc62e,"Merge pull request #1368 from mikel-brostrom/fix-queue-indexing
+
+fix deepocsort obs list bug",ea5098e6edcbaabefeb577311b47b28d24059015;939dbc651987f85679b527c7cb432f1f3d1db4e1,True,boxmot/motion/kalman_filters/deepocsort_kf.py
+e1a1d98478219ea9c6369b8bfcd1f77f1125bbb2,fix deque indexing,297d0e3238415d183ab94f368e467fea5c407640,False,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py
+701f85761fddf5ed7f1188913574df903ed77bd6,"Merge pull request #1371 from mikel-brostrom/fix-deque-indexing
+
+fix deque indexing",09e43cfb0cfe236b62c72e0874efb601e52b8410;e1a1d98478219ea9c6369b8bfcd1f77f1125bbb2,True,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py
+89a43c56a64f84f2074d61448b910e34d1382105,per class frame count fix,d4b81297e1a605a97bc9bb7ce0ec5e501526e632,False,boxmot/utils/__init__.py
+e340a7f2de8af6b593afcc04f3db56b91f2313e9,"Merge pull request #1401 from mikel-brostrom/per-class-id-fix
+
+Per class frame count fix",d4b81297e1a605a97bc9bb7ce0ec5e501526e632;8e8672e648ad1bcd3ade2bad176e877bcc98136d,True,boxmot/utils/__init__.py
+f99ddea27cf57d9edaa9edffd862dfdff3682e7f,fix device arg handling,ef5dcb83e9cd41c70bbe3409e9cc61792c70e69b,False,boxmot/appearance/reid_auto_backend.py;boxmot/utils/torch_utils.py
+14152d21362e1e3602180a771e38750c30455b2a,"Merge pull request #1417 from mikel-brostrom/fix-device-arg-handling
+
+fix device arg handling",ef5dcb83e9cd41c70bbe3409e9cc61792c70e69b;f99ddea27cf57d9edaa9edffd862dfdff3682e7f,True,boxmot/appearance/reid_auto_backend.py;boxmot/utils/torch_utils.py
+a7db6fed51470a1d07e422a8d5a8907ec84a9800,Merge branch 'master' of https://github.com/mikel-brostrom/yolo_tracking into fix-pkg-version-handling,2d9e2c70136ddce95a09c9120293afd7d33d0748;7ee8981ed31d0cbe4436ca74778cb09be1506209,True,boxmot/__init__.py;boxmot/utils/torch_utils.py
+c7b250465bd26c23bf75e43557173561d9bd854d,fix sed command,a7db6fed51470a1d07e422a8d5a8907ec84a9800,False,boxmot/__init__.py
+08626750fa7bc4ddc0910831f52cd9624ab4324c,"Merge pull request #1421 from mikel-brostrom/fix-pkg-version-handling
+
+fetch pkg version from __init__ instead of pyproject",c294bc8b881dfd9c995ccef8036935d73314c1ed;c7b250465bd26c23bf75e43557173561d9bd854d,True,boxmot/__init__.py;boxmot/utils/torch_utils.py
+77906e293a88860011d362277585a99845667628,fix frame count,e768786a68696516a066b3e205c5dcdfd9b6be29,False,boxmot/utils/__init__.py
+6bbb7ed8dbbe5da14f40add72f561705ae3f0eac,fix frame count,77906e293a88860011d362277585a99845667628,False,boxmot/utils/__init__.py
+d542e18a166e5da62146e869c7de4ff445cd3eb6,"Merge pull request #1475 from johnnynunez/master
+
+Fix mot results gen on macOS",bdfddff0eb584b1c4347427345b8b2e5fd891c6a;94d35662a91c9dc3438019f4d106bdd0e0494391,True,tracking/generate_mot_results.py
+c6bd482b01701c5d286a1ceb8eb18ca4a27c2bc8,"Update generate_mot_results.py
+
+fix cuda device:
+RuntimeError: Attempting to deserialize object on CUDA device 0 but torch.cuda.device_count() is 0. Please use torch.load with map_location to map your storages to an existing device.",d542e18a166e5da62146e869c7de4ff445cd3eb6,False,tracking/generate_mot_results.py
+d287a3c6177a5c602deead75ca0e3d9a0d55f637,"Merge pull request #1479 from YoungjaeDev/bug-evolve-deepocsort
+
+Delete centroid from asso_func in deepocsort",3ed0ccafe8508a7c40c6557dfe94af626fa2ceb3;850df074ccfeb73f57566f2a6e7d307acd388aba,True,tracking/evolve.py
+9eb81edc34c68db73e0dfc2f5accba49d95121a8,fix kfs,6aaf88164839bbb3b02f75bf7d4a7a7989ef2f79,False,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py
+b0795a6c7db5200d27efcfcd88b91d83c8ca6b05,fix test,9eb81edc34c68db73e0dfc2f5accba49d95121a8,False,boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;tests/unit/test_trackers.py
+a0d3b374eb2aa16b6b1e2a970a880681dba0de23,fix test,b0795a6c7db5200d27efcfcd88b91d83c8ca6b05,False,tests/unit/test_trackers.py
+42d872362d24bbd12209457e4b473d44e4fd73ee,fix test,a0d3b374eb2aa16b6b1e2a970a880681dba0de23,False,boxmot/trackers/basetracker.py;tests/unit/test_trackers.py
+15e286f580f9a72aa3e5122fcd120fa342bdc820,fix test,42d872362d24bbd12209457e4b473d44e4fd73ee,False,tests/unit/test_trackers.py
+18a38f88247df600849adbd7cd39d6d9cbbca7ec,fix test,15e286f580f9a72aa3e5122fcd120fa342bdc820,False,tests/unit/test_trackers.py
+599a05f013741f2d7c1a77127f4e388f4ecc2fa0,fix test,18a38f88247df600849adbd7cd39d6d9cbbca7ec,False,tests/unit/test_trackers.py
+6cfee3a4b14517405891b0daee3f8f10b737d539,fix test,599a05f013741f2d7c1a77127f4e388f4ecc2fa0,False,boxmot/trackers/basetracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py
+b150783f175bb9927eb28ebe67ba8c7fdd22d870,fix test,6cfee3a4b14517405891b0daee3f8f10b737d539,False,boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py
+1ac8a7b994173725d2e4eba61bc1d23c96adf67d,"Merge pull request #1481 from mikel-brostrom/fix-max_age-lt-max_obs-bug
+
+ensure max_age always < max_obs",d287a3c6177a5c602deead75ca0e3d9a0d55f637;b150783f175bb9927eb28ebe67ba8c7fdd22d870,True,boxmot/motion/kalman_filters/deepocsort_kf.py;boxmot/motion/kalman_filters/hybridsort_kf.py;boxmot/motion/kalman_filters/ocsort_kf.py;boxmot/trackers/basetracker.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py;tests/unit/test_trackers.py
+644661e195e4bc5983ba83cf788320d816e378e4,fix xys kf import,238d07a12b01f7f0cdff132f566be52857d16075,False,boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py
+69e65b6b75bce0caa97959e1b565aabcba635574,fix bytetrack slow KF bug,b06191d840cd410931ecc7b79eafc714938c691e,False,boxmot/motion/kalman_filters/base_kalman_filter.py;boxmot/motion/kalman_filters/xyah_kf.py;boxmot/motion/kalman_filters/xywh_kf.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py
+bdce3f359bf03ff7b98f93783aff2a46ca054059,"Merge pull request #1488 from mikel-brostrom/fix-kf-name
+
+xys now xysr kf",95d67ff483142ef134399e6c28618e12e9382854;54a2c4d337a54cc562cdf0e9ebdf3ff3409a43b3,True,boxmot/motion/kalman_filters/xyah_kf.py;boxmot/motion/kalman_filters/xysr_kf.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py
+68322afe399a474b022cc53fc365d146abb28749,"Merge pull request #1490 from mikel-brostrom/revert-1488-fix-kf-name
+
+Revert ""xys now xysr kf""",9f8c75d716866f335c81cabb8a22f2efcb253259;2c845db3e0217de60f88f7c3d0a455699e485e4f,True,boxmot/motion/kalman_filters/xyah_kf.py;boxmot/motion/kalman_filters/xys_kf.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py
+d04c4e9ba055a698007c302361903f795f46e5af,fix export format imports,c601131c7b41d2c08c65c9bc86322824795876ae,False,boxmot/appearance/reid_export.py
+d57959cf5712368e37e3bd4c102489448c51309f,fix imports,d04c4e9ba055a698007c302361903f795f46e5af,False,boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/openvino_exporter.py;boxmot/appearance/exporters/tensorrt_exporter.py;boxmot/appearance/exporters/tflite_exporter.py;boxmot/appearance/exporters/torchscript_exporter.py
+25ce7f21f092a38183fc4a0f9c9438c723696c12,fix imports,d57959cf5712368e37e3bd4c102489448c51309f,False,boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/openvino_exporter.py;boxmot/appearance/exporters/tensorrt_exporter.py;boxmot/appearance/exporters/tflite_exporter.py;boxmot/appearance/exporters/torchscript_exporter.py
+f70b116ee03343c5d217b01b02da75cde10355e2,fix imports,25ce7f21f092a38183fc4a0f9c9438c723696c12,False,boxmot/appearance/reid_export.py
+b7943673c085dcb310a08d61e6aadaf89abdce7d,fix imports,f70b116ee03343c5d217b01b02da75cde10355e2,False,boxmot/appearance/reid_export.py
+9af4742087d144e8fcc027041b4ac392aa5e49e4,fix reqs checker usage,aa7372770e85a200f6ccdc65fc952db06e0a7f19,False,boxmot/appearance/exporters/base_exporter.py;boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/openvino_exporter.py;boxmot/appearance/exporters/tensorrt_exporter.py;boxmot/appearance/exporters/tflite_exporter.py
+ad2d2df6cadf67600d7188fc1b45caf317328c82,fix tensorrt export,d5e9baabe79547a899531abd8fa04b3d029d8d15,False,boxmot/appearance/exporters/base_exporter.py;boxmot/appearance/reid_export.py
+1ba7bf7a34eadd7af600de3e097df94aac1bfaad,fix test,bc92a3c05087c019a0fe5808f50f093fcb18c540,False,boxmot/postprocessing/gsi.py
+406919597a2c1cfe46d9654c2e8aad3350876cf4,fix,1ba7bf7a34eadd7af600de3e097df94aac1bfaad,False,boxmot/postprocessing/gsi.py
+9f64a3dbaf4cb1391f5459e6dc9768fbb4856da6,fix tflite export,c2adc186cc0058b9bb2495482073cb39735155bb,False,boxmot/appearance/exporters/onnx_exporter.py
+f755c57af6a07b5f4a8c5d66f07bb9c3332ba5ed,fix,9f64a3dbaf4cb1391f5459e6dc9768fbb4856da6,False,boxmot/appearance/exporters/tflite_exporter.py
+814799fb4db657e30bfddfc5d28c71ba1eaf9450,fix,f755c57af6a07b5f4a8c5d66f07bb9c3332ba5ed,False,boxmot/appearance/exporters/tflite_exporter.py
+312450de06e506d9d3f7c5db5d62e321d376fd0c,fix,797908871a630ebafa9afa1c8e8a7d4966aa649a,False,boxmot/appearance/exporters/base_exporter.py
+a3b44dca588025f89cc8011756f41ce465adb20e,delete error reqs,53915037fd1bd1d265e68366236cf112f4523435,False,boxmot/appearance/exporters/tflite_exporter.py
+2034bd3d5d55e094d913a992adc569a906417b82,fix tflite inference,7d7d96c0d3497b007650a8b949cd5dcb2c6aabca,False,boxmot/appearance/backends/tflite_backend.py
+07a1dedb626d15424d276a9d7712292a54c20eff,fix,8915aa42f4270dccd9c0df40633942d1ce215572,False,boxmot/appearance/backends/tflite_backend.py
+2d8a03648388c29142a7661fc1ba2c1a0d9ec98c,fix,07a1dedb626d15424d276a9d7712292a54c20eff,False,boxmot/appearance/backends/tflite_backend.py
+4b6192f06762138621bd569205cc9cea3041a225,fix,2d8a03648388c29142a7661fc1ba2c1a0d9ec98c,False,boxmot/appearance/backends/tflite_backend.py
+eceb0b78fd42847b24cb9eeb2047ec9bc3d8b2fe,fix,4b6192f06762138621bd569205cc9cea3041a225,False,boxmot/appearance/backends/tflite_backend.py
+38a118c34bfc99eaf52eb09e3b55675667024934,fix,eceb0b78fd42847b24cb9eeb2047ec9bc3d8b2fe,False,boxmot/appearance/backends/tflite_backend.py
+4a96cf512a3d81b916cceae1417f00db789591e9,fix,38a118c34bfc99eaf52eb09e3b55675667024934,False,boxmot/appearance/backends/tflite_backend.py
+e163475d0301c07f94771b533ff4bc5b1e477771,Add fixes,3bf12d79ab27615edd70f602c1f37d74c9e32c16,False,boxmot/trackers/imprassoc/impr_assoc_tracker.py;tracking/generate_mot_results.py
+f2dd5d1dd47eb74fbac7aa8163a283938c465151,fix,051cc1d39ee1373f479e88822480f1e4e32b3e01,False,tracking/val.py
+9bb9a5080657b5c0f02d6f61e53648f64efdf9f6,fix,f2dd5d1dd47eb74fbac7aa8163a283938c465151,False,tracking/val.py
+649e827e67d7668d7e3ad0d5499976990e6893f4,fix,9bb9a5080657b5c0f02d6f61e53648f64efdf9f6,False,tracking/val.py
+cd384213e54c6adf91f2188960dc08348e6db767,fix,649e827e67d7668d7e3ad0d5499976990e6893f4,False,tracking/val.py
+98b1a5b9986340823703992fbb474818db6e13cd,fix,1eb2a3b8b462b39377ec8dab8e30f332686a98be,False,tracking/val.py
+d4b98c7d4876ef03422c9dfb051da398d72456cf,fix,98b1a5b9986340823703992fbb474818db6e13cd,False,tracking/val.py
+ff6937a39c80c6012c40fb2c1c9206b4e5258ee1,fix evolution,a42ae065d2bffcb74241bbedaaf6598a4d13cfde,False,tracking/val.py
+5745ca5e4ce8c74be59893bce53a9093dab4bd9f,fix evolution,ff6937a39c80c6012c40fb2c1c9206b4e5258ee1,False,tracking/evolve.py
+dbaf0586904820d5bf931838efca4a315256d8a1,fix evolution,5745ca5e4ce8c74be59893bce53a9093dab4bd9f,False,tracking/val.py
+c922139c6baf8fb7667451d93cf06e2f4d19a86e,fix import,868d007ec5ffb7776412c4fd11e7b1736158bb7c,False,boxmot/appearance/backends/base_backend.py
+ce286facb8a4c13926c9aa756a727e9204dcf987,Merge branch 'master' of https://github.com/mikel-brostrom/boxmot into tflite-fix,d602f85040e3d7531f11a462ed3eeb350984e12a;e8d894b398cdf2df3ca1ca3a7507b7100ccbb6b9,True,boxmot/appearance/backends/base_backend.py;boxmot/appearance/backends/onnx_backend.py;boxmot/appearance/backends/openvino_backend.py;boxmot/appearance/backends/tensorrt_backend.py;boxmot/appearance/backends/tflite_backend.py;boxmot/appearance/exporters/base_exporter.py;boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/tflite_exporter.py;boxmot/appearance/reid_auto_backend.py;boxmot/trackers/basetracker1.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/strongsort/strong_sort.py;tracking/evolve.py;tracking/val.py
+98f88d9f22180060ef1400a9426f16e47e3219a5,fix,ce286facb8a4c13926c9aa756a727e9204dcf987,False,boxmot/appearance/backends/base_backend.py
+3a20778ef69b8e9a1d84cb4a9d10f5f7e5511237,fix bs,1579f26324d6c9a509bda86f7a8d8f2b2373ef3f,False,boxmot/appearance/backends/tflite_backend.py
+1fb70ed44fa4f209f1100141ee9c62405f8275a6,"Merge pull request #1526 from mikel-brostrom/tflite-fix
+
+enable tflite export",e8d894b398cdf2df3ca1ca3a7507b7100ccbb6b9;1e02856a57da5eb03d718664f4ba75d2addd87b2,True,boxmot/appearance/backends/base_backend.py;boxmot/appearance/backends/onnx_backend.py;boxmot/appearance/backends/openvino_backend.py;boxmot/appearance/backends/tensorrt_backend.py;boxmot/appearance/backends/tflite_backend.py;boxmot/appearance/exporters/base_exporter.py;boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/tflite_exporter.py
+4dad1d8aaafd5cfcda429d1649ad70d47a810ea9,fix user input,805033f36420dc97d6f816d4ae31d125fe308bb1,False,tracking/val.py
+2235d750d688ec0a35b671dcaccdd93949cccfa5,fix imports,2650a643c65e9f7a8a08fc72f6f765e6a7ed5387,False,tracking/evolve.py
+edae8e430e4c431eef1715c1f92f712c562d7de9,fix evolve params,a9bf4b0fe52dbd349b7d43e622363d739f8d36e3,False,tracking/val.py
+6bd4363a771443fa650d19da787130aabb3addd7,fix evolve,edae8e430e4c431eef1715c1f92f712c562d7de9,False,tracking/evolve.py
+e110319b04b7fe545551b1b66ed0c67a8ff8fcb8,fix MOTXX dataset extraction location,2162e88900584c1ee4f39c420231fbcb069f75d2,False,tracking/utils.py
+880ea6b904e5d0a4a5f1eb87399dadae88f71160,fix tensorrt export,5d93fd0beec76a4990067cdd69b340537d3e4730,False,boxmot/appearance/exporters/tensorrt_exporter.py
+cc34c7206422bef42d0ccabbe69d47871049e8df,fix evolve,b7988b3ae54a4ea654528d5660d6df1029397741,False,tracking/evolve.py
+d5e2f4af2a92dce2f80e25a9c58e96d88297e70d,fix mot results append bug for each trial,869029a432486bf7e850bb05ac4bf646e946d381,False,boxmot/utils/__init__.py;tracking/evolve.py;tracking/val.py
+6b18fc6f01d32d79a9e83b5e20eeba0fbc8f52de,fix config usage in objective function,3d0b87094229c615f7bda51aacbfaccfd4ed8397,False,tracking/evolve.py
+c8bbbf601a467ea91e76ba90a5b22b016f612ec4,fix execution order,eb303500f57fba660a511dd9a3ac055ab64b6460,False,tracking/evolve.py;tracking/val.py
+70c410a0054771d39d41de0bea82de72489a3b6d,"Merge pull request #1541 from mikel-brostrom/fix-MOTxx-download
+
+fix execution order",eb303500f57fba660a511dd9a3ac055ab64b6460;c8bbbf601a467ea91e76ba90a5b22b016f612ec4,True,tracking/evolve.py;tracking/val.py
+de352989e3e26107ce77e84b80a9ce95f0123ab8,fix val tools path bug,c8bbbf601a467ea91e76ba90a5b22b016f612ec4,False,tracking/val.py
+b1449205fff740565dc4170d21f659df1c760476,fix val tools path bug,de352989e3e26107ce77e84b80a9ce95f0123ab8,False,tracking/val.py
+affe230bb9d30f9c9935370f6b80dbdd44d06cf2,"Merge pull request #1543 from mikel-brostrom/fix-MOTxx-download
+
+fix val tools path bug",70c410a0054771d39d41de0bea82de72489a3b6d;b1449205fff740565dc4170d21f659df1c760476,True,tracking/val.py
+776f61b527a8f24c73e2736510fe0d16ab95c74d,fix val tools path bug,affe230bb9d30f9c9935370f6b80dbdd44d06cf2,False,tracking/val.py
+bfa5e19b4324912bb34dd24b14595cd250b1785c,fix,776f61b527a8f24c73e2736510fe0d16ab95c74d,False,tracking/val.py
+ad64a612899de4c05a492b591d7cfd5c6731b0f6,"Merge pull request #1547 from mikel-brostrom/fix-ci
+
+fix",776f61b527a8f24c73e2736510fe0d16ab95c74d;bfa5e19b4324912bb34dd24b14595cd250b1785c,True,tracking/val.py
+7a1fd0e7a1d06e93a69bcbce8258c1e964382a91,fix,a5b3c32f59b5b821511f6a9e47fad4eba508c142,False,tracking/val.py
+c22ac2230f5392205688554bb55216e47583c9bc,fix,7a1fd0e7a1d06e93a69bcbce8258c1e964382a91,False,tracking/evolve.py
+ff20ea20364d9899143eff55fceb9aab5a4bd9a8,fix,c22ac2230f5392205688554bb55216e47583c9bc,False,tracking/evolve.py
+aa735d18c5dbe9f38a590c430c51b37bf8ba1e8b,"Merge pull request #1550 from mikel-brostrom/delete-double-ci-mot-gen
+
+fix eval in ci",dc36520f72786f4ef8d71f62d62163f9a5ea8b3a;71e54cd3b114ae60052616f3530ebe9ca73e0311,True,tracking/evolve.py;tracking/val.py
+cd0745b862d952978be104f6f0527a8066f5e6e7,fix embedding extraction for each class,d3cf67ef91849941fd3ffb7b2186ba7c46f38d19,False,boxmot/utils/__init__.py;tests/unit/test_trackers.py
+105922977b7aeaa677087fca56776db5c23404f4,fix embedding extraction for each class,cd0745b862d952978be104f6f0527a8066f5e6e7,False,boxmot/utils/__init__.py
+e2a02f7bec26e0efd1e5ba4803cf054cd71b57f1,fix embedding extraction for each class,105922977b7aeaa677087fca56776db5c23404f4,False,boxmot/utils/__init__.py
+3a4c34eb9e9d0d86fb2ef62f9c0cbfc3430360a9,fix embedding extraction for each class,e2a02f7bec26e0efd1e5ba4803cf054cd71b57f1,False,boxmot/utils/__init__.py
+395bb4a4b0532cb1288a6fdecebdfeefb7861021,fix,3a4c34eb9e9d0d86fb2ef62f9c0cbfc3430360a9,False,boxmot/utils/__init__.py
+036e140ff866b4f83d37fff7c25a3e193ca6c693,fix not generating mot results for last frame bug,23c9c3d98f317d8c34c5c6dfa56599d42d82fea9,False,tracking/val.py
+e95b749586348a2f07fb52d6eb9fad17676e8e98,"Merge pull request #1570 from mikel-brostrom/renovate/pyyaml-6.x-lockfile
+
+fix(deps): update dependency pyyaml to v6.0.2",036e140ff866b4f83d37fff7c25a3e193ca6c693;0e66b3fbc449bdb18fec4cc3e20c0ce8294a1010,True,boxmot/trackers/basetracker.py;boxmot/trackers/basetracker1.py;boxmot/trackers/botsort/bot_sort.py;boxmot/trackers/bytetrack/byte_tracker.py;boxmot/trackers/deepocsort/deep_ocsort.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/imprassoc/impr_assoc_tracker.py;boxmot/trackers/ocsort/ocsort.py;tracking/utils.py;tracking/val.py
+b7e11d675c7ba2dc8e51ef86b4fcbaf885973a42,fix val in windows,036e140ff866b4f83d37fff7c25a3e193ca6c693,False,tracking/val.py
+b72158cf6d15989cd3892329c594d54cf40625a4,"Merge pull request #1584 from mikel-brostrom/fix-val-in-windows
+
+fix val in windows",e95b749586348a2f07fb52d6eb9fad17676e8e98;b7e11d675c7ba2dc8e51ef86b4fcbaf885973a42,True,tracking/val.py
+6c1b254ccec51131cbbe929407857345ebd03194,fix import,0f0e62b15d22f903257a67f471f1dc0194561b07,False,tracking/val.py
+722e4dac73c58db536facd43cf49a67b7f071d90,fix evol,0c9a1cb9568ed21ec85f2038456da99cdd2f853a,False,tracking/val.py
+5faf6c6ce116e0b3c396de9c6fc85a24a7041c79,"Merge pull request #1599 from mikel-brostrom/fix-eval
+
+fix evol",0c9a1cb9568ed21ec85f2038456da99cdd2f853a;bd70cf10814245e6921afbe2e7c6c905f757ae48,True,tracking/val.py
+1ffcedde3aa5b74074bd4b0c4247109dc84c6792,fix missing KF functionality in oc & hybrid trackers,6bc5db65f4dcc711dd7f4b75d5ce56d843a49f9f,False,boxmot/motion/kalman_filters/xysr_kf.py
+949511c72e9cfa73330102a85d7e4177ece1ba8c,"Merge pull request #1603 from mikel-brostrom/fix-oc-n-hybrid-kfs
+
+fix missing KF functionality in oc & hybrid trackers",6bc5db65f4dcc711dd7f4b75d5ce56d843a49f9f;1ffcedde3aa5b74074bd4b0c4247109dc84c6792,True,boxmot/motion/kalman_filters/xysr_kf.py
+2d105ef38a9545e74305e25c0417e53e9c06ce76,"Revert ""Merge pull request #1603 from mikel-brostrom/fix-oc-n-hybrid-kfs""
+
+This reverts commit 949511c72e9cfa73330102a85d7e4177ece1ba8c, reversing
+changes made to 6bc5db65f4dcc711dd7f4b75d5ce56d843a49f9f.",949511c72e9cfa73330102a85d7e4177ece1ba8c,False,boxmot/motion/kalman_filters/xysr_kf.py
+3047f293b318408f4edd029101b341da668470cd,fix,2d105ef38a9545e74305e25c0417e53e9c06ce76,False,boxmot/motion/kalman_filters/xysr_kf.py
+d1bcf6d8986ec5371fdcd6b0e75e23504ccef0da,fix,3047f293b318408f4edd029101b341da668470cd,False,boxmot/motion/kalman_filters/xysr_kf.py
+f70386b2c9551b84e854f4abdeee2a7de4e80e0a,fix,d1bcf6d8986ec5371fdcd6b0e75e23504ccef0da,False,boxmot/motion/kalman_filters/xysr_kf.py
+c0b24a24badca6cefa5e24b3c8020b2c81d70df3,fix,f70386b2c9551b84e854f4abdeee2a7de4e80e0a,False,boxmot/motion/kalman_filters/xysr_kf.py
+1d4f522e62315b054f42ede4f2e80d3a7b40aac3,fix OOS smoothing,c0b24a24badca6cefa5e24b3c8020b2c81d70df3,False,boxmot/motion/kalman_filters/xysr_kf.py
+7becf36ca643d1d163719357fdd448686cca158c,"Merge pull request #1605 from mikel-brostrom/fix-oc-hybrid-kf
+
+fix OOS smoothing",2d105ef38a9545e74305e25c0417e53e9c06ce76;1d4f522e62315b054f42ede4f2e80d3a7b40aac3,True,boxmot/motion/kalman_filters/xysr_kf.py
+f13d9c2acf0617c997a2a7ae4288d0f49bfc0d2c,"Merge pull request #1624 from mikel-brostrom/fix-strongsort
+
+add ss to ci",2524b641b52156bb18b7e1fa96fcc863d494caf4;6e511aa32272bc7f3cdea64b039f7914b55ed601,True,boxmot/tracker_zoo.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/strong_sort.py
+c1a5d5a744aa7939e872481741c646b78c4dc3a8,"Merge pull request #1625 from mikel-brostrom/fix-strongsort
+
+continue if time since update >= 1",f13d9c2acf0617c997a2a7ae4288d0f49bfc0d2c;aac6db4b03afb65c03731e0d43629417825657f2,True,boxmot/trackers/strongsort/strong_sort.py
+30b75ae7249da3820c50b5e25e9f7a35dcc05247,fix ss evol,3969d523946f7c2e3d4ad51313e224b98a7c2317,False,tracking/evolve.py
+d646be9ae1c7d965c97899f11e54a9b702b6232b,fix classes,18ae2e0dc4cbed465e5b4c36f2fc445158e06218,False,tracking/val.py
+e070abc98498e9ab8f202ae86a46a5003857d855,"Merge pull request #1651 from mikel-brostrom/conf-fix
+
+original configs",a3abca2d9a36465dcfe5f5815cd4d689f97f09cb;dd51a9a63ec229bcb80ee7fdd985ff3dcaca5f6f,True,boxmot/__init__.py;tracking/utils.py
+9ab139c75b612d4adcd253f99a10712edd49bbfa,fix botsort evolve,e69384a93ce935aac24a64db666ee95133dcae8f,False,tracking/evolve.py
+379e4b241c456e4985eb0c4725dfe4a753894121,fix test,92dbb3daf81e606796a00f22fe40cbf16f8c23a3,False,tests/unit/test_trackers.py
+e1ccccfce6822e4a766aea584a560e2529aa0239,fix test,379e4b241c456e4985eb0c4725dfe4a753894121,False,boxmot/tracker_zoo.py
+9c477c6bbec863298691d8e03fd5e073beddfe9c,fix,90fc564e9de07306a4556e6f545932ddd8e3566b,False,boxmot/trackers/botsort/botsort.py
+2e58e898d08e540051a9803d73f5a3ea6be1428f,fixed refactor,9c477c6bbec863298691d8e03fd5e073beddfe9c,False,boxmot/trackers/botsort/botsort.py
+c9a36fc868b4babe97c4c583eb89bd60860ac7d3,fix,2e58e898d08e540051a9803d73f5a3ea6be1428f,False,boxmot/trackers/botsort/botsort.py
+fce4a465cb375539bd956fe2b61ff5f4aac272a9,fix when embeddings are fed externally,b544ca3da9059a67de885589b183889930a3e357,False,boxmot/trackers/botsort/botsort.py
+35c02931bdcea982ba906f8871d86227a0f87972,fix import,ae1c5e00ead3447ce92cfcfa71e3c3e30e904a93,False,tracking/val.py
+7ee8c511bccbd234183906cfc5d121c78ab05af3,fix import,35c02931bdcea982ba906f8871d86227a0f87972,False,boxmot/data/loader.py;tracking/val.py
+e57f5af9afacdca179c95dc83cdadbca595145c7,Fix source reassignment,92ab7b234a761d38ac664959720c5f73903e3993,False,tracking/val.py
+9b5c53ef9f2bdaeb0dbf49f64bdcf1d942041b0b,Fix of source option for generating dets and embs,e57f5af9afacdca179c95dc83cdadbca595145c7,False,tracking/val.py
+a88cb381e25f5aef86392b396a6e7b0fd8578d81,"Merge pull request #1733 from Fleyderer/boxmot-val-fixes
+
+Fix source reassignment",6f5cb361fb57e380ace7d9266ce6f9982786d510;9b5c53ef9f2bdaeb0dbf49f64bdcf1d942041b0b,True,tracking/val.py
+3a9ed49e4a4ac7bcc7ab1e7bee82dad27a6eb73c,Formatting and naming fixes,5d571fb1d19a6af9837dbba41dacddc283c31788,False,boxmot/utils/ops.py;tracking/track.py;tracking/val.py
+1e1c4fe41ea91a622fd57001cdb42ff0f0e9f188,Small fixes for model loading and preprocessing,a077d31aaec7a83758158f664e2424065707eaff,False,tracking/detectors/yolox.py;tracking/val.py
+f89ca72ec55881946637cf80ea5107b1ad01bb71,Fix for YOLOX inference,1e1c4fe41ea91a622fd57001cdb42ff0f0e9f188,False,tracking/detectors/yolox.py
+3b0fa06d7f4e4c18332b2968c7111923823a9cc1,Fix for non-existing tracks files,f89ca72ec55881946637cf80ea5107b1ad01bb71,False,tracking/utils.py;tracking/val.py
+b49911f08fccd0535b4629584b31ff14c3d4bc33,Fixes for correct yolox installing before importing,3b0fa06d7f4e4c18332b2968c7111923823a9cc1,False,tracking/detectors/__init__.py;tracking/detectors/yolox.py;tracking/track.py;tracking/val.py
+c39c745762f58df5c9a1c5463f5dae5df0cbb8c8,"Merge pull request #1739 from Fleyderer/fix-yolox
+
+Fix YOLOX",a88cb381e25f5aef86392b396a6e7b0fd8578d81;b49911f08fccd0535b4629584b31ff14c3d4bc33,True,boxmot/utils/ops.py;tracking/detectors/__init__.py;tracking/detectors/yolo_interface.py;tracking/detectors/yolox.py;tracking/track.py;tracking/utils.py;tracking/val.py
+b0978214addd03c787e58a6c5e6762072a1c4bca,"Merge pull request #1750 from mikel-brostrom/fix-giou
+
+use union area instead of intersection area in giou",610c737645e7e80a9e3c4d8eadea2bddc4917db6;a3c716cbbb8dbe70264c3a6e067e3781c52359e1,True,boxmot/utils/iou.py
+118a1d56b1c01419b30cebf1a0800564d11d0edf,fix when no model selected,610c737645e7e80a9e3c4d8eadea2bddc4917db6,False,tracking/val.py
+5251f69740991dd3c32389e4559c52d78bfdbc83,"Merge pull request #1777 from mikel-brostrom/args-as-list
+
+fix when no model selected",f9640858aba9fb4824b512345272c5c675087e7f;118a1d56b1c01419b30cebf1a0800564d11d0edf,True,boxmot/__init__.py;boxmot/utils/iou.py;tracking/val.py
+c22ddbad05e6bcde0a6f5631cf4cc2af7fde1018,Fix invalid escape sequence warning by using raw string in val.py,cb1664c1b0d72aa231ce6e98f7eea8452acfae2e,False,tracking/val.py
+9094f75f10d0b84ceb22a07a18fc7002cf0ab3fa,"Merge pull request #1793 from 14790897/fix-invalid-escape-sequence
+
+Fix invalid escape sequence warning by using raw string in val.py",cb1664c1b0d72aa231ce6e98f7eea8452acfae2e;c22ddbad05e6bcde0a6f5631cf4cc2af7fde1018,True,tracking/val.py
+50949254921ce3bf40267307cb9adbb5f03e0d34,"Merge pull request #1795 from mikel-brostrom/fix-loader
+
+ultra dataloader",9094f75f10d0b84ceb22a07a18fc7002cf0ab3fa;a7cc2fb308efb4afe25620a18443537fb1461078,True,tracking/val.py
+821e18eddc6950ede0e3add54bddd3489a31fdfc,fix,53d5985eb72e3a5f90f34a2da9f0dd7fe7dd66f1,False,boxmot/trackers/basetracker.py
+648d8ff71403b8d8e9d4f29a9a812c1b1d98d29f,fix,821e18eddc6950ede0e3add54bddd3489a31fdfc,False,boxmot/utils/selective_reid.py
+d12506a7e1b38559d7dd81f75946ab052470b569,Fix: Handle dynamic batch sizes in TensorRT ReID model,ce578630786676679c31dbc9a3e40122bd7e897b,False,boxmot/appearance/backends/tensorrt_backend.py
+cc361c3ca3d0864c8e4452ea616a25dfc37de0f0,"Merge pull request #1817 from usamaimdadsian/fix-tensorrt-batch-handling
+
+Fix: Handle dynamic batch sizes in TensorRT ReID model",ce578630786676679c31dbc9a3e40122bd7e897b;d12506a7e1b38559d7dd81f75946ab052470b569,True,boxmot/appearance/backends/tensorrt_backend.py
+569b96c64d4e8ba15c88abc0b5c045fc53fa0a27,Fix: Mistake in handling the output features of ReID model in TensorRT,cc361c3ca3d0864c8e4452ea616a25dfc37de0f0,False,boxmot/appearance/backends/tensorrt_backend.py
+be9428f64b58d44323820c65008da779063f43d9,"Merge pull request #1818 from usamaimdadsian/tensorrt-batch-features-issue
+
+Fix: Mistake in handling the output features of ReID model in TensorRT",cc361c3ca3d0864c8e4452ea616a25dfc37de0f0;569b96c64d4e8ba15c88abc0b5c045fc53fa0a27,True,boxmot/appearance/backends/tensorrt_backend.py
+7f3eee4f139c0f09123178b3d62ada58a9cfb6d8,FIX: RuntimeError: expected scalar type Float but found Half error on CLIP inference,be9428f64b58d44323820c65008da779063f43d9,False,boxmot/appearance/backbones/clip/clip/model.py
+45a08ffe486c681bd5a8bb867ac47e83218f92bf,Merge pull request #1820 from MlaikahImdad/fix-clip-half-error,be9428f64b58d44323820c65008da779063f43d9;7f3eee4f139c0f09123178b3d62ada58a9cfb6d8,True,boxmot/appearance/backbones/clip/clip/model.py
+54191fd2049ddfa81581d9baae1e1eb1dd929cef,Fix no response problem,ca7d0fde0692d861480d87f4f5077974ed4929fb,False,tracking/utils.py
+a7637639e4c29da0c7ab8a14cd5e71d7408133f2,Fix download in case of data already exists,54191fd2049ddfa81581d9baae1e1eb1dd929cef,False,tracking/val.py
+123190ccc0e37650c993414d1fafb25e1782dd96,Fix mot format conversion,a7637639e4c29da0c7ab8a14cd5e71d7408133f2,False,tracking/utils.py
+72a647c6b5f9598c4d8c7e21fc729bf2c33322be,Fix num classes for YOLOX,83b29d4bf6d951f388c7540d07f00055493186e2,False,tracking/detectors/yolox.py
+a261f125a28b7d58dc85aec8134c24d243851cc4,Fix with default values,3a81bbe9d13cd956c09d9055a9d39c487ae1092d,False,boxmot/trackers/boosttrack/boosttrack.py
+027217b0c1919cb539d28a4e632368aa7b218192,Fix with no detections,a261f125a28b7d58dc85aec8134c24d243851cc4,False,boxmot/trackers/boosttrack/boosttrack.py
+33efc695c088b4b52e96483e0d51f3e52cfff0ea,Fixed box for boosttrack test,003469a60afc71ef6be301c1bc8cdb0e45c1508d,False,tests/unit/test_trackers.py
+79df3f754a1d04ec080d9190612bea46806b0e58,Fix embedding normalization,8134ef07d6ec3e2facefe3eaeaa3b7ae8b91850b,False,boxmot/appearance/backends/base_backend.py
+d29eb245869f466deb19f9f748b56d9423d1ed23,Fix of invalid escape sequence,79df3f754a1d04ec080d9190612bea46806b0e58,False,tracking/val.py
+5db90516154a23c9e01af9500887bfe5b5fc4bfa,Fix of embedding extraction rounding and clipping,1d624d4f03f7e1ee22154bceb69af95cbfcbc00d,False,boxmot/appearance/backends/base_backend.py
+20ffe4f99158931ce981449bbff23127a86e2d8e,Fixes of bugs with no dets or embs,bf466e4cdfa95d59d2b2ae4a619c9be5a0b32805,False,boxmot/trackers/boosttrack/boosttrack.py
+7a802d47a8413b49307596b44cf8a2004c64a6b2,"Merge pull request #1853 from Fleyderer/master
+
+Detections and embeddings (Updated and fixed)",1d624d4f03f7e1ee22154bceb69af95cbfcbc00d;5331dbea4002876eb1ec5e15f9611b2f500a56e0,True,boxmot/appearance/backends/base_backend.py;boxmot/trackers/boosttrack/boosttrack.py;boxmot/trackers/bytetrack/bytetrack.py;tracking/detectors/yolox.py;tracking/val.py
+f61a8180a07fcf3350acaddcebc5ef2f22084ee2,Fix with visualization,ea9a05e1882d89e3163e82de422365c5c971308f,False,boxmot/trackers/boosttrack/boosttrack.py
+338aef68d01b3ac76652b040d79ba669f90e01b8,Fix empty detections,a2d4e5ff373499e45d203a2c75523c6742abbbbf,False,boxmot/trackers/boosttrack/boosttrack.py
+e4016529f11910869866033bc991ae5f808cba61,fix no dets emb bug,79b4ae334600fd3b684ba5d9e0dd2dbb624f2a6e,False,boxmot/trackers/boosttrack/boosttrack.py
+4123159e0abd7c5aa8e1bc4ccb7b993abba199a6,"Merge pull request #1874 from mikel-brostrom/boosttrack-empty-dets
+
+fix no dets emb boosttrack bug",7aa9a448b2c512a23bc882188697f127a8b16246;e4016529f11910869866033bc991ae5f808cba61,True,boxmot/trackers/boosttrack/boosttrack.py
+46cb08542f1fafc37d9cd5d0e85a3c55aa4f5869,fix,a5211461759f2bb7665a291d57a5eda66fe16771,False,tracking/detectors/yolox.py
+555fd011fee664517a6330e14d9c2dba1ce89342,fix,46cb08542f1fafc37d9cd5d0e85a3c55aa4f5869,False,tracking/detectors/yolox.py
+00a88850df5609daba3cdbb36828c843552e103d,fix,555fd011fee664517a6330e14d9c2dba1ce89342,False,tracking/detectors/yolox.py
+a43055fb28b0654958cf7fa5b3e216b1f254331b,fix,20a4b0572bbc63ca8df61e4b48724bd485710fb4,False,tracking/detectors/__init__.py
+2a221e149031f97beff4b1dd693e2fcc27cbe8e7,fix,a43055fb28b0654958cf7fa5b3e216b1f254331b,False,tracking/detectors/__init__.py
+dcea454dce132214596f7a4f22c12eec5718908c,fix performance drop,e74da2c3aa69c3065fc8d5a73f0059522c7279c8,False,tracking/val.py
+94e60779bc600998da7ba227ef1edb2ecfe84126,fix,3f2392b8972b2c3b607a4017942247309bdc84d8,False,tracking/utils.py;tracking/val.py
+b126e922bf5178e55bb600b4d1cd6df8a5fdde9b,fix,2808e2c74cf8e870a32fc669de863fc4416e900a,False,boxmot/appearance/exporters/tflite_exporter.py
+ecbfd1b4d4621aeccc6d8262260d7f9c41f226e9,fix,b126e922bf5178e55bb600b4d1cd6df8a5fdde9b,False,boxmot/appearance/exporters/onnx_exporter.py
+cc1b4a33d40fe69ca952d64fa564db8c022bce30,fix,ecbfd1b4d4621aeccc6d8262260d7f9c41f226e9,False,boxmot/appearance/exporters/openvino_exporter.py
+bd791f0def7efc6499de1615c55e3c22c860da97,fix,cc1b4a33d40fe69ca952d64fa564db8c022bce30,False,boxmot/appearance/exporters/openvino_exporter.py
+a417accf676e9926e0fe58763df6776593c48d71,Fix input shape for LMBN arch,20c0607086e2d387451e37162266fa3bbf1db92f,False,boxmot/appearance/backbones/lmbn/lmbn_n.py;boxmot/appearance/backends/base_backend.py
+babfdf0a4905ce87608f61eb8789e64ecd6177f0,"Merge pull request #1940 from Fleyderer/master
+
+Fix of input shapes for LMBN ReID model",0b61bb82c22466855e7d86916b4a26a61a0f063a;5edd1b794ec537df3eacc792a26bc1b630d75776,True,boxmot/appearance/backbones/lmbn/lmbn_n.py;boxmot/appearance/backends/base_backend.py
+668782907d9cebd8707a950427abaeb54dfff5e6,"wrong im used and code refactor (#1949)
+
+* BUG - wrong im used
+
+* rfdetr internally supports nparray so we dont need to_pil
+
+* double append for pred is None
+
+* device tag needs to be fixed everywhere.
+
+* minor refactor
+
+* per_class_decorator refactor
+
+* too much redundancy
+
+* bring the indents down",fc417b618b93429fc1579e7803539ec1f7ec7c41,False,boxmot/trackers/basetracker.py;boxmot/trackers/boosttrack/boosttrack.py;tracking/detectors/rfdetr.py;tracking/detectors/yolov9.py
+1d523973ad0b95643c81932c7c945c54b4f1399a,fix ci skipping (#1967),fb73437c59bf880848f3637d699e33f74274b7a0,False,tracking/val.py
+0487d2d7ee926ab3241d4e752643f53902a7a40d,"code refac: single to double quotes + fixed whitespace + line length (#1987)
+
+* sort imports
+
+* single to double quotes + whitespace + line length
+
+* remove parse_opt",dfde490c18e3289007e9882d5aebffada87d98f3,False,boxmot/__init__.py;boxmot/appearance/backbones/__init__.py;boxmot/appearance/backbones/clip/clip/clip.py;boxmot/appearance/backbones/clip/clip/model.py;boxmot/appearance/backbones/clip/clip/simple_tokenizer.py;boxmot/appearance/backbones/clip/config/defaults.py;boxmot/appearance/backbones/clip/config/defaults_base.py;boxmot/appearance/backbones/clip/make_model.py;boxmot/appearance/backbones/clip/make_model_clipreid.py;boxmot/appearance/backbones/hacnn.py;boxmot/appearance/backbones/lmbn/attention.py;boxmot/appearance/backbones/lmbn/lmbn_n.py;boxmot/appearance/backbones/mlfn.py;boxmot/appearance/backbones/mobilenetv2.py;boxmot/appearance/backbones/osnet.py;boxmot/appearance/backbones/osnet_ain.py;boxmot/appearance/backbones/resnet.py;boxmot/appearance/backends/base_backend.py;boxmot/appearance/backends/onnx_backend.py;boxmot/appearance/backends/tensorrt_backend.py;boxmot/appearance/backends/tflite_backend.py;boxmot/appearance/exporters/base_exporter.py;boxmot/appearance/exporters/onnx_exporter.py;boxmot/appearance/exporters/openvino_exporter.py;boxmot/appearance/exporters/tensorrt_exporter.py;boxmot/appearance/exporters/tflite_exporter.py;boxmot/appearance/exporters/torchscript_exporter.py;boxmot/appearance/reid/auto_backend.py;boxmot/appearance/reid/config.py;boxmot/appearance/reid/export.py;boxmot/appearance/reid/factory.py;boxmot/appearance/reid/registry.py;boxmot/data/loader.py;boxmot/motion/cmc/__init__.py;boxmot/motion/cmc/base_cmc.py;boxmot/motion/cmc/ecc.py;boxmot/motion/cmc/orb.py;boxmot/motion/cmc/sift.py;boxmot/motion/cmc/sof.py;boxmot/motion/kalman_filters/aabb/base_kalman_filter.py;boxmot/motion/kalman_filters/aabb/xyah_kf.py;boxmot/motion/kalman_filters/aabb/xysr_kf.py;boxmot/motion/kalman_filters/aabb/xywh_kf.py;boxmot/motion/kalman_filters/obb/xywha_kf.py;boxmot/postprocessing/gsi.py;boxmot/tracker_zoo.py;boxmot/trackers/basetracker.py;boxmot/trackers/boosttrack/assoc.py;boxmot/trackers/boosttrack/boosttrack.py;boxmot/trackers/boosttrack/kalmanfilter.py;boxmot/trackers/botsort/basetrack.py;boxmot/trackers/botsort/botsort.py;boxmot/trackers/botsort/botsort_track.py;boxmot/trackers/botsort/botsort_utils.py;boxmot/trackers/bytetrack/bytetrack.py;boxmot/trackers/deepocsort/deepocsort.py;boxmot/trackers/hybridsort/association.py;boxmot/trackers/hybridsort/hybridsort.py;boxmot/trackers/ocsort/ocsort.py;boxmot/trackers/strongsort/sort/detection.py;boxmot/trackers/strongsort/sort/linear_assignment.py;boxmot/trackers/strongsort/sort/track.py;boxmot/trackers/strongsort/sort/tracker.py;boxmot/trackers/strongsort/strongsort.py;boxmot/trackers/strongsort/strongsort_kf.py;boxmot/utils/__init__.py;boxmot/utils/association.py;boxmot/utils/checks.py;boxmot/utils/iou.py;boxmot/utils/matching.py;boxmot/utils/misc.py;boxmot/utils/ops.py;boxmot/utils/torch_utils.py;tests/performance/test_cmcs_p.py;tests/performance/test_tracking_p.py;tests/test_config.py;tests/unit/test_cuda.py;tests/unit/test_postprocessing.py;tests/unit/test_reidbackend.py;tests/unit/test_trackers.py;tracking/detectors/__init__.py;tracking/detectors/rfdetr.py;tracking/detectors/yolo_interface.py;tracking/detectors/yolonas.py;tracking/detectors/yolov9.py;tracking/detectors/yolox.py;tracking/evolve.py;tracking/track.py;tracking/utils.py;tracking/val.py
+8cd53ee74137205da64cf998dfb517e6d8709cce,Evolve config fix (#1997),6df1ceb4ca5ac5dfdbae2b8822583df9cff5a7e5,False,tracking/val.py
+cc466d12c2075f6a06dafe1e408be8eda11251e9,boosttrack bug fix (#2009),cc2530791bac1377cc297057c212bb5eb014fb44,False,boxmot/trackers/boosttrack/boosttrack.py;boxmot/utils/__init__.py
+4b8c902d5cceaf063a0fc116a990d0bb3e7b1a26,fix bug,afe3947e8fb92029eb8b5f20978c760706be5097,False,boxmot/trackers/boosttrack/boosttrack.py
+605ff37640c2759fdf034bfb8b029cf24351ef4d,Fix cuda mp (#2023),3cf007ae5f80fb3b32bf884be882bacc828df01b,False,boxmot/engine/cli.py;boxmot/engine/val.py
+c8193f83b94e8c95f57a43005937109c1b7126d4,Fix deprecated pkg resources (#2024),abdff944c5164d319109e3bfc54d3abc825d63c5,False,boxmot/utils/checks.py
+301bc51c65c58679c3a83f917c6e8f6326eafdeb,fix multiprocessing logging mess (#2025),c8193f83b94e8c95f57a43005937109c1b7126d4,False,boxmot/utils/__init__.py
+3b7934eb7a4494c00c74bfd58b196691a4e4d0a4,fix MOT17-ablation reproducibility (#2046),7514293627de637c57194db9a706e6ad2d8b5411,False,boxmot/engine/cli.py;boxmot/engine/evolve.py;boxmot/engine/val.py;boxmot/utils/download.py
+9b53be39237b8be437d90e827442fbcb3e6c6dcf,"fix: make --verbose enable logging instead of disabling (#2056)
+
+Co-authored-by: zli <zli@mail.com>",c686320fd1d6fc1efbea4db12450fa2a37a4af49,False,boxmot/engine/cli.py
+bbdef72c8342fa473a0e9ad1ff86a5e1f546a84e,fix trackeval download path bug in clone vs pkg missmatch (#2066),a8cb79d515e91a1cc34269e723a9ffcef780547c,False,boxmot/engine/cli.py;boxmot/engine/evolve.py;boxmot/engine/val.py;boxmot/utils/__init__.py;boxmot/utils/analysis/mot_ds_kf_tuning.py;boxmot/utils/analysis/mot_seq_bb_plot.py
+52dc19ee230bf57594dc8a645b765e94621dca7a,Fix warnings in detectors and trackers (#2093),bad235ede5eeb1e9998253e2d9f519ca180576c5,False,boxmot/engine/detectors/rfdetr.py;boxmot/engine/detectors/yolox.py;boxmot/motion/kalman_filters/obb/xywha_kf.py;boxmot/trackers/deepocsort/deepocsort.py;boxmot/trackers/ocsort/ocsort.py
