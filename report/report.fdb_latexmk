@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757251640.44729 "/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex" "report.pdf" "report" 1757251643.79329 2
+["pdflatex"] 1757252228.70702 "/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex" "report.pdf" "report" 1757252233.21897 0
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png" 1757246672.91052 69995 3108d231e6dbe9fdcf3dd368e1625d03 ""
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png" 1757246667.12203 100404 0d0d95a034f41c986f7e1d376390c19a ""
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png" 1757246667.11877 107606 db1da230b90dbf171adc715e7ed0659c ""
@@ -7,7 +7,7 @@
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png" 1757246667.11187 236709 6efa22d9a1079a76ea1f0cb5998eead2 ""
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png" 1757246667.10506 97380 0cddce95ecbde174b5579a6632adfa47 ""
   "/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png" 1757246667.09836 104605 07288af020cf27a0f12cd741bad126de ""
-  "/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex" 1757251636.18246 96873 767e4d44c733f351e213a89184f51db1 ""
+  "/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex" 1757252228.30442 96895 8734e36860124f7da02fc631260fb771 ""
   "/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg" 1756549350.8551 98874 a39135bbe59d0a9cb0e5aedf2d32980f ""
   "/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg" 1756588919.60396 43812 bb945e68e83bdbc6bc6ddddc6ac901ae ""
   "/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg" 1756628224.14164 29537 2b4f180c605a418f586f8f5a6425595e ""
@@ -80,7 +80,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb" 1255129361 121021 1bf809ce4a594679006bd72263eba59b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb" 1254269338 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
@@ -173,10 +172,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1738959575.49831 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1738959556 8221445 196e628fbe917e649372112c349bdcff ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "report.aux" 1757251643.67739 14479 2628374e3455a45d77914395de78e272 "pdflatex"
-  "report.out" 1757251643.67862 8289 f5155a65e97ae76c5c1bb0c6eaf3d6e3 "pdflatex"
-  "report.tex" 1757251636.18246 96873 767e4d44c733f351e213a89184f51db1 ""
-  "report.toc" 1757251643.67895 3381 0bbe5b39a056b7ef7c7176fb49d339a9 "pdflatex"
+  "report.aux" 1757252233.00359 14482 a70afbd1778bce05da1748bed96914d1 "pdflatex"
+  "report.out" 1757252233.0052 8289 f5155a65e97ae76c5c1bb0c6eaf3d6e3 "pdflatex"
+  "report.tex" 1757252228.30442 96895 8734e36860124f7da02fc631260fb771 ""
+  "report.toc" 1757252233.00556 3382 9fd671fe78ede2c60d2f8972f764f447 "pdflatex"
   (generated)
   "report.aux"
   "report.log"

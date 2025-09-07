@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.8)  7 SEP 2025 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.8)  7 SEP 2025 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -433,8 +433,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box56
-)
-No file report.aux.
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -455,7 +454,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count299
 \scratchdimen=\dimen179
@@ -475,6 +474,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 76.
+ (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
@@ -536,17 +536,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing $ inserted.
-<inserted text> 
-                $
-l.108     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 108.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 108.
@@ -579,36 +578,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Extra }, or forgotten $.
-<argument> ...sLohia21/TejasLohia_Assessment1.git}
-                                                   \vspace {1em} \@@par 
-l.108     }
-           
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing $ inserted.
-<inserted text> 
-                $
-l.108     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing } inserted.
-<inserted text> 
-                }
-l.108     }
-           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -622,83 +591,74 @@ Overfull \hbox (9.91661pt too wide) in paragraph at lines 108--109
 
 [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 122--123
 [][][][][][] 
  []
 
-No file report.toc.
-\tf@toc=\write4
-\openout4 = `report.toc'.
-
-
+(./report.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \chapter
-              {Introduction to Version Controlling, Git Workflows, and Actions} [1]
+l.31 ...efine Selection Criteria}{50}{section.4.4}
+                                                  % [1])
+\tf@toc=\write4
+\openout4 = `report.toc'.
+
+ [2]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 138.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2
+) [3
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 163.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [3]
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [4]
 Overfull \hbox (7.44682pt too wide) in paragraph at lines 256--256
  []        \T1/lmtt/m/n/12 commit 7e4d7da93c58274df903e73f653de9e9fe8e84fb (HEAD -> main)[] 
  []
 
-[4]
+[5]
 Overfull \hbox (44.53186pt too wide) in paragraph at lines 272--272
  []        \T1/lmtt/m/n/12 git remote add origin git@github.com:TejasLohia21/TejasLohialab1.git[] 
  []
 
-[5]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg, id=53, 1284.8pt x 883.3pt>
+[6]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg, id=233, 1284.8pt x 883.3pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg  used on input line 361.
 (pdftex.def)             Requested size: 317.07614pt x 217.98059pt.
- [6]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg, id=63, 1284.8pt x 331.2375pt>
+ [7]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg, id=241, 1284.8pt x 331.2375pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg  used on input line 378.
 (pdftex.def)             Requested size: 317.07614pt x 81.7427pt.
- [7 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg, id=72, 943.525pt x 232.87pt>
+ [8 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg, id=250, 943.525pt x 232.87pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg  used on input line 394.
 (pdftex.def)             Requested size: 317.07614pt x 78.258pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg, id=73, 1606.0pt x 358.33875pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg, id=251, 1606.0pt x 358.33875pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg  used on input line 410.
 (pdftex.def)             Requested size: 317.07614pt x 70.74788pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg, id=74, 1606.0pt x 395.4775pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg, id=252, 1606.0pt x 395.4775pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg  used on input line 420.
 (pdftex.def)             Requested size: 317.07614pt x 78.08029pt.
- [8 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg, id=82, 1606.0pt x 1054.94125pt>
+ [9 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg, id=260, 1606.0pt x 1054.94125pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg  used on input line 431.
 (pdftex.def)             Requested size: 317.07614pt x 208.2802pt.
- [9 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg>]
+ [10 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg>]
 Chapter 2.
-[10
+[11
 
 
 ]
@@ -719,28 +679,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--491
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg, id=96, 2951.025pt x 1684.2925pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg, id=270, 2951.025pt x 1684.2925pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg  used on input line 497.
 (pdftex.def)             Requested size: 407.66833pt x 232.66391pt.
-[11 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg, id=105, 2619.7875pt x 576.1525pt>
+[12 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg, id=278, 2619.7875pt x 576.1525pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg  used on input line 506.
 (pdftex.def)             Requested size: 407.66833pt x 89.65436pt.
- [12 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg>]
+ [13 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg, id=112, 1284.8pt x 966.61125pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg, id=284, 1284.8pt x 966.61125pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg  used on input line 548.
 (pdftex.def)             Requested size: 317.07614pt x 238.54012pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg, id=113, 1284.8pt x 884.30376pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg, id=285, 1284.8pt x 884.30376pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg  used on input line 554.
@@ -748,13 +708,13 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg>]
+[14 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 573--574
 
  []
 
-[14 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg, id=125, 1284.8pt x 213.79875pt>
+[15 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg, id=296, 1284.8pt x 213.79875pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg  used on input line 582.
@@ -764,25 +724,25 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 586--592
 [] [][][][][][]
  []
 
-[15 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg>]
+[16 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 596--597
 
  []
 
-[16
+[17
 
 ]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg, id=136, 1284.8pt x 1038.88126pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg, id=307, 1284.8pt x 1038.88126pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg  used on input line 628.
 (pdftex.def)             Requested size: 317.07614pt x 256.3749pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg, id=137, 1284.8pt x 1026.83624pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg, id=308, 1284.8pt x 1026.83624pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg  used on input line 634.
 (pdftex.def)             Requested size: 317.07614pt x 253.40244pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg, id=138, 1284.8pt x 949.5475pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg, id=309, 1284.8pt x 949.5475pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg  used on input line 640.
@@ -791,7 +751,7 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg, id=139, 1284.8pt x 915.42pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg, id=310, 1284.8pt x 915.42pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg  used on input line 646.
@@ -799,7 +759,7 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg, id=140, 1284.8pt x 842.14626pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg, id=311, 1284.8pt x 842.14626pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg  used on input line 652.
@@ -807,22 +767,22 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg>]
+[18 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg>]
 Overfull \hbox (201.58781pt too wide) in paragraph at lines 662--663
 []\T1/lmr/bx/n/12 (-20) Model Load-ing \T1/lmr/m/n/12 (-20) -- Loaded mod-els and to-k-eniz-ers: \T1/lmtt/m/n/12 CommitPredictorT5 \T1/lmr/m/n/12 (-20) and \T1/lmtt/m/n/12 SEBIS/code_trans_t5_base_commit_generation
  []
 
-[18 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg>] [19 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg>]
+[19 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg>] [20 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 694--695
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg, id=165, 1284.8pt x 84.315pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg, id=334, 1284.8pt x 84.315pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg  used on input line 698.
 (pdftex.def)             Requested size: 452.9679pt x 29.72552pt.
-[20 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg>] [21]
+[21 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg>] [22]
 Underfull \hbox (badness 10000) in paragraph at lines 807--808
 
  []
@@ -832,8 +792,8 @@ Overfull \hbox (27.44507pt too wide) in paragraph at lines 810--815
 \T1/lmr/m/n/12 (-20) sage prop-erly, be-cause of lack of fine-tuning. \T1/lmtt/m/n/12 SEBIS/code_trans_t5_base_commit_generation
  []
 
-[22]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg, id=181, 979.66pt x 945.5325pt>
+[23]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg, id=350, 979.66pt x 945.5325pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg  used on input line 837.
@@ -847,10 +807,10 @@ Overfull \hbox (20.35161pt too wide) in paragraph at lines 852--853
 []\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
  []
 
-[23
+[24
 
-] [24 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg, id=193, 1007.765pt x 785.93625pt>
+] [25 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg, id=361, 1007.765pt x 785.93625pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg  used on input line 884.
@@ -864,8 +824,8 @@ Overfull \hbox (20.35161pt too wide) in paragraph at lines 897--898
 []\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
  []
 
-[25] [26 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg, id=204, 1606.0pt x 1106.1325pt>
+[26] [27 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg, id=371, 1606.0pt x 1106.1325pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg  used on input line 934.
@@ -879,16 +839,16 @@ Overfull \hbox (20.35161pt too wide) in paragraph at lines 946--947
 []\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
  []
 
-[27] [28 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg>] [29]
+[28] [29 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg>] [30]
 Chapter 3.
-[30
+[31
 
-] [31]
+] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg, id=233, 1606.0pt x 525.965pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg, id=394, 1606.0pt x 525.965pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg  used on input line 1050.
@@ -896,41 +856,41 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg, id=238, 1421.31pt x 594.22pt>
+[33]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg, id=399, 1421.31pt x 594.22pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg  used on input line 1074.
 (pdftex.def)             Requested size: 362.37569pt x 151.50142pt.
- [33 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg, id=245, 1284.8pt x 938.50626pt>
+ [34 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg, id=406, 1284.8pt x 938.50626pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg  used on input line 1098.
 (pdftex.def)             Requested size: 362.37569pt x 264.6989pt.
- [34 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg, id=251, 1176.395pt x 991.705pt>
+ [35 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg, id=412, 1176.395pt x 991.705pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg  used on input line 1128.
 (pdftex.def)             Requested size: 362.37569pt x 305.47333pt.
- [35 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg>] [36]
+ [36 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg>] [37]
 Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg, id=262, 482.80376pt x 505.89pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg, id=423, 482.80376pt x 505.89pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg  used on input line 1182.
 (pdftex.def)             Requested size: 271.7835pt x 284.78627pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg, id=263, 1284.8pt x 1033.8625pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg, id=424, 1284.8pt x 1033.8625pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg  used on input line 1190.
 (pdftex.def)             Requested size: 271.7835pt x 218.69507pt.
-[37 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg, id=270, 697.60625pt x 549.05125pt>
+[38 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg, id=431, 697.60625pt x 549.05125pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg  used on input line 1200.
@@ -940,13 +900,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
 
  []
 
-[38 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg>]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg, id=277, 1365.1pt x 1296.845pt>
+[39 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg, id=438, 1365.1pt x 1296.845pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg  used on input line 1235.
 (pdftex.def)             Requested size: 362.37569pt x 344.25594pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg, id=278, 1606.0pt x 762.85pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg, id=439, 1606.0pt x 762.85pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg  used on input line 1242.
@@ -955,41 +915,41 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg>] [40 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg>]
+[40 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg>] [41 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 1276--1277
 
  []
 
-[41]
+[42]
 Overfull \hbox (30.36713pt too wide) in paragraph at lines 1308--1309
 []\T1/lmr/m/n/12 (-20) Similarly, the BLEU model is ap-plied as a com-ple-men-tary met-ric. The \T1/lmtt/m/n/12 BLEU_Similarity
  []
 
-[42
+[43
 
 ]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg, id=300, 1284.8pt x 1214.5375pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg, id=459, 1284.8pt x 1214.5375pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg  used on input line 1318.
 (pdftex.def)             Requested size: 271.7835pt x 256.91364pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg, id=301, 1284.8pt x 1236.62pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg, id=460, 1284.8pt x 1236.62pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg  used on input line 1325.
 (pdftex.def)             Requested size: 271.7835pt x 261.5848pt.
- [43 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg>] [44]
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg, id=313, 1265.72874pt x 1284.8pt>
+ [44 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg>] [45]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg, id=471, 1265.72874pt x 1284.8pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg  used on input line 1359.
 (pdftex.def)             Requested size: 362.37569pt x 367.81857pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg, id=314, 1539.7525pt x 299.1175pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg, id=472, 1539.7525pt x 299.1175pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg  used on input line 1366.
 (pdftex.def)             Requested size: 362.37569pt x 70.39758pt.
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg, id=315, 1537.745pt x 764.8575pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg, id=473, 1537.745pt x 764.8575pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg  used on input line 1373.
@@ -998,39 +958,36 @@ Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg>]
+[46 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
 
  []
 
-[46 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg>] [47]
+[47 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg>] [48]
 Chapter 4.
-[48
+[49
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 1464--1465
 
  []
 
-[49] [50]
+[50] [51{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
 Underfull \hbox (badness 10000) in paragraph at lines 1501--1502
 
  []
 
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
 
  []
 
-</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg, id=354, 1284.8pt x 908.39375pt>
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg, id=508, 1284.8pt x 908.39375pt>
 File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg Graphic file (type jpg)
 <use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg>
 Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg  used on input line 1533.
 (pdftex.def)             Requested size: 362.37569pt x 256.20589pt.
-
-LaTeX Warning: Reference `fig:image for diff' on page 52 undefined on input line 1538.
-
-[52 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg>]
+[53 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg>]
 Overfull \hbox (1.95412pt too wide) in paragraph at lines 1547--1548
 []\T1/lmr/m/n/12 (-20) Defining \T1/lmtt/m/n/12 common_args \T1/lmr/m/n/12 (-20) which stores com-mands to be passed on to the \T1/lmtt/m/n/12 subprocess.run()
  []
@@ -1045,7 +1002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1578--1579
 
  []
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 1582--1583
 
  []
@@ -1055,7 +1012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1594--1595
 
  []
 
-[54]
+[55]
 Overfull \hbox (56.88187pt too wide) in paragraph at lines 1629--1630
 []\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/load/resource/bitmap/Downsampler.java
  []
@@ -1095,24 +1052,24 @@ Overfull \hbox (56.88187pt too wide) in paragraph at lines 1638--1639
 []\T1/lmtt/m/n/12 samples/giphy/src/main/java/com/bumptech/glide/samples/giphy/MainActivity.java
  []
 
-[55]
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png, id=384, 578.16pt x 361.35pt>
+[56]
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png, id=537, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png  used on input line 1671.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png, id=386, 578.16pt x 361.35pt>
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png, id=539, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png  used on input line 1678.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
- [56 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png>]
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png, id=395, 578.16pt x 361.35pt>
+ [57 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png>]
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png, id=548, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png  used on input line 1685.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png, id=396, 578.16pt x 361.35pt>
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png, id=549, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png  used on input line 1692.
@@ -1121,7 +1078,7 @@ Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/t
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png, id=397, 722.7pt x 361.35pt>
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png, id=550, 722.7pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png  used on input line 1699.
@@ -1129,7 +1086,7 @@ Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/r
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png, id=398, 578.16pt x 361.35pt>
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png, id=551, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png  used on input line 1706.
@@ -1137,7 +1094,7 @@ Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/d
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png, id=399, 578.16pt x 361.35pt>
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png, id=552, 578.16pt x 361.35pt>
 File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png Graphic file (type png)
 <use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png>
 Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png  used on input line 1713.
@@ -1145,40 +1102,27 @@ Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/t
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png>] [58 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png>] [59 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png>] [60] [61] (./report.aux)
+[58 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png>] [59 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png>] [60 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png>] [61] [62] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F5155A65E97AE76C5C1BB0C6EAF3D6E3;8289.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: F5155A65E97AE76C5C1BB0C6EAF3D6E3;8289.
  ) 
 Here is how much of TeX's memory you used:
- 16167 strings out of 474116
- 275822 string characters out of 5743683
+ 16218 strings out of 474116
+ 276499 string characters out of 5743683
  1939187 words of memory out of 5000000
- 37934 multiletter control sequences out of 15000+600000
- 630205 words of font info for 187 fonts, out of 8000000 for 9000
+ 37976 multiletter control sequences out of 15000+600000
+ 630523 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1286b,906s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on report.pdf (62 pages, 4296841 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on report.pdf (63 pages, 4297244 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 388 compressed objects within 4 object streams
- 170 named destinations out of 1000 (max. 500000)
- 39635 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 536 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 40435 words of extra memory for PDF output out of 42996 (max. 10000000)
 
