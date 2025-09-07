@@ -1,0 +1,1768 @@
+\documentclass[12pt, a4paper]{report}
+
+%==============================================================================
+% PACKAGES
+%==============================================================================
+\usepackage[utf8]{inputenc} % For text encoding
+\usepackage{xcolor}         % For defining custom colors
+\usepackage{tocloft} 
+\usepackage{amsmath}        % For math equations
+\usepackage{hyperref}       % For clickable links in the PDF
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[protrusion=true,expansion=true]{microtype} % load after lmodern
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{parskip} % no paragraph indent, adds space
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{amssymb} % For \checkmark symbol
+
+%==============================================================================
+% DOCUMENT SETUP
+%==============================================================================
+
+% Set page margins
+\geometry{a4paper, margin=1in}
+
+% Define the custom orange color from your title page image
+\definecolor{customOrange}{HTML}{D28A32}
+\definecolor{sectionbar}{HTML}{E9A640} % orange bar color similar to the image
+\definecolor{sectiontext}{HTML}{2B2B2B}
+
+% Setup for hyperref (makes ToC and references clickable)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% Wide, colored bar style for "section-like" headers
+\newcommand{\sectionbar}[1]{%
+  \vspace{0.6\baselineskip}%
+  \noindent
+  \colorbox{sectionbar}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \textbf{\Large\textsf{#1}}%
+    }%
+  }%
+  \vspace{0.6\baselineskip}
+}
+
+% Body text tweaks
+\setstretch{1.2}
+\setlist[itemize]{leftmargin=1.2em}
+\setlist[enumerate]{leftmargin=1.2em}
+
+% Section title spacing (not used directly since we use custom bars)
+\titlespacing*{\section}{0pt}{1ex}{0.6ex}
+
+% Figure captions smaller and tight
+\captionsetup{font=small,labelfont=bf}
+
+% Footer with page number
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+%==============================================================================
+% BEGIN DOCUMENT
+%==============================================================================
+\begin{document}
+
+%==============================================================================
+% TITLE PAGE
+% This is a custom title page environment to replicate your image.
+%==============================================================================
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} % Pushes content down vertically
+    
+    % --- Main Title ---
+    {\color{customOrange}\Huge\bfseries ASSIGNMENT 1}
+    
+    \vspace{0.75cm} % Space between title and subtitle
+    
+    % --- Subtitle ---
+    {\Large\bfseries Software Tools and Techniques for CSE}
+    
+    \vfill % Flexible vertical space
+    
+    % --- Author Info Box ---
+    % \colorbox creates the colored background
+    % \parbox creates a container for the text inside
+    \colorbox{customOrange}{%
+        \parbox{1.0\textwidth}{%
+            \centering
+            \vspace{1em} % Padding top
+            {\Large\color{white} Tejas Lohia} \\[0.5em] % Your name
+            {\large\color{white} 23110335} % Your ID
+            {\large\color{white} https://github.com/TejasLohia21/TejasLohia_Assessment1.git} % Your ID
+            \vspace{1em} % Padding bottom
+        }
+    }
+    
+    \vspace*{\fill} % Pushes the author box up from the bottom
+\end{titlepage}
+
+
+%==============================================================================
+% FRONT MATTER (Table of Contents, etc.)
+%==============================================================================
+% \pagenumbering{arabic}
+
+
+\renewcommand{\cfttoctitlefont}{\hfill} 
+\renewcommand{\cftaftertoctitle}{\hfill}
+{\noindent\colorbox{customOrange}{\parbox{\textwidth}{\vspace{0.4em}\Large\bfseries\color{white}\hspace{1em}TABLE OF CONTENTS\vspace{0.4em}}}}
+
+% --- Generate the list of contents ---
+\tableofcontents 
+
+%=================================
+%       LABORATORY SESSION 1
+%=================================
+\chapter{Introduction to Version Controlling, Git Workflows, and Actions}
+\section{Introduction}
+
+The aim of the laboratory session was to provide a hands-on introduction to version control using Git and GitHub. The activities focused on core concepts—initializing repositories, staging and committing changes, and synchronizing work—while also highlighting good practices for collaboration and project maintainance.
+\
+\section{Tools}
+
+\begin{itemize}
+    \item \textbf{Programming Language:} Python 3.12.9 --- Used for code and using pylint library.
+    \item \textbf{Editor/IDE:} Visual Studio Code --- Used for coding, debugging and execution.
+    \item \textbf{Version Control:} Git and GitHub --- Used to track and the changes in the code, and to improve maintainability of the codebases.
+    \item \textbf{Linting Tool:} Pylint --- Used to ensure that the code follows PEP8 standards.
+    \item \textbf{Automation Platform:} GitHub Actions --- used to automate the linting workflow and provide continuous integration (CI) feedback.
+    \item \textbf{Virtual Environment:} venv --- To prevent library version conflicts by isolating working environments.
+\end{itemize}
+
+\
+\section{Setup}
+
+To configure GitHub for this project, I had to setup git on my machine and Visual Studio Code (VS Code) as the code editor. For github setup I had to sign up using email ID and password;
+\newline 
+To maintain isolated coding environment, created a new vevn \textbf{lab1} with python version \textbf{3.12.9}.
+
+\
+\section{Methodology and Execution}
+
+The following methodology was followed execute tasks.
+\subsection*{Part A: Initial Compilation and Git Setup}
+
+\begin{enumerate}
+    \item \textbf{Git initialization:}
+    \begin{itemize}
+        \item Installed git on MacOS, and checked git version:
+        \begin{verbatim}
+        git --version
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Version Control Initialization:}
+    \begin{itemize}
+        \item Configured Git global username and email:
+        \begin{verbatim}
+        git config --global user.name "TejasLohia21"
+        git config --global user.email 23110335@iitgn.ac.in
+        \end{verbatim}
+
+        \item Verified configurations:
+        \begin{verbatim}
+        git config --list
+        git config user.name
+        git config user.email
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Repository Setup in a New Folder:}
+    \begin{itemize}
+        \item A new folder named \texttt{testing\_lab1} was created and entered:
+        \begin{verbatim}
+        cd testing_lab1
+        \end{verbatim}
+
+        \item A Git repository was initialized inside the folder:
+        \begin{verbatim}
+        git init
+        \end{verbatim}
+
+        \item A \texttt{README.md} file was created and initialized with content:
+        \begin{verbatim}
+        echo "# read_test" > README.md
+        \end{verbatim}
+
+        \item The file was staged and committed with a message:
+        \begin{verbatim}
+        git add README.md
+        git commit -m "add readme"
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Repository Setup in a New Folder:}
+        \begin{itemize}
+            \item A new folder named \texttt{testing\_lab1} was created and entered:
+            \begin{verbatim}
+            cd testing_lab1
+            \end{verbatim}
+
+            \item A Git repository was initialized inside the folder:
+            \begin{verbatim}
+            git init
+            \end{verbatim}
+
+            \item A \texttt{README.md} file was created and initialized with content:
+            \begin{verbatim}
+            echo "# read_test" > README.md
+            \end{verbatim}
+
+            \item The file was staged and committed with a message:
+            \begin{verbatim}
+            git add README.md
+            git commit -m "add readme"
+            \end{verbatim}
+        \end{itemize}
+
+
+    \item \textbf{Pushing Code to GitHub:}
+    \begin{itemize}
+        \item The local commits were pushed to the remote repository using:
+        \begin{verbatim}
+        git push -u origin main
+        \end{verbatim}
+        \item The \texttt{-u} flag sets the upstream branch so that subsequent pushes can simply use \texttt{git push}.
+    \end{itemize}
+
+    \item \textbf{Checking Commit History:}
+    \begin{itemize}
+        \item The commit history was viewed using:
+            \begin{verbatim}
+            git log
+            \end{verbatim}
+
+        \item Output:
+        \begin{verbatim}
+        commit 7e4d7da93c58274df903e73f653de9e9fe8e84fb (HEAD -> main)
+        Author: TejasLohia21 <23110335@iitgn.ac.in>
+        Date:   Sat Sep 6 01:00:00 2025 +0530
+
+            add readme
+        \end{verbatim}
+    \end{itemize}
+
+\end{enumerate}
+ 
+\subsection*{Part C: Working with Remote Repositories}
+
+\begin{enumerate}
+    \item \textbf{Connecting to GitHub:}
+    \begin{itemize}
+        \item A new repository was created on GitHub named \texttt{TejasLohialab1}.
+        \item The local repository was linked to GitHub using:
+        \begin{verbatim}
+        git remote add origin git@github.com:TejasLohia21/TejasLohialab1.git
+        git branch -M main
+        git push -u origin main
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Pushing Changes to GitHub:}
+    \begin{itemize}
+        \item The committed changes were pushed to GitHub using:
+        \begin{verbatim}
+        git push -u origin main
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Cloning a Repository:}
+    \begin{itemize}
+        \item An existing repository was cloned from GitHub to the local machine using:
+        \begin{verbatim}
+        git clone git@github.com:TejasLohia21/datascience-HNSW.git
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Pulling Changes:}
+    \begin{itemize}
+        \item Updates from the remote repository were pulled using:
+        \begin{verbatim}
+        git pull origin main
+        \end{verbatim}
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Part D: Setting up Pylint Workflow with GitHub Actions}
+
+In this part, a continuous integration (CI) workflow was created using \textbf{GitHub Actions} to automatically check the Python code using \texttt{pylint}. The steps followed were:
+
+\begin{enumerate}
+    \item \textbf{Python Script Creation:}  
+    A Python file \texttt{code.py} was created with more than 30 lines of code. The script implemented functions for factorial calculation, Fibonacci sequence generation, and prime number detection.
+
+    \item \textbf{Workflow Configuration:}  
+    A workflow file was created at the path:
+    \begin{verbatim}
+    .github/workflows/pylint.yml
+    \end{verbatim}
+
+    The content of the workflow file is shown below:
+    \begin{verbatim}
+    name: Pylint Check
+
+    on: [push, pull_request]
+
+    jobs:
+      lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+
+          - name: Set up Python
+            uses: actions/setup-python@v2
+            with:
+              python-version: '3.12'
+
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip
+              pip install pylint
+
+          - name: Run pylint
+            run: |
+              pylint code.py
+    \end{verbatim}
+
+    \item \textbf{Commit and Push:}  
+    The workflow file and the Python script were staged, committed, and pushed to the GitHub repository:
+    \begin{verbatim}
+    git add main.py .github/workflows/pylint.yml
+    git commit -m "Add Python script and pylint workflow"
+    git push
+    \end{verbatim}
+
+    \item \textbf{Verification:}  
+    After pushing, the GitHub Actions workflow was triggered. The Python script was linted using \texttt{pylint}, and all errors were resolved until a green tick (\checkmark) appeared, confirming successful execution.
+\end{enumerate}
+This ensured that the code followed Python coding standards and passed linting checks automatically on every push.
+
+
+\
+\section{Results and Analysis}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg}
+    \caption{Setting up git}
+    \label{fig:lab1}
+\end{figure}
+
+Commands to check the version and verify initialization gave the following outputs.
+
+\begin{itemize}
+    \item {Git version initialized:} 2.39.5 (Apple Git - 154)
+    \item {Git username:} TejasLohia21
+    \item {Git user email:} 23110335@iitgn.ac.in
+\end{itemize}
+
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg}
+    \caption{Init git Repo and addition of README file}
+    \label{fig:lab2}
+\end{figure}
+
+Upon committing the staged files in the main branch of the initialized local git repository:
+\begin{verbatim}
+    [main (root-commit) 7e4d7da] add readme
+    1 file changed, 1 insertion(+)
+    create mode 100644 README.md
+\end{verbatim}
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg}
+    \caption{Checking commit history}
+    \label{fig:lab3}
+\end{figure}
+
+Command git log generated the commit history along with Metadata.
+
+\begin{verbatim}
+    Author: TejasLohia21 <23110335@iitgn.ac.in>
+    Date: Sat Sep 6 01:00:00 2025 +530
+
+        add readme
+\end{verbatim}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg}
+    \caption{Linking local repositories with github}
+    \label{fig:lab4}
+\end{figure}
+
+Created a new repository on github named lab1. Using the command, the local repository was linked to Online Repo.
+The repository was then pushed to the online repository on github in the main branch.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg}
+    \caption{Cloning existing repositories and initiating pull}
+    \label{fig:lab5}
+\end{figure}
+
+To get a hands on experience of pulling repositories, I cloned an existing repository and pulled that. As the repository did not have any changes, the output was 'Already upto date'.
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg}
+    \caption{Pylint workflow}
+    \label{fig:lab6}
+\end{figure}
+
+Initially there was a cross mark after pushing to the online repository. THe error was because of no blank empty line in the end.
+\newline
+After rectifying this, there was a tick symbol in the github repository.
+
+\section{Discussion and Conclusion}
+This lab was quite important to understand and learn git in a systematic way. It introduced us to the very basics of git init, till using github workflows, making us familiar to use and maintain repositories using git and github.
+
+\cleardoublepage
+
+
+%=================================
+%       LABORATORY SESSION 2
+%=================================
+\chapter{Commit Message Rectification for Bug-Fixing Commits in the Wild}
+\section{Introduction}
+
+The aim of this laboratory session is to provide familiarity with the basics of mining open source software (OSS) repositories. 
+The process involves processing and analyzing commits on the GitHub version control system for popular real-world projects. 
+This also introduced about the quality of commit messaged in real-life projects which have huge userbases, and require active and effective maintainance. I was also introduced to different LLMs which could be used to classify the commits into various types of commits, as well as to understand the effectiveness of generating commit messages using LLMs.
+This task also made us to explore SEART search engine, which allows us to filter all the repositories on github based on various parameters.
+
+\section{Tools}
+
+\begin{itemize}
+    \item \textbf{Software and Tools Used:}
+    \begin{itemize}
+        \item Operating System: MacOS
+        \item Text Editor: Visual Studio Code
+        \item Version Control: Git
+        \item Remote Hosting: GitHub
+        \item Continuous Integration: GitHub Actions
+    \end{itemize}
+
+    \item \textbf{Python Libraries:}
+    \begin{itemize}
+        \item Pydriller: A Python library for mining software repositories, used to analyze git repositories and extract commit information.
+        \item Pandas: Used for managing dataframes and working with CSV files.
+        \item Pre-trained LLMs: \texttt{SEBIS/code\_trans\_t5\_base\_commit\_generation} and \texttt{CommitPredictorT5}.
+    \end{itemize}
+\end{itemize}
+
+\section{Setup}
+
+\begin{itemize}
+    \item GitHub account: \texttt{TejasLohia21}
+    \item Created and activated a virtual environment named \texttt{lab2} to manage library versions.
+    \item Installed Python version 3.12.9.
+    \item Cloned and initialized three repositories for experiments and version control.
+\end{itemize}
+
+% Add content for this section later
+\
+\section{Part A: Repository selection and Part B: Define Selection Criteria}
+
+\sectionbar{METHODOLOGY AND EXECUTION}
+
+To choose a repository, I used criterias mentioned in the lecture to find real-life projects with active users.
+Used SEART search engine, to search for repositories which satisfied the criterias for filtering out repositories.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg}
+    \caption{SEART Search engine}
+    \label{fig:2.1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg}
+    \caption{BOXMOT repository}
+    \label{fig:2.2}
+\end{figure}
+
+\begin{itemize}
+    \item \texttt{Boxmot} -- Boxmot is a modular and extendable repository which is contains implementations of state-of-the-art motion object tracking. This offers a plug and play architecture with support for varying tasks such as segmentation, object detection and pose tracking.
+    This repository is central for tracking pursposes, and active responses to all the issues and commits after to resolve the issues makes it an ideal repository for analysis.
+\end{itemize}
+
+% '/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.22.15.jpeg'
+
+\textbf{Criteria for chosing this repository}
+
+This was chosen in reference to the funnel diagram in lecture 2 slides.
+
+Repositories were chosen using the criterias which were mentioned in lectures and in the assignment:
+\begin{itemize}
+    \item {Number of commits}: 3777 which is greater than 1206 commits (median commits) and less than 25000
+    \item {Number of Stars}: 7.6k which indicates that this repository is of a real\-world project.
+    \item {Language used}: Primary language is Python.
+    \item {Merges}: There should be enough merges (which was concluded after trying some other repositories).
+\end{itemize}
+
+I have previously also used this repository as this is central to implementations of all the state-of-the-art(\textbf{SOTA}) trackers benchmarked in research papers. This repository has a huge base of users, as well as there are active resolves for the issues resolved, resulting in higher number of commits.
+
+% \cleardoublepage
+
+\newpage
+
+\section{Part C: Bug-Fixing Commit Identification:}
+\sectionbar{METHODOLOGY AND EXECUTION}
+
+To proceed with our analysis, it was essential to identify commits that were specifically related to bug-fixes.
+
+In our case, the a bug was defined using a keyword-based heuristic applied to commit messages. We considered a commit to be bug-related if its message contained any of the following terms:  
+\texttt{fix}, \texttt{fixed}, \texttt{fixes}, \texttt{bug}, \texttt{bugfix}, \texttt{bug fix}, \texttt{issue}, \texttt{crash}, \texttt{error}, \texttt{fault}, \texttt{regression}, \texttt{null}, \texttt{none}, \texttt{npe}, \texttt{leak}, \texttt{overflow}, \texttt{bounds}, \texttt{oob}, \texttt{segfault}, as well as commit messages that referenced issue-closing patterns such as \texttt{close\#}, \texttt{closed\#}, \texttt{resolves\#}, or \texttt{resolved\#} etc.
+
+We excluded commits that were unrelated to bugs, such as those containing: \texttt{readme}, \texttt{doc}, \texttt{docs}, \texttt{typo}, \texttt{chore}, \texttt{license}, \texttt{format}, \texttt{style}, \texttt{pre-commit}, \texttt{ci}, \texttt{workflow}, or \texttt{version bump}. This exclusion ensured that cosmetic or maintenance commits were not misclassified as bug-fixes.  
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg}
+    \caption{Code for mine fixing.}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg}
+    \caption{Code for mine fixing.}
+\end{figure}
+
+\subsection*{Explanation of the Code}
+
+The provided Python script automates the identification of bug-fixing commits in a given Git repository using the PyDriller framework. Here is a breakdown of its main components:
+
+\begin{itemize}
+    \item \textbf{Import Statements:} The script imports necessary modules: \texttt{re} for regular expressions, \texttt{csv} for writing output, \texttt{os} for file path operations, and \texttt{pydriller} for mining the repository.
+    \item \textbf{Repository Path:} The variable \texttt{REPO\_PATH} specifies the local path to the repository to be analyzed.
+    \item \textbf{Bug-fix Pattern:} The regular expression \texttt{BUGFIX\_RE} is designed to match common bug-related keywords for filtering the commits to match those which are specific to bug-fix related commits.
+    \item \textbf{Exclude Pattern:} The regular expression \texttt{EXCLUDE\_RE} is used to filter out commits that are not related to bug-fixes, such as documentation updates, formatting changes, or version bumps.
+    \item \textbf{Main Function:} The code iterates through all commits in the repository. For each commit, it checks if the commit message matches the bug-fix pattern and some other filtering. If so, it records relevant information in the CSV file.
+    \item \textbf{Files in merge commits:} For merge commits, PyDriller may not always provide a complete list of modified files due to the way merges are represented in git history. To address this, the script defines a helper function (\texttt{\_merge\_check\_commit}) that directly invokes the \texttt{git show -m} command. This command retrieves the names of all files changed in each parent of the merge commit, ensuring that no relevant file modifications are missed. The function filters these files to include only source code files (e.g., \texttt{.py}, \texttt{.c}, \texttt{.cpp}, etc.), which are most likely to contain bug fixes. This ensures accurate and comprehensive extraction of modified files for both regular and merge commits.
+\end{itemize}
+
+This approach enables extraction and documentation of bug-fixing commits, which can be further analyzed for trends or patterns in software maintenance.
+
+\sectionbar{Results}
+
+For each of the commit, csv contains a row with information about Hash, Message, Hashes of Parents, whether it's a merge commit, List of modified files
+We also found that the total number of merge commits in the data is \textbf{84}.  
+This gives a count of how many merge operations were done in the project.  
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg}
+    \caption{First five rows of the generated output.}
+\end{figure}
+
+\
+\sectionbar{Discussion and Conclusion}
+% Add content for this section later
+In this code, we implemented a pipeline that extracts all the commits, and respective Metadata and information is saved to a CSV file. 
+The regular expression used to identify the commits related to bug-fixes is an efficient way of classifying commits, but lags in cases where commit messages might not explicitly contain keywords in the list.
+Merge commits were handled effectively using another function. This pipeline achieves the aim of storing the commit history in a CSV file for required for further analysis.
+
+\cleardoublepage
+
+\section{Part D and E: Diff Extraction and Analyses and Rectification of the Message}
+\sectionbar{METHODOLOGY AND EXECUTION}
+
+In this, we work on a pipeline iterates through the csv file, and runs LLM models to classify the commits into fix-types. Another LLM was used to generate a rectified commit message.
+This task is fundamental to understand the quality of commit messages contributors commit with. Also, this analysis leads us to investigate the quality of the generated rectified messages by LLMs.
+
+In the pipeline, we iterated through all the rows in the dataframe generated in the previous code and cleaned it to deal with abnormality in the strings.
+\newline
+To generate llm message, CommitPredictorT5 is instantiated, which is fed with code difference between current source code and previos codes.
+
+\textbf{Rectification}
+
+\begin{itemize}
+    \item In the experiment, multiple rectifiers were tested, initially with the CommitPredictorT5 model.
+    \item CommitPredictorT5 was not specifically trained for the task of rectifying commit messages, hence generated suboptimal outputs even with very elaborate prompts.
+    \item The script used \texttt{SEBIS/code\_trans\_t5\_base\_commit\_generation}, which is a model trained for commit message generation, resulting in more accurate and concise rectified messages.
+    \item Prompt given to the LLM was designed to constraint the model to generate precise commit messages and avoid using generic terms such as update, added or changed.
+    \item Difference was restricted to a string of length less than 2000 to avoid hallucination of models which could have occured because of the prompt size.
+    \item \textbf{Prompt designing: } Pileline implements a dynamic prompt based on the length of the source code.
+    \begin{itemize}
+        \item {Methodology: } Models are expected to generate more relevant rectified commit message with more contexts. But, when models are provided with very long prompts, they tend to lose relevant information and often hallucinate.
+        \item {Parameters in prompt: } To provide better context, model is prompted with code difference, current source code, previos source code, human message and llm\_inference.
+        \item {Reducing the prompt size: } To avoid hallucination, we dynamically change prompt. Based on classification of the source code, based on its length being less than 2000, model changes prompt and does not pass source codes, if length > 2000.
+        \item {Expected improvement: } Difference in source code provides crucial information, thus can't be sliced. Removal of codes might cause information lose, but would also prevent the model from hallucinating.
+    \end{itemize}
+\end{itemize}
+
+% \subsection*{Code}
+
+% \newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg}
+    \caption{Code(Image 1).}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg}
+    \caption{Code (Image 2).}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg}
+    \caption{Code (Image 3).}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg}
+    \caption{Code (Image 4).}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg}
+    \caption{Code (Image 5).}
+\end{figure}
+
+% \newpage
+
+\subsection*{Code}
+
+\begin{itemize}
+    \item \textbf{Importing} -- Imported libraries such as \texttt{os}, \texttt{csv}, \texttt{pydriller} (Repository), transformers, and \texttt{torch}, and set up Metal GPU acceleration on Mac.
+    \item \textbf{Model Loading} -- Loaded models and tokenizers: \texttt{CommitPredictorT5} and \texttt{SEBIS/code\_trans\_t5\_base\_commit\_generation} for rectified message generation.
+    \item \textbf{LLM-based fix type classification} -- The code difference was passed to this model to obtain the fix type from the predefined categories.
+    \item \textbf{LLM-based commit message rectification} -- To generate the rectified message, the diff and other parameters were passed to the model.
+\end{itemize}
+
+    \subsection{Main Loop: CSV Processing and Analysis}
+        The main loop of the script processes commits and applies LLM-based analysis. The steps are as follows:
+
+        \begin{enumerate}
+            \item The script opens the input CSV (containing bug-fix commit information) and an output CSV file with columns:
+            \begin{itemize}
+                \item Hash
+                \item Message
+                \item Filename
+                \item Source Code (prev)
+                \item Source Code (current)
+                \item Diff
+                \item LLM Inference
+                \item Rectified Message
+            \end{itemize}
+            
+            \item For each commit, the script iterates through all modified files.
+            
+            \item The relevant source code (previous and current versions) and the diff are extracted.
+            
+            \item LLM-based classification is applied to determine the commit type from a predefined set of categories.
+            
+            \item LLM-based rectification is used to generate a more precise commit message based on the extracted diff.
+            
+            \item The results are written to the output CSV, enabling systematic analysis of each bug-fix at the file level.
+        \end{enumerate}
+
+\sectionbar{Results and Analysis}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg}
+    \caption{First five rows of the generated output.}
+\end{figure}
+
+\subsection*{Commit 1}
+\begin{tabular}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Commit Hash} & 95d67ff483142ef134399e6c28618e12e9382854 \\
+\hline
+\textbf{Commit Message} & Fixed Kalman filter bug in motion module \\
+\hline
+\textbf{Files Changed} & 
+boxmot/motion/kalman\_filters/xyah\_kf.py \newline
+boxmot/motion/kalman\_filters/xysr\_kf.py \\
+\hline
+\textbf{Diff Summary} & Bug in state transition corrected, equations updated \\
+\hline
+\textbf{Fix Type} & Bug Fix \\
+\hline
+\textbf{Rectified Message} & Corrected Kalman filter implementation in XYAH and XYSR variants. \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+% ------------------ Commit 2 ------------------
+\subsection*{Commit 2}
+\begin{tabular}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Commit Hash} & 54a2c4d337a54cc562cdf0e9ebdf3ff3409a43b3 \\
+\hline
+\textbf{Commit Message} & Added functionality for DeepOCSort tracker \\
+\hline
+\textbf{Files Changed} & 
+boxmot/trackers/deepocsort/deepocsort.py \\
+\hline
+\textbf{Diff Summary} & Added initialization and matching logic for DeepOCSort \\
+\hline
+\textbf{Fix Type} & Feature Addition \\
+\hline
+\textbf{Rectified Message} & Introduced DeepOCSort tracker with new matching mechanism. \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+% ------------------ Commit 3 ------------------
+\subsection*{Commit 3}
+\begin{tabular}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Commit Hash} & 7f82e09a2e93cbd5db1d91a6a26c31a134ff29e0 \\
+\hline
+\textbf{Commit Message} & Updated SORT tracker logic \\
+\hline
+\textbf{Files Changed} & 
+boxmot/trackers/sort/sort.py \\
+\hline
+\textbf{Diff Summary} & Updated association metrics and bounding box handling \\
+\hline
+\textbf{Fix Type} & Update \\
+\hline
+\textbf{Rectified Message} & Enhanced SORT tracker logic for more robust association. \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+% ------------------ Commit 4 ------------------
+\subsection*{Commit 4}
+\begin{tabular}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Commit Hash} & 1b34ac93271fa3e5827d4f0b7c0a3ec8b1f93c8f \\
+\hline
+\textbf{Commit Message} & Fixed memory leak issue in OC-SORT \\
+\hline
+\textbf{Files Changed} & 
+boxmot/trackers/ocsort/ocsort.py \\
+\hline
+\textbf{Diff Summary} & Deallocated unused objects, fixed leak in update step \\
+\hline
+\textbf{Fix Type} & Bug Fix \\
+\hline
+\textbf{Rectified Message} & Resolved memory leak in OC-SORT tracker. \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+% ------------------ Commit 5 ------------------
+\subsection*{Commit 5}
+\begin{tabular}{|p{3cm}|p{10cm}|}
+\hline
+\textbf{Commit Hash} & d2f40a8f62b3c6a5f68a10e22c6d14e3acdb8c65 \\
+\hline
+\textbf{Commit Message} & Improved logging and error handling \\
+\hline
+\textbf{Files Changed} & 
+boxmot/utils/logger.py \\
+\hline
+\textbf{Diff Summary} & Added detailed exception logs and warnings \\
+\hline
+\textbf{Fix Type} & Update \\
+\hline
+\textbf{Rectified Message} & Improved logging system with better error traceability. \\
+\hline
+\end{tabular}
+
+\newpage
+
+\sectionbar{Discussion and Conclusion}
+
+
+In this pipeline, two LLMs were used to generation fix-type and rectified commit message. 
+Many of the original commits, had same commit message for multiple modified files, resulting in loss of information for the exact change. Generated rectified messages are specific for file changes and are based on in depth context about the changes, thus making commit messages more relevant.
+\newline
+Initially CommitPredictorT5 was testeed to generate rectified commit message. Despite providing in depth context and specific prompt, it was not able to generate the rectified message properly, because of lack of fine-tuning.
+\texttt{SEBIS/code\_trans\_t5\_base\_commit\_generation} was used to generate rectified messages, as it is trained for this specific task.
+\cleardoublepage
+
+\section{Part F: Evaluation: Research Questions}
+
+\textbf{RQ1 (Developer eval.)}
+
+This question intends to investigate the precision of commit message and quantify hit rate.
+
+To quantify the precision, pipeline uses an encoder \textbf{microsoft/codebert-base} to get embeddings for code difference and commit message. Then to obtain similarity, cosine distance is used and applied over a THRESHOLD to obtain HIT RATE.
+
+
+% \subsection*{\   Question 1}
+
+\begin{itemize}
+    \item {Aim:} -- This section requires to analyze the commit messages and check if it actually matches the bug fixing, for which we extract the difference in the code.
+    \item {Methodology:} -- Rather than analyzing in the conventional way, which is based on the method to check if the words in commit message matches the list of terms in the bug fixes, we use semantic based similarity score to assess the commit messages.
+    \item {Execution:} -- CodeBert model developed by microsoft which is an encoder captures sequential words and generate embeddings. Code uses this model to generate embeddings for the codes as well as for the commit message.
+    \item {Metric: } -- We use cosine similarity to analyze the similarity in the code embedding and commit message embedding. We define a THRESHOLD of 0.9 to quantify the hit rate. 
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg}
+    \caption{Code for Similarity analysis.}
+\end{figure}
+
+\subsection*{Explanation of the Code}
+
+The provided Python script computes semantic similarity between commit messages and their corresponding code diffs using the CodeBERT model. This enables an evaluation of how precise developer-written commit messages are in relation to the actual changes. 
+
+\begin{itemize}
+    \item \textbf{Import Statements:} The script imports required libraries: \texttt{pandas} for handling CSV data, \texttt{sentence-transformers} for loading the pre-trained CodeBERT model, and \texttt{util} for cosine similarity computation.
+    
+    \item \textbf{Dataset Input:} The variable \texttt{commits\_csv} specifies the path to the input CSV file containing commit information. This file includes columns such as commit hash, message, diff, and other metadata.
+    
+    \item \textbf{Model Loading:} The script loads the pre-trained \texttt{microsoft/codebert-base} model from Hugging Face’s \texttt{sentence-transformers} library. This model is designed to capture semantic relationships between natural language and source code.
+    
+    \item \textbf{Similarity Function:} A helper function \texttt{compute\_similarity(code\_diff, commit\_msg)} is defined. It encodes both the commit message and code diff into embeddings, then calculates the cosine similarity between them. If either field is missing, it returns a similarity score of zero.
+    
+    \item \textbf{Application Across Dataset:} The function is applied row-wise to the dataset using \texttt{pandas.DataFrame.apply()}, generating a new column named \texttt{similarity} that stores the computed similarity for each commit.
+    
+    \item \textbf{Output Storage:} The results, including the computed similarity scores, are written to a new CSV file specified by the variable \texttt{output\_path}. This ensures the data is preserved for further analysis and visualization.
+\end{itemize}
+
+\subsection*{Result}
+
+We obtained a \textbf{cosine} similarity of \textbf{0.913620}.
+
+We obtained a \textbf{hit rate} of \textbf{74.28 \%} at a threshold of \textbf{0.9}.
+
+
+\newpage
+
+\textbf{RQ2 (LLM eval.)}
+
+This question intends to investigate the precision of fix-type and quantify hit rate.
+
+To quantify the precision, pipeline uses an encoder \textbf{microsoft/codebert-base} to get embeddings for code difference and commit message. Then to obtain similarity, cosine distance is used and applied over a THRESHOLD to obtain HIT RATE.
+
+
+\begin{itemize}
+    \item {Aim:} -- This section requires to analyze the fix type generated by LLM and check if it actually matches the bug fixing, for which we extract the difference in the code.
+    \item {Methodology:} -- Rather than analyzing in the conventional way, which is based on the method to check if the words in commit message matches the list of terms in the bug fixes, we use semantic based similarity score to assess the commit messages.
+    \item {Execution:} -- CodeBert model developed by microsoft which is an encoder captures sequential words and generate embeddings. Code uses this model to generate embeddings for the codes as well as for the LLm generated commit message.
+    \item {Metric: } -- We use cosine similarity to analyze the similarity in the code embedding and commit message embedding. We define a THRESHOLD of 0.9 to quantify the hit rate. 
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg}
+    \caption{Semantic similar between fix type (LLM) embedding and commit message embedding.}
+\end{figure}
+
+
+\subsection*{Explanation of the Code}
+
+The provided Python script computes semantic similarity between LLM generated fix type and their corresponding code diffs using the CodeBERT model. This enables an evaluation of how precise is the classification of fix type in relation to the actual changes. 
+
+\begin{itemize}
+    \item \textbf{Import Statements:} The script imports required libraries: \texttt{pandas} for handling CSV data, \texttt{sentence-transformers} for loading the pre-trained CodeBERT model, and \texttt{util} for cosine similarity computation.
+    \item \textbf{Dataset Input:} The variable \texttt{commits\_csv} specifies the path to the input CSV file containing commit information. This file includes columns such as commit hash, message, diff, and other metadata.
+    \item \textbf{Model Loading:} The script loads the pre-trained \texttt{microsoft/codebert-base} model from Hugging Face’s \texttt{sentence-transformers} library. This model is designed to capture semantic relationships between natural language and source code.
+    \item \textbf{Similarity Function:} A helper function \texttt{compute\_similarity(code\_diff, commit\_msg)} is defined. It encodes both the LLM generated fix type and code diff into embeddings, then calculates the cosine similarity between them. If either field is missing, it returns a similarity score of zero.
+    \item \textbf{Application Across Dataset}: The function is applied to each row of the dataset using \texttt{pandas.DataFrame.apply()}, creating a new column \texttt{similarity} that holds the computed similarity score for every commit.
+    \item \textbf{Output Storage}: The resulting similarity scores and hit flags are saved to a CSV file specified by \texttt{\detokenize{output_path}}, ensuring the data is available for further analysis and reporting.
+\end{itemize}
+
+The evaluation of LLM-generated commit messages yielded the following results:
+
+\begin{itemize}
+    \item Average cosine similarity: 0.9238
+    \item Hit rate (threshold 0.5): 88.72\%
+\end{itemize}
+
+This hit rate indicates, that LLM is able to correctly extract the fix type using the difference in the code. 
+
+\subsection{Possible Reasons for high hit rate:}
+
+\begin{itemize}
+    \item \textbf{Short outputs by LLM:} Bug fixing commit messages are vert short, which leads to very strong embeddings, as it does not have to capture sequential variation.
+    \item \textbf{Addition and update can be seen in the code difference}: Generic words such as update and add could easily be visible in the code differences and this is the reason LLM generated these outputs at higher frequency.
+\end{itemize}
+
+% \newpage
+
+
+\textbf{RQ3 (Rectifier eval.)}
+
+This section intends to analyze the rectification in the commit message. We take the difference betweem the similarities between human commit message and rectified commit message, and then take Average for all the modifications.
+
+\begin{itemize}
+    \item {Aim:} -- This section requires to analyze the amount of rectification done, to generated a commit message using LLMs provided with information including source code difference, previous and current source code and LLM fix type message.
+    \item {Methodology:} -- We measure the rectification improvement using the embeddings. We calculate the similarity between commit message and the diff code, and similarity between rectified message and diff code.
+    \item {Execution:} -- CodeBert model developed by microsoft which is an encoder captures sequential words and generate embeddings. Code uses this model to generate embeddings for the codes as well as for the rectifier generated commit message.
+    \item {Metric: } -- For the hit rate we set a THRESHOLD of 0.9 and we classify based on that threshold.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg}
+    \caption{Code for rectification and improvement}
+\end{figure}
+
+\subsection*{Explanation of the Code}
+
+The provided Python script computes the amount of rectification a rectifier can perform provided content of code difference, source code before and after, fix type message.
+
+\begin{itemize}
+    \item \textbf{Import Statements:} The script imports required libraries: \texttt{pandas} for handling CSV data, \texttt{sentence-transformers} for loading the pre-trained CodeBERT model, and \texttt{util} for cosine similarity computation.
+    \item \textbf{Dataset Input:} The variable \texttt{commits\_csv} specifies the path to the input CSV file containing commit information. This file includes columns such as commit hash, message, diff, and other metadata.
+    \item \textbf{Model Loading:} The script loads the pre-trained \texttt{microsoft/codebert-base} model from Hugging Face’s \texttt{sentence-transformers} library. This model is designed to capture semantic relationships between natural language and source code.
+    \item \textbf{Similarity Function:} A helper function \texttt{compute\_similarity(code\_diff, commit\_msg)} is defined. It encodes both the LLM generated fix type and code diff into embeddings, then calculates the cosine similarity between them. If either field is missing, it returns a similarity score of zero.
+    \item \textbf{Application Across Dataset}: The function is applied to each row of the dataset using \texttt{pandas.DataFrame.apply()}, creating a new column \texttt{similarity} that holds the computed similarity score for every commit.
+    \item \textbf{Output Storage}: The resulting similarity scores and hit flags are saved to a CSV file specified by \texttt{\detokenize{output_path}}, ensuring the data is available for further analysis and reporting.
+\end{itemize}
+
+The evaluation of LLM-generated commit messages yielded the following results:
+
+\subsection*{Result}
+\begin{itemize}
+    \item Average Rectification improvement: 0.0171
+    \item Rectification Similarity: 0.9307
+    \item Commits above threshold: 668
+    \item Hit rate (threshold 0.9): 91.88\%
+\end{itemize}
+
+\section{Discussion and Conclusion}
+
+This was an interesting investigation to understand the LLM outputs. I was suprised by the score obtained even with the high similarity obtained upon human commit message. 
+Reason for this could be the generic commit messages, which might match the code differences. 
+
+Rectified messages had an improvement but not as high as expected. Possible reason for this could be Initial high scores, but also when we have huge codes which are being embedded, it starts gettin generalized because of encoding of every line in the code combined into a single vector.
+Even if the embeddings did not show much of improvement, but checking the rectified commit messages manually, I found them to be much more relevant.
+
+\chapter{Multi-Metric Bug Context Analysis and Agreement Detection in Bug-Fix Commits}
+\section{Introduction}
+
+The aim of this laboratory was to give us an hands on experience to investigate the bug fix commits using structural metrix and similar measure betweem the previous and current versions of the source code.
+The structural matric was analyzed using methods of Maintainability Index(MI), Cyclomatic Complexity(CC), and Lines of Code(LOC) for each bugfix. To analyze the similarity we use semantic similarity and token similarity generated by models like codeBERT and BLEU. 
+We analyzed the results based on code quality improvement (or changes) and the extend of changes. Based on this changes were analyzed to classify the commits into major bug and minor bug fixes, also the conflicting assessments between both the models.
+
+
+\section{Tools}
+
+\begin{itemize}
+    \item \textbf{Software and Tools Used:}
+    \begin{itemize}
+        \item Operating System: macOS
+        \item Text Editor: Visual Studio Code
+        \item Version Control: Git
+        \item Remote Hosting: GitHub
+        \item Continuous Integration: GitHub Actions
+    \end{itemize}
+    
+    \item \textbf{Repository:}
+    \begin{itemize}
+        \item \texttt{boxmot} -- An open-source library that extends trackers by integrating state-of-the-art multi-object tracking (MOT) algorithms. It provides implementations of popular trackers such as DeepSORT, StrongSORT, and ByteTrack, allowing seamless combination of object detection and tracking. The library is modular, easy to integrate with detection pipelines, and designed for real-time performance, making it suitable for research as well as production-level applications.
+    \end{itemize}
+    
+    \item \textbf{Python Libraries:}
+    \begin{itemize}
+        \item \texttt{pydriller} -- Framework for mining software repositories and extracting commit information.
+        \item \texttt{pandas} -- For managing dataframes and extracting data from CSV files.
+        \item \texttt{collections.Counter} -- To create dictionaries with default values and count occurrences of elements.
+        \item \texttt{matplotlib.pyplot} -- For data visualization and plotting.
+        \item \texttt{os} -- Interacting with the operating system.
+        \item \texttt{radon} -- Code analysis tool to compute metrics like LOC, Maintainability Index, and Cyclomatic Complexity.
+        \item \texttt{re} -- Regular expressions for string pattern matching and text refinement.
+        \item \texttt{subprocess} -- Running external commands and interacting with system processes.
+        \item \texttt{sentence\_transformers} -- For semantic similarity checking using pretrained transformer models.
+        \item \texttt{torch} -- PyTorch deep learning framework.
+        \item \texttt{nltk (BLEU)} -- Natural Language Toolkit, used for evaluating BLEU scores.
+    \end{itemize}
+\end{itemize}
+
+\section{Setup}
+
+\begin{itemize}
+    \item GitHub account: \texttt{TejasLohia21}
+    \item SSH key configured for secure push/pull
+    \item Virtual Environment named \texttt{lab3} to manage library versions
+    \item Configured git username and email
+    \item Cloned/initialized three repositories
+\end{itemize}
+
+\
+\section{Part A and B: Compute and report baseline descriptive statistics}
+
+This part aims us analyze the fundamental properties of the Commits and repositories from the data generated in previous lab session.
+
+Code analyses the number of commits and files, which give us an idea of the size of the repositories, and maintainance changes. It becomes easier to mantain, if the number of changes made in a single commit are less, as it provides better navigation and specific understanding to each of the change made. 
+Thus we also analyze the number of file modifications per commit. 
+% \newline
+
+In the previous lab, we used CommitPredictorT5 to classify bug-fix commits into various types which allows us to interprete the changes required, or the type of errors that exist in the repository. 
+% \newline
+
+Its also important to know, which type of files have most bug-fixes commits, as this allows to deal differently with different types of files to handle efficiently. Some files might be critical and changes as well as bug-fixing in them might be a big deal, thus we also analyze the files which have most number of modifications
+
+\sectionbar{METHODOLOGY AND EXECUTION}
+
+Loaded the csv "diff.csv" generated in Lab2 using pandas into a dataframe "df"
+
+\begin{itemize}
+    \item \textbf{Compute and report baseline descriptive statistics:}
+    \begin{itemize}
+        \item Using nunique on the Hashes stored in the df to obtain the unique number of hashes
+        \item Using nunique on the Filename stored in the df to obtain the unique number of files.
+        \item Stored all the commits and the file counts for respective commits, and then reported the average number of modified files per commit.
+        \item To find the fix types from LLM, we use a dictionary to store the keywords used in commit messages and map them to six generic categories. We run through every commit message and if any word is in dictionary mapping, we return the type of that keyword.
+        \item Used OS and counter libraries to count the top ten most frequently modified files, and extensions.
+    \end{itemize}
+    \item \textbf{Codes: Total number of commits and files}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg}
+            \caption{Loading of diff.csv file and finding total number of commits and files.}
+            \label{fig:diff-example}
+        \end{figure}
+
+        \begin{itemize}
+            \item \textbf{Explanation of Code for total commits and files:}
+            \begin{itemize}
+                \item Loaded the row which stores hashes, and used .nunique to find the total unique hashes.
+                \item Loaded the row which stores Filename, and used .nunique to find the total unique files modified.
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Results:}
+            \begin{itemize}
+                \item Total number of hashes in the dataframe are \textbf{727}, while the unique number of hashes are \textbf{388}.
+                \item Total number of files in the dataframe are \textbf{727}, while the unique number of files which have been modified are \textbf{247}.
+            \end{itemize}
+        \end{itemize}
+
+    \item \textbf{Codes: Average number of files modified per commit}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg}
+            \caption{Average numbers of modified files per commit.}
+            \label{fig:diff-example-2}
+        \end{figure}
+
+        \begin{itemize}
+            \item \textbf{Explanation of Code for Average file modifications per commit:}
+            \begin{itemize}
+                \item For every commit, maintain a dictionary which maps it to a list of files which have been modified.
+                \item Iterated thru' all the rows, as each row contained information about changes in distinct modifications in files.
+                \item Sum of all the values in dictionary divided by the length of dictionary yielded the average number of files modified per commit.
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Results:}
+            \begin{itemize}
+                \item Average number of files modified per commit are \textbf{1.8737}.
+            \end{itemize}
+        \end{itemize}
+
+    \item \textbf{Codes: Distribution of number of fix types}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg}
+            \caption{Distribution of number of fix types.}
+            \label{fig:diff-example-3}
+        \end{figure}
+
+        \begin{itemize}
+            \item \textbf{Explanation of Code for Fix types distribution:}
+            \begin{itemize}
+                \item As the commit messages with same fix type may have different keywords, initialized a dictionary fix\_types which contains mapping from six keywords to list of words which contain frequently used keywords of that fix type.
+                \item Created another dictionary, 'mappings' which contains map from each of the word in list to the fix type it belongs to.
+                \item Classify function iterates through all the words in each commits, and returns the type using the dictionary mapping.
+                \item counttype function iterates through each of the commit and calls for the function classify and increments the count of the type returned by function classify.
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Results:}
+            \begin{itemize}
+                \item Distribution for the fix type is:
+                \item {update} -- 497
+                \item {add} -- 191
+                \item {fix} -- 37
+                \item {remove} -- 1
+            \end{itemize}
+        \end{itemize}
+
+
+    \item \textbf{Codes: Most frequently modified filenames\/extensions}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg}
+            \caption{Most frequently modified filenames/extensions.}
+            \label{fig:diff-example-4}
+        \end{figure}
+
+        \begin{itemize}
+            \item \textbf{Explanation of Code for Most frequently modified filenames/extensions:}
+            \begin{itemize}
+                \item 'df' is passed to the function freqmax which extracts the column Filename to extract extensions using another function extret.
+                \item Freqmax function applies the instantiates the counter object over files to find the top\_n number of files, and extret function returns the extension for all the files.
+                \item Another counter object is instantiated to create a count for all the extensions
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Most modified extensions:}
+            \begin{itemize}
+                \item Distribution for the fix type is:
+                \item {.py} -- \textbf{699}
+                \item {.yml} -- \textbf{14}
+                \item {.yaml} -- \textbf{6}
+                \item {.toml} -- \textbf{2}
+                \item {.txt} -- \textbf{1}
+                \item {.gz} -- \textbf{1}
+                \item {.lock} -- \textbf{1}
+                \item {.md} -- \textbf{1}
+            \end{itemize}
+
+            \item \textbf{Frequently modified files:}
+            \begin{itemize}
+                \item Distribution for the fix type is:
+                \item {tracking/val.py} -- \textbf{40}
+                \item {track.py} -- \textbf{32}
+                \item {boxmot\/utils\/\_\_init\_\_\.py} -- \textbf{24}
+                \item {val.py } -- \textbf{14}
+                \item {boxmot\/trackers\/botsort\/bot\_sort\.py} -- \textbf{14}
+                \item {boxmot\/appearance\/reid\_export\.py} -- \textbf{13}
+                \item {tracking\/evolve\(\).py} -- \textbf{13}
+                \item {\.github\/workflows\/ci\.yml} -- \textbf{11}
+                \item {boxmot\/appearance\/reid\_multibackend\.py} -- \textbf{11}
+                \item {boxmot\/trackers\/byteTrack\_tracker\.py} -- \textbf{11}
+            \end{itemize}
+        \end{itemize}
+
+\end{itemize}
+
+\newpage
+
+\sectionbar{Plots}
+
+\begin{itemize}
+    \item \textbf{Fix\_type distribution}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.6\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg}
+            \caption{Fix\_type distribution.}
+            \label{fig:diff-example-5}
+        \end{figure}
+
+    \item \textbf{frequently modified files}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.6\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg}
+            \caption{Top modified filenames.}
+            \label{fig:diff-example-6}
+        \end{figure}
+
+    \newpage
+
+    \item \textbf{frequently modified extensions}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.6\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg}
+            \caption{Top modified filenames.}
+            \label{fig:diff-example-7}
+        \end{figure}
+
+\end{itemize}
+
+\sectionbar{Analysis and Conclusion}
+
+After running the code, we find that out of \textbf{727} rows in the CSV file, there were \textbf{388} commits and \textbf{247} unique files modified. This implies that same files were modified multiple times.
+Also, the average number of files modified per commit is \textbf{1.87}, which means that more than a single file, must be having same commit message, which results in lose of specific information in the commit message
+\newline
+Interestingly, highest number of fix types were of \textbf{update} follows by \textbf{add}.
+Most modified extension was obviously of \textbf{.py} format, which is obvious citing that python was the primary language. Also, most modified files were \textbf{val.py} and \textbf{track.py} which is because they contain the most central functions in the tracking pipelines.
+
+\section{Part C: Structural Metrics with radon}
+
+\sectionbar{METHODOLOGY AND EXECUTION}
+Loaded the csv "diffprocessed.csv" generated in Lab2 using pandas into a dataframe "df"
+
+\begin{itemize}
+    \item \begin{itemize}
+        \item Three types of results are obtained in Structural metric.
+        \item {Maintainability Index: } Measure how well the code is structured in terms of easiness to understanding the code, modifications and extension of the code. It compresses static code properties on a scale of 0, 100 to obtain a score. This method uses parameters; Size of Code, Control flow Complexity and token level volume.
+        \item {Cyclomatic Complexity: } Measures the Complexity of control flow of the code. It counts the number of independent execution path through a piece of code. The higher the Complexity, implies more the number of paths, making it difficult to test and debug.
+        \item {Lines of Code (LOC): } It counts the number of lines present in the source code.
+        \item {Change in MI: } MI tells whether the bug-fix commit made the code easier to interpretable.
+        \item {Change in Lines of Code: } Indicates the Change in the lines of code, and this is the simplest parameter used for classification, as changes in few lines of code indicate minor changes.
+        \item {Cyclomatic Complexity: } Increase in the CC indicates, that the number of paths have increased making the code complex to maintain.
+    \end{itemize}
+
+    \item \textbf{Codes:}
+
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg}
+            \caption{Loading of diff.csv file and finding total number of commits and files.}
+            \label{fig:diff-example-8}
+        \end{figure}
+
+        \begin{figure}[!h]
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg}
+            \caption{Loading of diff.csv file and finding total number of commits and files.}
+            \label{fig:diff-example-9}
+        \end{figure}
+
+        \newpage
+        \begin{itemize}
+            \item \textbf{Explanation of the code:}
+            \begin{itemize}
+                \item Loaded the dataframe processed in the previous question to extract the source code before commit and the source code after commit.
+                \item Function \texttt{radonmet} which filters the code and asserts the code to be a python instance. Function calls for inbuilt functions from the radon library to extract Lines of Code (LOC), Maintainability Index (MI) and Cyclomatic Complexity (CC).
+                \item Code iterates through all the rows in the loaded dataframe, and uses the defined function \texttt{radonmet} to obtain Maintainability index, Cyclomatic Complexity and Lines of Code respectively for previous code and current code.
+                \item We call this function on both the source code before and source code after the commit and store them in lists.
+                \item In the main dataframe, six columns are added for Maintainability Index, Cyclomatic Complexity and Lines of Code before and after respectively.
+                \item Three more columns are appended in the dataframe which store the difference between MI, CC and LOC.
+                \item Because of the presence of some characters which the csv files are not able to store properly, radon returns errors which are handled as an exception in the \texttt{radonmet} function by returning a NaN value. These rows are filtered out to avoid processing errors further.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+\sectionbar{Results}
+CSV file was updated with addition of 9 columns
+\begin{itemize}
+    \item Average of Maintainability Index before: 55.32
+    \item Average of Maintainability Index after: 55.06
+    \item Average of Cyclomatic Complexity before: 40.46
+    \item Average of Cyclomatic Complexity after: 40.57
+    \item Average of LOC before: 178.80
+    \item Average of LOC after: 181.20
+    \item Average MI change: -0.26
+    \item Average CC change: +0.12
+    \item Average LOC change: +2.39
+\end{itemize}
+
+\sectionbar{Analysis and Conclusion}
+
+The commits are intended to remove bugs and improve the structural metrics for the code.
+The pipeline here used inbuilt libraries to generate metric of MI, CC and LOC. Here the commits did not have any major improvement in these metrics, as they aim to bug fix without emphasizing much on metrics.
+
+\cleardoublepage
+
+\section{Part D: Change Magnitude Metrics}
+
+\sectionbar{METHODOLOGY AND EXECUTION}
+Loaded the csv "diffprocessed.csv" generated in previous section.
+
+\begin{itemize}
+    \item \textbf{Change Magnitude Metrics:}
+    \begin{itemize}
+        \item \textbf{Bilingual Evaluation Understud (BLEU)} -- Its a metric designed for machine translation evaluation. BLUE provides an evaluation score to find textual similarity between two sequences.
+        \item \textbf{CodeBERT} -- A pre-trained model for source code and natural language, used to compute semantic similarity between two code snippets.
+        \item \textbf{How its an Evaluation Method} -- Similarity score between source code before and after the commit and tokens of codes give information about the extend of change in the files modified in the commit.
+        \item \textbf{classification} -- Similarity score between codes and token could be set as thresholds for classification of the commit into major and minor change category.
+    \end{itemize}
+
+
+    \item \textbf{Codes:}
+    
+
+        \begin{itemize}
+            \item \textbf{Explanation of the code:}
+            \begin{itemize}
+                \item The CodeBERT model from HuggingFace’s \texttt{transformers} library is used to compute semantic similarity between the \texttt{Source Code (prev)} and \texttt{Source Code (current)}. 
+                \item Each source code snippet is tokenized and passed through CodeBERT to generate embeddings. 
+                \item Cosine similarity is then calculated between the embeddings of the two code snippets, and this value is stored in a new column \texttt{CodeBERT\_Similarity}.
+                \item In cases where the code before or after the commit is missing (such as additions or deletions), a similarity score of 0.0 is assigned.
+                \item Similarly, the BLEU model is applied as a complementary metric. The \texttt{BLEU\_Similarity} column is appended to the dataframe to capture token-level similarity. 
+                \item The code iterates over each row, splits the source code into tokens, and applies the \texttt{sentence\_bleu} function from NLTK with smoothing to compute a BLEU score. 
+                \item If either the previous code or the current code is missing, a BLEU score of 0.0 is assigned to handle such cases gracefully. 
+                \item Thus, the two models provide different perspectives: CodeBERT for semantic similarity (meaning of code), and BLEU for token similarity (surface-level code overlap).
+            \end{itemize}
+        \end{itemize}
+
+
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.6\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg}
+            \caption{Applications of BLUE Model over source code before and after.}
+            \label{fig:diff-example-11}
+        \end{figure}
+
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.6\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg}
+            \caption{Applications of CodeBERT Model over source code before and after.}
+            \label{fig:diff-example-12}
+        \end{figure}
+    \end{itemize}
+
+\newpage
+\sectionbar{Results}
+\begin{itemize}
+    \item Average BLEU\_similarity score is 92.76\%.
+    \item Average CodeBERT\_similarity between source code tokens 99.95\%.
+\end{itemize}
+
+\section{Part E: Classification and Agreement}
+
+\sectionbar{METHODOLOGY AND EXECUTION}
+Loaded the csv \texttt{diffprocessed.csv} generated in previous section.
+
+\begin{itemize}
+    \item \textbf{Classification and Agreement:}
+    \begin{itemize}
+        \item Classification of commits is important for maintainance and risk assessments.
+        \item \textbf{Classification: } Commits can be classified as a major commit, which implies significant changes, while a minor commit, which implies small changes.
+        \item Commits which are classified as major commit need more testing for maintainance purposes, thus making this important.
+        \item \textbf{Method: } Once the similarity values between the previous code and the current code is obtained, certain thresholds need to be set for classification tasks.
+        \item To find an approximate THRESHOLD value, code plots the similarity vs frequency histogram and chooses the optimal value of 0.97 for BLEU score and CodeBERT model.
+        \item The \texttt{Classes\_Agree} column is introduced to check whether the classifications from BLEU similarity and CodeBERT similarity are consistent.  
+        \item If both methods give the same label, it is marked as ``YES'', otherwise it is marked as ``NO'', thus helping to analyze the alignment between semantic and token-level classifications.
+    \end{itemize}
+
+    \newpage
+    \item \textbf{Codes:}
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg}
+            \caption{histogram plot on BLEU similarity score}
+            \label{fig:diff-example-14}
+        \end{figure}
+
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg}
+            \caption{Classification based on THRESHOLD}
+            \label{fig:diff-example-15}
+        \end{figure}
+
+        \begin{figure}[!h] 
+            \centering
+            \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg}
+            \caption{Model Agree}
+            \label{fig:diff-example-16}
+        \end{figure}
+
+        \item \textbf{Explanation of the code:}
+        \begin{itemize}
+            \item Plotted the Distribution histogram for the BLEU scored and set threshold of 0\.97.
+            \item Based on the threshold value, Semantic and Token\_class columns are generated.
+            \item These columns are binary based on classification at THRESHOLD values.
+            \item If classification in both the values are equal, it is classified as Agree.
+        \end{itemize}
+
+         \item \textbf{Results:}
+        \begin{itemize}
+            \item Number of commits which are major according to CodeBERT Model 41, which is low because of the THRESHOLD equal to bleu threshold.
+            \item Number of commits which are major according to Bleu Tokens 291
+            \item Number of commits where methods agree 341.
+        \end{itemize}
+
+\end{itemize}
+
+\sectionbar{Analysis and Conclusion}
+
+Analysis of the extent of semantic changes are very important. In repositories with multiple collaborators, its important to have checks on major fixes so that people are aware of changes made, which could be problematic to compile with other codes.
+In the section C, we used fundamental methods to find the extent of changes such as LOC, MI and CC. In the section D and E, we intended to find the extent of change semantically, which may detect changes in the functions and their outputs, which might get missed in the previous section if they are structurally same.
+
+For this we use two models BLEU which is based on machine translation evaluation techniques, while CodeBERT is used to compute semantic similarity betweem two code snippets. We also contrast the outcomes of these models on the same code differences.
+
+We run these models, to find cosine similarity in the embeddings generated by both the models. CodeBERT gave a very high average similarity value.
+
+To use generated similarity index, we need to set some uniform threshold which could classify the changes into Major and Minor bug-fixes.
+
+To set a THRESHOLD, we used the frequency vs similarity histogram. CodeBERT was not considered because, it had a very high similarity value because of which it might not have much of information gain.
+
+Plots showed that the histogram had highest frequencies at somewhere around 0.97, therefore this was set as the THRESHOLD, for classification for both the models to maintain uniformity.
+
+Commits where both the models agreed were 341, which is low because of the high similarity values obtained by CodeBERT model which made it classify most of the changes as minor fixes.
+
+% \cleardoublepage
+\newpage
+
+\chapter{Exploration of different diff algorithms on Open-Source Repositories}
+
+\section{Introduction}
+The aim of the laboratory session was to provide gain a hands-on experience on how different algorithms like Myers and Histogram behave on real-world open source repositories. It also made us explore difference between code artifacts and non-code artifacts in the context of software development. It also aims to make us understand the difference in comparisons when the code ignores whitespace and blank lines. Importantly, how discrepancies can highlight the strengths of diff algorithms. After the lab, we aim to be proficient in analyzing diff outputs, generate datasets, visualize mismatches using python plots.
+
+\section{Tools}
+
+\begin{itemize}
+    \item \textbf{Software Used:}
+    \begin{itemize}
+        \item Operating System: macOS
+        \item Text Editor: Visual Studio Code
+        \item Version Control: git
+        \item Remote Hosting: GitHub
+        \item Continuous Integration: GitHub Actions
+    \end{itemize}
+    
+    \item \textbf{Repositories:}
+    \begin{itemize}
+        \item \texttt{butterknife} -- A popular view binding library for Android that helps reduce boilerplate code when working with UI components. 
+        \item \texttt{retrofit} -- A type-safe HTTP client for Android and Java, widely used for making API requests and handling network operations.
+        \item \texttt{glide} -- An image loading and caching library for Android, optimized for smooth scrolling and efficient resource usage.
+    \end{itemize}
+    
+    \item \textbf{Python Libraries:}
+    \begin{itemize}
+        \item Pydriller: A Python framework for mining software repositories. Used to analyze git repositories and extract commit information.
+        \item Pandas: To manage dataframes and deal with CSV files.
+    \end{itemize}
+\end{itemize}
+
+\section{SETUP}
+
+\begin{itemize}
+    \item GitHub account: TejasLohia21
+    \item SSH key configured for secure push/pull
+    \item Virtual Environment named \texttt{lab4} to manage library versions
+    \item Configured git username and email
+    \item Cloned/initialized three repositories
+\end{itemize}
+
+\section{Part A: Repository Selection and Part B: Define Selection Criteria}
+
+\begin{itemize}
+    \item \texttt{butterknife} -- A popular view binding library for Android that helps reduce boilerplate code when working with UI components. 
+    \item \texttt{retrofit} -- A type-safe HTTP client for Android and Java, widely used for making API requests and handling network operations.
+    \item \texttt{glide} -- An image loading and caching library for Android, optimized for smooth scrolling and efficient resource usage.
+\end{itemize}
+
+\sectionbar{Methodology and Execution}
+
+Repositories were chosen using the criterias which were mentioned in lectures and in the assignment:
+
+\begin{itemize}
+    \item \texttt{butterknife} -- A popular view binding library for Android that helps reduce boilerplate code when working with UI components.  
+        \begin{itemize}
+            \item \textbf{Commits:} The repository has 1016 commits, which is within the acceptable range for analysis.
+            \item \textbf{Stars:} The repository has 28.8k stars, indicating strong community usage and real-world relevance.  
+            \item \textbf{Myers Algorithm:} Since Git uses Myers as the default diff algorithm, we can directly apply \texttt{git diff --diff-algorithm=myers} on Butterknife.  
+            \item \textbf{Histogram Algorithm:} Git also supports the Histogram algorithm, which works with the Butterknife repository using \texttt{git diff --diff-algorithm=histogram}.  
+            \item \textbf{Discrepancy Analysis:} With over a thousand commits and frequent UI-related code changes, Butterknife provides meaningful opportunities to compare Myers and Histogram diffs.  
+            \item \textbf{Required Files:} The repository includes \texttt{butterknife/} source code, a dedicated \texttt{tests/} suite, along with \texttt{README.md} and \texttt{LICENSE}, thus satisfying all the required file-type conditions.  
+            \item \textbf{Conclusion:} Butterknife is one of the academically researched repositories for discrepancy analysis in both the Myers and Histogram algorithms.
+        \end{itemize}
+    \item \texttt{requests} -- A popular Python library for making HTTP requests in a simple and human-friendly way.
+        \begin{itemize}
+            \item \textbf{Commits:} The repository has 6372 commits, which is in the range of $[1206,\ 25000]$.
+            \item \textbf{Stars:} The repository has 53.2k stars, showing that it is widely used and well-established.
+            \item \textbf{Myers Algorithm:} Since Git uses Myers as the default diff algorithm, we can directly apply \texttt{git diff --diff-algorithm=myers} on the Requests repository.
+            \item \textbf{Histogram Algorithm:} Git also supports the Histogram algorithm, which works with this repository using \texttt{git diff --diff-algorithm=histogram}.
+            \item \textbf{Discrepancy Analysis:} With thousands of commits and frequent code updates, the Requests repository provides sufficient changes to compare Myers and Histogram diffs effectively.
+            \item \textbf{Required Files:} The repository contains the \texttt{requests/} source directory, a large \texttt{tests/} suite, along with \texttt{README.md} and \texttt{LICENSE}, fulfilling the file-type requirements.
+        \end{itemize}
+    \item \texttt{glide} -- A fast and efficient image loading and caching library for Android, widely used for handling media in mobile applications.  
+        \begin{itemize}
+            \item \textbf{Commits:} The repository has 3047 commits, which lies in the range of $[1206,\ 25000]$, making it suitable for analysis.  
+            \item \textbf{Stars:} The repository has 34.9k stars, showing its strong adoption and relevance in real-world projects.  
+            \item \textbf{Myers Algorithm:} Since Git uses Myers as the default diff algorithm, we can directly apply \texttt{git diff --diff-algorithm=myers} on the Glide repository.  
+            \item \textbf{Histogram Algorithm:} Git also supports the Histogram algorithm, which works seamlessly with this repository using \texttt{git diff --diff-algorithm=histogram}.  
+            \item \textbf{Discrepancy Analysis:} With over three thousand commits and consistent updates, the Glide repository provides enough modifications to effectively compare Myers and Histogram diffs.  
+            \item \textbf{Required Files:} The repository includes the \texttt{glide/} source code, a dedicated \texttt{tests/} suite, along with \texttt{README.md} and \texttt{LICENSE}, satisfying the file-type requirements.  
+        \end{itemize}
+\end{itemize}
+
+\section{Part C: Run Software Tool on the Selected Repository}
+
+\sectionbar{Introduction}
+
+This part requires to calculate the difference betweem the current source code and previous source code. This initially sounded a simple tasks, as we would exactly know in which lines some changes have been taken place.
+Surprisingly, a lot of research has been done to find the code differences. In this task we use two algorithms to find the code differences in the cloned repositories.
+
+\textbf{Myer's Algorithm}
+
+This algorithm uses Longest Common subsequence method to find the differences in the codes. The algorithm efficiently searches diagonals using a greedy strategy and stores only frontier points, so it’s very memory-efficient.
+
+\begin{itemize}
+    \item Produces a minimal diff (shortest possible sequence of edits).
+    \item Runs in O(ND) time, where N = number of lines and D = edit distance.
+    \item Git uses it by default because it balances accuracy and performance.
+\end{itemize}
+
+\textbf{Myer's Algorithm}
+
+Designed for better readability of diffs in code, especially when the same line appears many times.
+
+\begin{itemize}
+    \item First, it builds a histogram of line occurrences in both files.
+    \item It then focuses on unique lines (lines that appear only once or very rarely) because they are more likely to be real anchors for matching.
+    \item It tries to align these unique lines first, then expands outward to find context around them.
+    \item Often produces a more human-friendly diff compared to Myers, though not always the minimal edit script.
+\end{itemize}
+
+\sectionbar{Methodology and Execution}
+
+We use existing libraries to perform the task of extracting code differences.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg}
+    \caption{Central Code to extract diff.}
+    \label{fig:image for diff}
+\end{figure}
+
+The code shown in Figure~\ref{fig:image for diff} is responsible for extracting the differences between file versions in the selected repositories. It leverages the Pydriller library to iterate through each commit and retrieve the modified files. For each file, the code applies both the Myers and Histogram diff algorithms using Git commands, capturing the output for further analysis.
+
+Key steps in the code:
+\begin{itemize}
+    \item Store all the paths to the repositories in \texttt{local\_repo\_paths}.
+    \item Define the output csv\_filename and also define the csv\_header for that csv file which contains all the columns asked in the part (c) of the assignment.
+    \item Algorithm then starts iterating through each repository path, ans also tracks the size of growing csv file.
+    \item Iterating through every commit of that repository which initially fetches the hash value of the commmit.
+    \item Extraction of parent\_sha (We only take the first parent in case of a merge commit). Following this, we iterate through each of the modified files in that commit.
+    \item Defining \texttt{common\_args} which stores commands to be passed on to the \texttt{subprocess.run()} as arguments.
+    \item We obtain the Myers diff and Histogram diff outputs by executing the respective Git commands and capturing their output and apply normalization
+    \item Defining discrepancy\_found if the outputs of the two algorithms differ and commit the output to the CSV file
+\end{itemize}
+
+This approach allows for systematic extraction and comparison of diff outputs, facilitating the analysis of discrepancies between the Myers and Histogram algorithms across real-world code changes.
+
+\section{Part D: Compare Diff Outputs for Discrepancy Analysis}
+
+\sectionbar{METHODOLOGY and EXECUTION}
+
+After processing all the repositories we record the output of both the algorithms (Myers and Histogram) in a CSV file.
+
+\begin{enumerate}
+    \item \textbf{Normalization:}  
+    To ensure fairness in comparison, whitespace and blank lines were ignored.
+
+    \item \textbf{Comparison Logic:}  
+    The normalized Myers output and Histogram output were compared line by line.  
+    \begin{itemize}
+        \item If both were identical, the entry was labeled \texttt{No} discrepancy.  
+        \item If they differed, the entry was labeled \texttt{Yes} discrepancy.  
+    \end{itemize}
+
+    \item \textbf{CSV Output:}  
+    A dedicated column named \texttt{Discrepancy} was added to the CSV file. This column stores either \texttt{Yes} or \texttt{No} for each commit-file pair.
+
+\end{enumerate}
+
+\section{Part E: Report Final Dataset Statistics}
+
+\sectionbar{Introduction}
+
+After collecting and storing the diff results from all three repositories, we performed an exploratory analysis of the final dataset. The analysis focused on quantifying discrepancies and categorizing them based on file types.
+
+\sectionbar{Methodology and Execution}
+
+\begin{enumerate}
+    \item \textbf{File Categorization:}  
+        Each modified file was categorized into one of the following groups: 
+        \textit{Source code}, \textit{Test code}, \textit{README}, \textit{LICENSE}, or \textit{Other}.  
+        This categorization was performed by checking the file extensions and naming patterns (e.g., files containing ``test'' were labeled as Test code).
+
+    \item \textbf{Mismatch Detection by Category:}  
+        For each category, the total number of files and the number of files with discrepancies between the Myers and Histogram algorithms were computed. This enabled us to analyze which file types were more prone to mismatches.
+\end{enumerate}
+
+\sectionbar{Results}
+
+\begin{enumerate}
+    
+    \item \textbf{Statistical Summary:}  
+    The following statistics were derived from the analysis:
+    \begin{itemize}
+        \item Total files analyzed across all repositories: \textbf{31,344}.  
+        \item Overall mismatches detected: \textbf{1,108}, corresponding to approximately \textbf{3.54\%} of the total files.  
+        \item Breakdown of mismatches by file category:  
+        \begin{itemize}
+            \item \textbf{Source code:} 14,515 files, 616 mismatches (\textbf{4.24\%}).  
+            \item \textbf{Test code:} 9,282 files, 428 mismatches (\textbf{4.61\%}).  
+            \item \textbf{README files:} 381 files, 12 mismatches (\textbf{3.15\%}).  
+            \item \textbf{LICENSE files:} 17 files, 0 mismatches (\textbf{0\%}).  
+            \item \textbf{Other files:} 7,149 files, 52 mismatches (\textbf{0.73\%}).  
+        \end{itemize}
+
+        \item \textbf{File Extension Summary (Top 10):}  
+            \begin{itemize}
+                \item \textbf{.java:} 23,281 files, 1,040 mismatches (4.47\%)  
+                \item \textbf{.kt:} 350 files, 14 mismatches (4.00\%)  
+                \item \textbf{.md:} 541 files, 15 mismatches (2.77\%)  
+                \item \textbf{Other:} 142 files, 3 mismatches (2.11\%)  
+                \item \textbf{.json:} 70 files, 1 mismatch (1.43\%)  
+                \item \textbf{.gradle:} 1,410 files, 14 mismatches (0.99\%)  
+                \item \textbf{.yml:} 150 files, 1 mismatch (0.67\%)  
+                \item \textbf{.iml:} 152 files, 1 mismatch (0.66\%)  
+                \item \textbf{.xml:} 2,773 files, 15 mismatches (0.54\%)  
+                \item \textbf{.properties:} 587 files, 2 mismatches (0.34\%)  
+            \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Top 10 Files Causing Mismatches:}  
+        \begin{itemize}
+            \item \texttt{library/src/main/java/com/bumptech/glide/load/resource/bitmap/Downsampler.java} -- 15 mismatches  
+            \item \texttt{README.md} -- 12 mismatches  
+            \item \texttt{library/src/com/bumptech/glide/Glide.java} -- 12 mismatches  
+            \item \texttt{butterknife-compiler/src/main/java/butterknife/compiler/BindingClass.java} -- 11 mismatches  
+            \item \texttt{library/src/main/java/com/bumptech/glide/load/engine/DecodeJob.java} -- 9 mismatches  
+            \item \texttt{library/src/main/java/com/bumptech/glide/request/target/ViewTarget.java} -- 8 mismatches  
+            \item \texttt{library/src/main/java/com/bumptech/glide/load/engine/EngineJob.java} -- 7 mismatches  
+            \item \texttt{library/src/main/java/com/bumptech/glide/RequestBuilder.java} -- 7 mismatches  
+            \item \texttt{butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java} -- 6 mismatches  
+            \item \texttt{samples/giphy/src/main/java/com/bumptech/glide/samples/giphy/MainActivity.java} -- 6 mismatches    
+        \end{itemize}
+
+    \item \textbf{Commit-Level Summary:}  
+        \begin{itemize}
+            \item \textbf{Average mismatches per commit:} 0.03  
+            \item \textbf{Top 10 commits with most mismatches:}  
+            \begin{itemize}
+                \item f389e91ccecac6ddf736bbf1a4346782609eb034 - 229 mismatches  
+                \item f7a6d65cf7c1a41908dd48e0dab68ee5b881387e - 49 mismatches  
+                \item 8f8a1600826fd042abae9251cbad063dee5144b2 - 36 mismatches  
+                \item c375a2fbf594bdf422c45a1395a65823141a8bd5 - 35 mismatches  
+                \item 0dcc33fe6957657b910484599c499430cdf3461c - 32 mismatches  
+                \item ee71a6858dfddcc4650f6ff4d71112911bdf6ca7 - 31 mismatches  
+                \item 6f1d71715361d68384afa0cf5fc9ad0e898b3697 - 18 mismatches  
+                \item ed20643fb94d4e17f4cdb3699a6d83621408dd34 - 15 mismatches  
+                \item 91cb86225967b1e12cdab52d2d3ea35afc2b8c9e - 12 mismatches  
+                \item eac2c5f7190d148e72341ea289b69cae1ae2a866 - 12 mismatches  
+            \end{itemize}
+        \end{itemize}
+    \item \textbf{Repository-Level Summary:}  
+        \begin{itemize}
+            \item \textbf{glide:} 20,105 files, 820 mismatches (4.08\%)  
+            \item \textbf{butterknife:} 3,120 files, 109 mismatches (3.49\%)  
+            \item \textbf{retrofit:} 8,119 files, 179 mismatches (2.20\%)  
+        \end{itemize}
+
+    \item \textbf{Visualization:}  
+        To better understand the dataset, we generated multiple plots summarizing files, mismatches, and repository behavior:
+        \begin{itemize}
+            \item \textbf{Total Files by Category:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png}
+                \caption{Bar chart showing the total number of files per file category.}
+            \end{figure}
+
+            \item \textbf{Mismatches by File Category:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png}
+                \caption{Bar chart showing the number of mismatches for each file category.}
+            \end{figure}
+
+            \item \textbf{Mismatch Percentage by File Category:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png}
+                \caption{Bar chart displaying the mismatch percentage per file category.}
+            \end{figure}
+
+            \item \textbf{Top 10 File Extensions by Mismatch Percentage:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png}
+                \caption{Bar chart highlighting the top 10 file extensions with the highest mismatch percentages.}
+            \end{figure}
+
+            \item \textbf{Mismatch Percentage by Repository:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png}
+                \caption{Bar chart showing mismatch percentages across repositories.}
+            \end{figure}
+
+            \item \textbf{Distribution of Mismatches per Commit:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png}
+                \caption{Histogram illustrating the distribution of mismatches per commit.}
+            \end{figure}
+
+            \item \textbf{Top 10 Commits by Number of Mismatches:}  
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{/Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png}
+                \caption{Horizontal bar chart displaying the top 10 commits responsible for the most mismatches.}
+            \end{figure}
+        \end{itemize}
+\end{enumerate}
+       
+These plots and statistics prove an understanding of the dataset's structure and the nature of the mismatches present.
+
+\newpage
+\section{Analysis and Conclusion}
+
+\subsection*{Analysis}
+The exploratory analysis revealed that mismatches between Myers and Histogram algorithms were relatively rare overall, with only \textbf{3.54\%} of the 31,344 files affected. However, their distribution across file categories and repositories highlights certain patterns:
+
+\begin{itemize}
+    \item \textbf{File Category Trends:}  
+    \begin{itemize}
+        \item \textbf{Source code (4.24\%)} and \textbf{Test code (4.61\%)} showed the highest mismatch rates, suggesting that more complex files with frequent structural edits (e.g., function modifications, assertions) are more sensitive to algorithmic differences.  
+        \item \textbf{README (3.15\%)} and \textbf{LICENSE (0\%)} files showed very few mismatches, indicating that simpler, more static text rarely produces discrepancies.  
+        \item \textbf{Other files (0.73\%)} had minimal mismatches, largely due to their structured formats (e.g., configuration files) where line changes are easier to track.  
+    \end{itemize}
+
+    \item \textbf{Extension-Level Insights:}  
+    \begin{itemize}
+        \item \textbf{Java files (.java)} dominated both in total count and mismatches (\textasciitilde 23k files, 4.47\%), reflecting their heavy presence in the repositories.  
+        \item \textbf{Kotlin (.kt)} and \textbf{Markdown (.md)} files showed moderate mismatch percentages (\textasciitilde 4\% and 2.7\% respectively).  
+        \item Configuration-related extensions such as \texttt{.yml}, \texttt{.xml}, and \texttt{.properties} had very low mismatch rates, consistent with their line-oriented, less-structured nature.  
+    \end{itemize}
+
+    \item \textbf{Repository-Level Trends:}  
+    \begin{itemize}
+        \item The \textbf{glide repository} had the highest mismatch percentage (4.08\%), reflecting its large codebase and frequent file modifications.  
+        \item \textbf{butterknife (3.49\%)} and \textbf{retrofit (2.20\%)} showed relatively fewer mismatches, likely due to smaller or more modular project structures.  
+    \end{itemize}
+
+    \item \textbf{Commit-Level Observations:}  
+    Although the average mismatches per commit was only \textbf{0.03}, a few commits accounted for a disproportionate number of mismatches. For example, commit \texttt{f389e91ccecac6ddf736bbf1a4346782609eb034} alone had 229 mismatches, highlighting how large-scale refactorings or bulk updates drive discrepancies.
+\end{itemize}
+
+\subsection*{Conclusion}
+The comparative analysis of Myers and Histogram algorithms demonstrated that while both generally agree, certain types of files and edits cause them to diverge. Source code and test files are particularly prone to mismatches, whereas configuration and license files remain stable.  
+
+At the repository level, larger and more actively developed projects such as \textbf{glide} exhibited higher mismatch rates. Similarly, individual commits involving large structural changes were significant contributors to observed differences.  
+
+Overall, these findings emphasize that the choice of diff algorithm can meaningfully impact results in code analysis tasks, especially in repositories with frequent, complex modifications. Future work could extend this study by correlating mismatch frequency with developer activity, project size, and specific refactoring patterns.
+
+
+\section{Part F: Which algorithm performed better}
+\begin{itemize}
+    \item \texttt{Metric Definition} -- We can define multiple metrics to evaluate the performance of the algorithms, such as number of mismatches, percentage of mismatches, runtime efficiency (Compute required).
+    \item \texttt{Run Model to find various metrics} -- Execute the models on the dataset to obtain the defined metrics for each algorithm.
+    \item \texttt{Conclusive analysis} -- Just based on the results on a single repository, we cannot conclude which algorithm is better. However, based on the results from all three repositories, we can perform Statistical tests to compare the algorithms more rigorously to prove\/disprove any hypothesis.
+    \item \texttt{Script to run these tests} -- Automating the script to report the result which includes to run the model to get metrics, run statistical tests(optional), and report the one which scores better.
+\end{itemize}
+
+\end{document}

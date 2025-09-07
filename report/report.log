@@ -1,0 +1,1184 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.8)  7 SEP 2025 18:57
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex
+(/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip50
+\cftbeforetoctitleskip=\skip51
+\cftaftertoctitleskip=\skip52
+\cftbeforepartskip=\skip53
+\cftpartnumwidth=\skip54
+\cftpartindent=\skip55
+\cftbeforechapskip=\skip56
+\cftchapindent=\skip57
+\cftchapnumwidth=\skip58
+\cftbeforesecskip=\skip59
+\cftsecindent=\skip60
+\cftsecnumwidth=\skip61
+\cftbeforesubsecskip=\skip62
+\cftsubsecindent=\skip63
+\cftsubsecnumwidth=\skip64
+\cftbeforesubsubsecskip=\skip65
+\cftsubsubsecindent=\skip66
+\cftsubsubsecnumwidth=\skip67
+\cftbeforeparaskip=\skip68
+\cftparaindent=\skip69
+\cftparanumwidth=\skip70
+\cftbeforesubparaskip=\skip71
+\cftsubparaindent=\skip72
+\cftsubparanumwidth=\skip73
+\cftbeforeloftitleskip=\skip74
+\cftafterloftitleskip=\skip75
+\cftbeforefigskip=\skip76
+\cftfigindent=\skip77
+\cftfignumwidth=\skip78
+\c@lofdepth=\count197
+\c@lotdepth=\count198
+\cftbeforelottitleskip=\skip79
+\cftafterlottitleskip=\skip80
+\cftbeforetabskip=\skip81
+\cfttabindent=\skip82
+\cfttabnumwidth=\skip83
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip84
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen141
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count199
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count270
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip16
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks20
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks21
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks22
+\multlinegap=\skip85
+\multlinetaggap=\skip86
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count277
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
+\@linkdim=\dimen150
+\Hy@linkcounter=\count279
+\Hy@pagecounter=\count280
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count281
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count282
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen151
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count283
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count284
+\c@Item=\count285
+\c@Hfootnote=\count286
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count287
+\c@bookmark@seq@number=\count288
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip87
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count289
+\Gm@cntv=\count290
+\c@Gm@tempcnt=\count291
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks25
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks26
+\MT@tempbox=\box53
+\MT@count=\count292
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks27
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen162
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count293
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip88
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip89
+\enit@outerparindent=\dimen165
+\enit@toks=\toks28
+\enit@inbox=\box54
+\enit@count@id=\count294
+\enitdp@description=\count295
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip90
+\aftertitleunit=\skip91
+\ttl@plus=\dimen166
+\ttl@minus=\dimen167
+\ttl@toksa=\toks29
+\titlewidth=\dimen168
+\titlewidthlast=\dimen169
+\titlewidthfirst=\dimen170
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip92
+\RaggedLeftLeftskip=\skip93
+\RaggedRightLeftskip=\skip94
+\CenteringRightskip=\skip95
+\RaggedLeftRightskip=\skip96
+\RaggedRightRightskip=\skip97
+\CenteringParfillskip=\skip98
+\RaggedLeftParfillskip=\skip99
+\RaggedRightParfillskip=\skip100
+\JustifyingParfillskip=\skip101
+\CenteringParindent=\skip102
+\RaggedLeftParindent=\skip103
+\RaggedRightParindent=\skip104
+\JustifyingParindent=\skip105
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen171
+\captionmargin=\dimen172
+\caption@leftmargin=\dimen173
+\caption@rightmargin=\dimen174
+\caption@width=\dimen175
+\caption@indent=\dimen176
+\caption@parindent=\dimen177
+\caption@hangindent=\dimen178
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: hyperref package is loaded.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip106
+\f@nch@O@elh=\skip107
+\f@nch@O@erh=\skip108
+\f@nch@O@olh=\skip109
+\f@nch@O@orh=\skip110
+\f@nch@O@elf=\skip111
+\f@nch@O@erf=\skip112
+\f@nch@O@olf=\skip113
+\f@nch@O@orf=\skip114
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count298
+\l__pdf_internal_box=\box56
+)
+No file report.aux.
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count299
+\scratchdimen=\dimen179
+\scratchbox=\box57
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen180
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 76.
+\@outlinefile=\write3
+\openout3 = `report.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 76.
+Package microtype Info: Applying patch `item' on input line 76.
+Package microtype Info: Applying patch `toc' on input line 76.
+Package microtype Info: Applying patch `eqnum' on input line 76.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 76.
+
+Package microtype Info: Applying patch `verbatim' on input line 76.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 76.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108     }
+           
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 108.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 108.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 108.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 108.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Extra }, or forgotten $.
+<argument> ...sLohia21/TejasLohia_Assessment1.git}
+                                                   \vspace {1em} \@@par 
+l.108     }
+           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108     }
+           
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/tejasmacipad/Desktop/Third_year/STT/submission_folder/TejasLohia_Assessment1/report/report.tex:108: Missing } inserted.
+<inserted text> 
+                }
+l.108     }
+           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 108.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 108.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 108.
+
+Overfull \hbox (9.91661pt too wide) in paragraph at lines 108--109
+ [][][][][][][] 
+ []
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 122--123
+[][][][][][] 
+ []
+
+No file report.toc.
+\tf@toc=\write4
+\openout4 = `report.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.130 \chapter
+              {Introduction to Version Controlling, Git Workflows, and Actions} [1]
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 138.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [2
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 163.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [3]
+Overfull \hbox (7.44682pt too wide) in paragraph at lines 256--256
+ []        \T1/lmtt/m/n/12 commit 7e4d7da93c58274df903e73f653de9e9fe8e84fb (HEAD -> main)[] 
+ []
+
+[4]
+Overfull \hbox (44.53186pt too wide) in paragraph at lines 272--272
+ []        \T1/lmtt/m/n/12 git remote add origin git@github.com:TejasLohia21/TejasLohialab1.git[] 
+ []
+
+[5]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg, id=53, 1284.8pt x 883.3pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg  used on input line 361.
+(pdftex.def)             Requested size: 317.07614pt x 217.98059pt.
+ [6]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg, id=63, 1284.8pt x 331.2375pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg  used on input line 378.
+(pdftex.def)             Requested size: 317.07614pt x 81.7427pt.
+ [7 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg, id=72, 943.525pt x 232.87pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg  used on input line 394.
+(pdftex.def)             Requested size: 317.07614pt x 78.258pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg, id=73, 1606.0pt x 358.33875pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg  used on input line 410.
+(pdftex.def)             Requested size: 317.07614pt x 70.74788pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg, id=74, 1606.0pt x 395.4775pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg  used on input line 420.
+(pdftex.def)             Requested size: 317.07614pt x 78.08029pt.
+ [8 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg, id=82, 1606.0pt x 1054.94125pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg  used on input line 431.
+(pdftex.def)             Requested size: 317.07614pt x 208.2802pt.
+ [9 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg>]
+Chapter 2.
+[10
+
+
+]
+Overfull \hbox (61.20563pt too wide) in paragraph at lines 473--474
+[]\T1/lmr/m/n/12 (-20) Pre-trained LLMs: \T1/lmtt/m/n/12 SEBIS/code_trans_t5_base_commit_generation \T1/lmr/m/n/12 (-20) and \T1/lmtt/m/n/12 CommitPredictorT5\T1/lmr/m/n/12 (-20) . 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 490.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg, id=96, 2951.025pt x 1684.2925pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg  used on input line 497.
+(pdftex.def)             Requested size: 407.66833pt x 232.66391pt.
+[11 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.18.04.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg, id=105, 2619.7875pt x 576.1525pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg  used on input line 506.
+(pdftex.def)             Requested size: 407.66833pt x 89.65436pt.
+ [12 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 01.20.05.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg, id=112, 1284.8pt x 966.61125pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg  used on input line 548.
+(pdftex.def)             Requested size: 317.07614pt x 238.54012pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg, id=113, 1284.8pt x 884.30376pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg  used on input line 554.
+(pdftex.def)             Requested size: 317.07614pt x 218.22829pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.42.40.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+
+ []
+
+[14 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 14.43.43.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg, id=125, 1284.8pt x 213.79875pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg  used on input line 582.
+(pdftex.def)             Requested size: 317.07614pt x 52.7612pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 586--592
+[] [][][][][][]
+ []
+
+[15 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 02.51.55.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 596--597
+
+ []
+
+[16
+
+]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg, id=136, 1284.8pt x 1038.88126pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg  used on input line 628.
+(pdftex.def)             Requested size: 317.07614pt x 256.3749pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg, id=137, 1284.8pt x 1026.83624pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg  used on input line 634.
+(pdftex.def)             Requested size: 317.07614pt x 253.40244pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg, id=138, 1284.8pt x 949.5475pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg  used on input line 640.
+(pdftex.def)             Requested size: 317.07614pt x 234.32913pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg, id=139, 1284.8pt x 915.42pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg  used on input line 646.
+(pdftex.def)             Requested size: 317.07614pt x 225.90715pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg, id=140, 1284.8pt x 842.14626pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg  used on input line 652.
+(pdftex.def)             Requested size: 317.07614pt x 207.82468pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.45.55.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.20.jpeg>]
+Overfull \hbox (201.58781pt too wide) in paragraph at lines 662--663
+[]\T1/lmr/bx/n/12 (-20) Model Load-ing \T1/lmr/m/n/12 (-20) -- Loaded mod-els and to-k-eniz-ers: \T1/lmtt/m/n/12 CommitPredictorT5 \T1/lmr/m/n/12 (-20) and \T1/lmtt/m/n/12 SEBIS/code_trans_t5_base_commit_generation
+ []
+
+[18 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.34.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.46.50.jpeg>] [19 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 16.47.06.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg, id=165, 1284.8pt x 84.315pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg  used on input line 698.
+(pdftex.def)             Requested size: 452.9679pt x 29.72552pt.
+[20 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-31 at 13.46.56.jpeg>] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 807--808
+
+ []
+
+
+Overfull \hbox (27.44507pt too wide) in paragraph at lines 810--815
+\T1/lmr/m/n/12 (-20) sage prop-erly, be-cause of lack of fine-tuning. \T1/lmtt/m/n/12 SEBIS/code_trans_t5_base_commit_generation
+ []
+
+[22]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg, id=181, 979.66pt x 945.5325pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg  used on input line 837.
+(pdftex.def)             Requested size: 385.02547pt x 371.61287pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (20.35161pt too wide) in paragraph at lines 852--853
+[]\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
+ []
+
+[23
+
+] [24 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.29.53.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg, id=193, 1007.765pt x 785.93625pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg  used on input line 884.
+(pdftex.def)             Requested size: 452.9679pt x 353.2603pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (20.35161pt too wide) in paragraph at lines 897--898
+[]\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
+ []
+
+[25] [26 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 20.49.55.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg, id=204, 1606.0pt x 1106.1325pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg  used on input line 934.
+(pdftex.def)             Requested size: 452.9679pt x 311.97667pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (20.35161pt too wide) in paragraph at lines 946--947
+[]\T1/lmr/bx/n/12 (-20) Similarity Func-tion: \T1/lmr/m/n/12 (-20) A helper func-tion \T1/lmtt/m/n/12 compute_similarity(code_diff, commit_msg)
+ []
+
+[27] [28 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-01 at 22.59.54.jpeg>] [29]
+Chapter 3.
+[30
+
+] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg, id=233, 1606.0pt x 525.965pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg  used on input line 1050.
+(pdftex.def)             Requested size: 362.37569pt x 118.67409pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg, id=238, 1421.31pt x 594.22pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg  used on input line 1074.
+(pdftex.def)             Requested size: 362.37569pt x 151.50142pt.
+ [33 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-02 at 21.16.10.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 17.44.18.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg, id=245, 1284.8pt x 938.50626pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg  used on input line 1098.
+(pdftex.def)             Requested size: 362.37569pt x 264.6989pt.
+ [34 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 01.27.14.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg, id=251, 1176.395pt x 991.705pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg  used on input line 1128.
+(pdftex.def)             Requested size: 362.37569pt x 305.47333pt.
+ [35 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 18.37.36.jpeg>] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg, id=262, 482.80376pt x 505.89pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg  used on input line 1182.
+(pdftex.def)             Requested size: 271.7835pt x 284.78627pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg, id=263, 1284.8pt x 1033.8625pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg  used on input line 1190.
+(pdftex.def)             Requested size: 271.7835pt x 218.69507pt.
+[37 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 02.33.36.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.41.14.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg, id=270, 697.60625pt x 549.05125pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg  used on input line 1200.
+(pdftex.def)             Requested size: 271.7835pt x 213.90292pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1208
+
+ []
+
+[38 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 05.45.26.jpeg>]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg, id=277, 1365.1pt x 1296.845pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg  used on input line 1235.
+(pdftex.def)             Requested size: 362.37569pt x 344.25594pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg, id=278, 1606.0pt x 762.85pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg  used on input line 1242.
+(pdftex.def)             Requested size: 362.37569pt x 172.12273pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 14.44.56.jpeg>] [40 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-03 at 15.13.51.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1277
+
+ []
+
+[41]
+Overfull \hbox (30.36713pt too wide) in paragraph at lines 1308--1309
+[]\T1/lmr/m/n/12 (-20) Similarly, the BLEU model is ap-plied as a com-ple-men-tary met-ric. The \T1/lmtt/m/n/12 BLEU_Similarity
+ []
+
+[42
+
+]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg, id=300, 1284.8pt x 1214.5375pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg  used on input line 1318.
+(pdftex.def)             Requested size: 271.7835pt x 256.91364pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg, id=301, 1284.8pt x 1236.62pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg  used on input line 1325.
+(pdftex.def)             Requested size: 271.7835pt x 261.5848pt.
+ [43 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.14.22.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 03.33.09.jpeg>] [44]
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg, id=313, 1265.72874pt x 1284.8pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg  used on input line 1359.
+(pdftex.def)             Requested size: 362.37569pt x 367.81857pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg, id=314, 1539.7525pt x 299.1175pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg  used on input line 1366.
+(pdftex.def)             Requested size: 362.37569pt x 70.39758pt.
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg, id=315, 1537.745pt x 764.8575pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg  used on input line 1373.
+(pdftex.def)             Requested size: 362.37569pt x 180.24338pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[45 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-05 at 05.20.45.jpeg> </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.32.47.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
+
+ []
+
+[46 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-07 at 16.41.30.jpeg>] [47]
+Chapter 4.
+[48
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1465
+
+ []
+
+[49] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1502
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
+
+ []
+
+</Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg, id=354, 1284.8pt x 908.39375pt>
+File: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg Graphic file (type jpg)
+<use /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg>
+Package pdftex.def Info: /Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg  used on input line 1533.
+(pdftex.def)             Requested size: 362.37569pt x 256.20589pt.
+
+LaTeX Warning: Reference `fig:image for diff' on page 52 undefined on input line 1538.
+
+[52 </Users/tejasmacipad/Downloads/WhatsApp Image 2025-08-30 at 15.52.26.jpeg>]
+Overfull \hbox (1.95412pt too wide) in paragraph at lines 1547--1548
+[]\T1/lmr/m/n/12 (-20) Defining \T1/lmtt/m/n/12 common_args \T1/lmr/m/n/12 (-20) which stores com-mands to be passed on to the \T1/lmtt/m/n/12 subprocess.run()
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1578--1579
+
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1595
+
+ []
+
+[54]
+Overfull \hbox (56.88187pt too wide) in paragraph at lines 1629--1630
+[]\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/load/resource/bitmap/Downsampler.java
+ []
+
+
+Overfull \hbox (26.00685pt too wide) in paragraph at lines 1632--1633
+[]\T1/lmtt/m/n/12 butterknife-compiler/src/main/java/butterknife/compiler/BindingClass.java
+ []
+
+
+Overfull \hbox (5.4002pt too wide) in paragraph at lines 1633--1634
+[]\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/load/engine/DecodeJob.java \T1/lmr/m/n/12 (-20) -- 9
+ []
+
+
+Overfull \hbox (13.65685pt too wide) in paragraph at lines 1634--1635
+[]\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/request/target/ViewTarget.java
+ []
+
+
+Overfull \hbox (5.10646pt too wide) in paragraph at lines 1635--1636
+[]\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/load/engine/EngineJob.java \T1/lmr/m/n/12 (-20) -- 7
+ []
+
+
+Overfull \hbox (23.09654pt too wide) in paragraph at lines 1636--1637
+[]\T1/lmtt/m/n/12 library/src/main/java/com/bumptech/glide/RequestBuilder.java \T1/lmr/m/n/12 (-20) -- 7 mis-matches 
+ []
+
+
+Overfull \hbox (75.40688pt too wide) in paragraph at lines 1637--1638
+[]\T1/lmtt/m/n/12 butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java
+ []
+
+
+Overfull \hbox (56.88187pt too wide) in paragraph at lines 1638--1639
+[]\T1/lmtt/m/n/12 samples/giphy/src/main/java/com/bumptech/glide/samples/giphy/MainActivity.java
+ []
+
+[55]
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png, id=384, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png  used on input line 1671.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png, id=386, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png  used on input line 1678.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+ [56 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/total_files_by_category.png>]
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png, id=395, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png  used on input line 1685.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png, id=396, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png  used on input line 1692.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png, id=397, 722.7pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png  used on input line 1699.
+(pdftex.def)             Requested size: 362.37569pt x 181.18733pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png, id=398, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png  used on input line 1706.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png, id=399, 578.16pt x 361.35pt>
+File: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png Graphic file (type png)
+<use /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png>
+Package pdftex.def Info: /Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png  used on input line 1713.
+(pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[57 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatches_by_category.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/mismatch_percentage_by_category.png>] [58 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_extensions_mismatch.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/repo_mismatch_percentage.png>] [59 </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/distribution_mismatches_commit.png> </Users/tejasmacipad/Desktop/Third_year/STT/lab4report/top_commits_mismatches.png>] [60] [61] (./report.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  F5155A65E97AE76C5C1BB0C6EAF3D6E3;8289.
+ ) 
+Here is how much of TeX's memory you used:
+ 16167 strings out of 474116
+ 275822 string characters out of 5743683
+ 1939187 words of memory out of 5000000
+ 37934 multiletter control sequences out of 15000+600000
+ 630205 words of font info for 187 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,12n,79p,1286b,906s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on report.pdf (62 pages, 4296841 bytes).
+PDF statistics:
+ 529 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 39635 words of extra memory for PDF output out of 42996 (max. 10000000)
+
